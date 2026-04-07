@@ -1,0 +1,1201 @@
+crime_code,crime_type,occurred_at,latitude,longitude,address,description,police_station,is_accident,is_women_related,severity
+307,IPC-AttemptToMurder,2026-03-09T23:17:00,13.038414,80.308535,"Sector 12, Zone 19",FIR narrative sample #1 for IPC-AttemptToMurder.,Mylapore PS,False,False,4
+NDPS-21,NDPS-DrugPossession,2026-03-02T00:05:00,13.039926,80.287023,"Sector 84, Zone 18",FIR narrative sample #2 for NDPS-DrugPossession.,Tambaram PS,False,False,4
+NDPS-21,NDPS-DrugPossession,2025-08-21T14:37:00,13.021109,77.51564,"Sector 55, Zone 11",FIR narrative sample #3 for NDPS-DrugPossession.,Tambaram PS,False,False,4
+376,IPC-SexualOffence,2025-10-26T06:48:00,12.907954,77.575388,"Sector 78, Zone 9",FIR narrative sample #4 for IPC-SexualOffence.,Velachery PS,False,False,5
+302,IPC-Murder,2024-12-19T17:07:00,12.904208,77.561509,"Sector 74, Zone 7",FIR narrative sample #5 for IPC-Murder.,Velachery PS,False,False,5
+307,IPC-AttemptToMurder,2026-02-16T21:14:00,13.049235,77.651451,"Sector 36, Zone 15",FIR narrative sample #6 for IPC-AttemptToMurder.,Anna Nagar PS,False,False,4
+323,IPC-Assault,2025-10-19T11:22:00,13.109928,80.302991,"Sector 78, Zone 6",FIR narrative sample #7 for IPC-Assault.,T. Nagar PS,False,False,2
+ARMS-25,ArmsAct-IllegalWeapon,2025-07-27T05:29:00,12.934792,77.662663,"Sector 88, Zone 11",FIR narrative sample #8 for ArmsAct-IllegalWeapon.,Adyar PS,False,False,4
+302,IPC-Murder,2025-08-12T01:51:00,12.955786,77.52519,"Sector 92, Zone 11",FIR narrative sample #9 for IPC-Murder.,Mylapore PS,False,False,5
+420,IPC-Fraud,2024-06-01T15:25:00,17.378416,78.449081,"Sector 69, Zone 9",FIR narrative sample #10 for IPC-Fraud.,Mylapore PS,False,False,3
+MV-184,Accident-RashDriving,2025-01-20T18:25:00,12.926691,77.674206,"Sector 97, Zone 2",FIR narrative sample #11 for Accident-RashDriving.,T. Nagar PS,True,False,3
+307,IPC-AttemptToMurder,2025-10-29T20:10:00,17.372546,78.416864,"Sector 68, Zone 9",FIR narrative sample #12 for IPC-AttemptToMurder.,Anna Nagar PS,False,False,4
+ARMS-25,ArmsAct-IllegalWeapon,2026-03-23T21:46:00,13.111774,80.276615,"Sector 44, Zone 4",FIR narrative sample #13 for ArmsAct-IllegalWeapon.,Tambaram PS,False,False,4
+376,IPC-SexualOffence,2025-01-13T05:29:00,13.155311,80.330836,"Sector 98, Zone 6",FIR narrative sample #14 for IPC-SexualOffence.,Mylapore PS,False,True,5
+ARMS-25,ArmsAct-IllegalWeapon,2025-12-16T20:19:00,17.386226,78.438526,"Sector 70, Zone 17",FIR narrative sample #15 for ArmsAct-IllegalWeapon.,Adyar PS,False,False,4
+302,IPC-Murder,2024-07-29T10:31:00,13.020599,80.248777,"Sector 31, Zone 2",FIR narrative sample #16 for IPC-Murder.,Velachery PS,False,False,5
+420,IPC-Fraud,2024-08-31T02:05:00,17.382758,78.417774,"Sector 17, Zone 16",FIR narrative sample #17 for IPC-Fraud.,Adyar PS,False,False,3
+ARMS-25,ArmsAct-IllegalWeapon,2025-10-16T08:33:00,17.372702,78.440588,"Sector 89, Zone 7",FIR narrative sample #18 for ArmsAct-IllegalWeapon.,Tambaram PS,False,False,4
+376,IPC-SexualOffence,2025-02-19T21:41:00,12.961696,77.597412,"Sector 9, Zone 11",FIR narrative sample #19 for IPC-SexualOffence.,Adyar PS,False,True,5
+302,IPC-Murder,2024-08-09T17:14:00,17.340235,78.418059,"Sector 9, Zone 2",FIR narrative sample #20 for IPC-Murder.,Adyar PS,False,False,5
+323,IPC-Assault,2026-01-21T16:15:00,12.998636,77.548878,"Sector 74, Zone 16",FIR narrative sample #21 for IPC-Assault.,Mylapore PS,False,False,2
+420,IPC-Fraud,2024-12-05T13:12:00,13.018209,80.259668,"Sector 94, Zone 2",FIR narrative sample #22 for IPC-Fraud.,Anna Nagar PS,False,False,3
+307,IPC-AttemptToMurder,2026-01-31T12:46:00,13.019695,77.532083,"Sector 58, Zone 5",FIR narrative sample #23 for IPC-AttemptToMurder.,Mylapore PS,False,False,4
+NDPS-21,NDPS-DrugPossession,2025-09-28T08:29:00,13.142618,80.202762,"Sector 13, Zone 2",FIR narrative sample #24 for NDPS-DrugPossession.,Mylapore PS,False,False,4
+ARMS-25,ArmsAct-IllegalWeapon,2026-03-19T02:59:00,13.02931,80.268403,"Sector 8, Zone 6",FIR narrative sample #25 for ArmsAct-IllegalWeapon.,Anna Nagar PS,False,False,4
+NDPS-21,NDPS-DrugPossession,2026-04-01T12:16:00,12.93724,77.626055,"Sector 85, Zone 16",FIR narrative sample #26 for NDPS-DrugPossession.,Mylapore PS,False,False,4
+379,IPC-Theft,2025-09-21T09:13:00,13.095369,80.277451,"Sector 7, Zone 19",FIR narrative sample #27 for IPC-Theft.,T. Nagar PS,False,False,2
+NDPS-27,NDPS-DrugConsumption,2024-11-05T16:10:00,13.156425,80.203518,"Sector 9, Zone 8",FIR narrative sample #28 for NDPS-DrugConsumption.,Mylapore PS,False,False,3
+NDPS-21,NDPS-DrugPossession,2025-12-02T18:15:00,17.400123,78.505801,"Sector 73, Zone 17",FIR narrative sample #29 for NDPS-DrugPossession.,Mylapore PS,False,False,4
+323,IPC-Assault,2025-07-10T06:42:00,17.355269,78.449198,"Sector 39, Zone 15",FIR narrative sample #30 for IPC-Assault.,Tambaram PS,False,False,2
+323,IPC-Assault,2026-01-19T00:29:00,17.464753,78.566075,"Sector 65, Zone 9",FIR narrative sample #31 for IPC-Assault.,Adyar PS,False,False,2
+379,IPC-Theft,2025-04-11T02:56:00,13.061824,80.215939,"Sector 39, Zone 20",FIR narrative sample #32 for IPC-Theft.,Tambaram PS,False,False,2
+ARMS-25,ArmsAct-IllegalWeapon,2026-03-26T21:52:00,17.352901,78.512842,"Sector 34, Zone 4",FIR narrative sample #33 for ArmsAct-IllegalWeapon.,Adyar PS,False,False,4
+307,IPC-AttemptToMurder,2024-09-14T04:17:00,12.988373,77.629418,"Sector 34, Zone 17",FIR narrative sample #34 for IPC-AttemptToMurder.,Tambaram PS,False,False,4
+NDPS-27,NDPS-DrugConsumption,2025-07-20T01:05:00,17.372772,78.450969,"Sector 82, Zone 9",FIR narrative sample #35 for NDPS-DrugConsumption.,Adyar PS,False,True,3
+379,IPC-Theft,2025-01-06T17:45:00,12.981345,77.5325,"Sector 20, Zone 18",FIR narrative sample #36 for IPC-Theft.,Tambaram PS,False,False,2
+302,IPC-Murder,2025-03-21T18:35:00,13.071466,80.197393,"Sector 46, Zone 7",FIR narrative sample #37 for IPC-Murder.,T. Nagar PS,False,False,5
+420,IPC-Fraud,2024-05-21T03:22:00,17.446462,78.47172,"Sector 31, Zone 6",FIR narrative sample #38 for IPC-Fraud.,Adyar PS,False,False,3
+379,IPC-Theft,2025-02-05T00:11:00,17.452918,78.531882,"Sector 95, Zone 8",FIR narrative sample #39 for IPC-Theft.,Tambaram PS,False,False,2
+376,IPC-SexualOffence,2025-10-22T22:06:00,13.031147,77.651975,"Sector 45, Zone 10",FIR narrative sample #40 for IPC-SexualOffence.,Anna Nagar PS,False,True,5
+420,IPC-Fraud,2025-08-18T00:42:00,13.066455,80.235276,"Sector 45, Zone 17",FIR narrative sample #41 for IPC-Fraud.,Velachery PS,False,False,3
+NDPS-21,NDPS-DrugPossession,2024-05-08T17:21:00,13.021155,80.345964,"Sector 5, Zone 4",FIR narrative sample #42 for NDPS-DrugPossession.,Velachery PS,False,False,4
+MV-184,Accident-RashDriving,2025-01-14T11:46:00,12.961423,77.672078,"Sector 25, Zone 9",FIR narrative sample #43 for Accident-RashDriving.,Mylapore PS,True,False,3
+302,IPC-Murder,2024-04-08T13:00:00,17.453092,78.492852,"Sector 95, Zone 7",FIR narrative sample #44 for IPC-Murder.,Tambaram PS,False,False,5
+323,IPC-Assault,2025-01-17T02:42:00,12.991305,77.620742,"Sector 65, Zone 10",FIR narrative sample #45 for IPC-Assault.,Velachery PS,False,False,2
+NDPS-21,NDPS-DrugPossession,2025-05-04T12:44:00,12.980306,77.545294,"Sector 87, Zone 6",FIR narrative sample #46 for NDPS-DrugPossession.,Anna Nagar PS,False,False,4
+MV-184,Accident-RashDriving,2024-08-29T09:25:00,17.438396,78.45532,"Sector 78, Zone 11",FIR narrative sample #47 for Accident-RashDriving.,Mylapore PS,True,False,3
+NDPS-27,NDPS-DrugConsumption,2025-01-06T14:43:00,13.084488,80.317698,"Sector 22, Zone 3",FIR narrative sample #48 for NDPS-DrugConsumption.,Tambaram PS,False,False,3
+376,IPC-SexualOffence,2024-10-23T21:40:00,17.35863,78.537648,"Sector 40, Zone 8",FIR narrative sample #49 for IPC-SexualOffence.,Tambaram PS,False,False,5
+420,IPC-Fraud,2025-11-04T00:02:00,13.16013,80.288504,"Sector 54, Zone 19",FIR narrative sample #50 for IPC-Fraud.,Anna Nagar PS,False,False,3
+420,IPC-Fraud,2024-04-20T12:31:00,12.930638,77.619569,"Sector 55, Zone 8",FIR narrative sample #51 for IPC-Fraud.,T. Nagar PS,False,True,3
+379,IPC-Theft,2024-04-21T16:29:00,13.091885,80.337495,"Sector 60, Zone 17",FIR narrative sample #52 for IPC-Theft.,Adyar PS,False,False,2
+ARMS-25,ArmsAct-IllegalWeapon,2024-08-02T10:48:00,12.989624,77.629684,"Sector 58, Zone 6",FIR narrative sample #53 for ArmsAct-IllegalWeapon.,Mylapore PS,False,False,4
+NDPS-27,NDPS-DrugConsumption,2024-12-29T08:48:00,13.137078,80.23507,"Sector 81, Zone 8",FIR narrative sample #54 for NDPS-DrugConsumption.,Anna Nagar PS,False,False,3
+376,IPC-SexualOffence,2025-01-08T02:45:00,12.929119,77.568336,"Sector 18, Zone 5",FIR narrative sample #55 for IPC-SexualOffence.,T. Nagar PS,False,False,5
+420,IPC-Fraud,2025-03-07T22:09:00,17.339232,78.473079,"Sector 54, Zone 2",FIR narrative sample #56 for IPC-Fraud.,Anna Nagar PS,False,False,3
+420,IPC-Fraud,2025-01-28T12:57:00,17.45637,78.409825,"Sector 49, Zone 16",FIR narrative sample #57 for IPC-Fraud.,Mylapore PS,False,False,3
+302,IPC-Murder,2025-04-08T09:48:00,13.028152,77.667149,"Sector 95, Zone 18",FIR narrative sample #58 for IPC-Murder.,Tambaram PS,False,False,5
+MV-184,Accident-RashDriving,2025-08-21T15:14:00,12.961334,77.519244,"Sector 52, Zone 6",FIR narrative sample #59 for Accident-RashDriving.,Tambaram PS,True,False,3
+NDPS-27,NDPS-DrugConsumption,2025-11-24T19:34:00,13.147809,80.285403,"Sector 83, Zone 14",FIR narrative sample #60 for NDPS-DrugConsumption.,T. Nagar PS,False,False,3
+379,IPC-Theft,2024-12-17T05:03:00,12.952257,77.548466,"Sector 36, Zone 14",FIR narrative sample #61 for IPC-Theft.,Anna Nagar PS,False,False,2
+376,IPC-SexualOffence,2026-01-10T15:01:00,17.391307,78.566685,"Sector 9, Zone 2",FIR narrative sample #62 for IPC-SexualOffence.,Tambaram PS,False,False,5
+302,IPC-Murder,2025-07-24T06:53:00,13.102114,80.228867,"Sector 73, Zone 7",FIR narrative sample #63 for IPC-Murder.,T. Nagar PS,False,False,5
+NDPS-27,NDPS-DrugConsumption,2024-04-17T08:49:00,12.918446,77.61176,"Sector 21, Zone 10",FIR narrative sample #64 for NDPS-DrugConsumption.,T. Nagar PS,False,False,3
+307,IPC-AttemptToMurder,2024-08-19T00:59:00,12.983727,77.659884,"Sector 26, Zone 3",FIR narrative sample #65 for IPC-AttemptToMurder.,Tambaram PS,False,False,4
+MV-184,Accident-RashDriving,2024-04-26T20:15:00,13.114251,80.238953,"Sector 73, Zone 2",FIR narrative sample #66 for Accident-RashDriving.,T. Nagar PS,True,False,3
+323,IPC-Assault,2024-10-05T13:42:00,12.902633,77.618207,"Sector 63, Zone 4",FIR narrative sample #67 for IPC-Assault.,Anna Nagar PS,False,True,2
+NDPS-21,NDPS-DrugPossession,2025-03-29T20:57:00,13.004769,77.584278,"Sector 35, Zone 20",FIR narrative sample #68 for NDPS-DrugPossession.,Tambaram PS,False,False,4
+ARMS-25,ArmsAct-IllegalWeapon,2024-11-24T14:27:00,17.399796,78.458269,"Sector 36, Zone 15",FIR narrative sample #69 for ArmsAct-IllegalWeapon.,T. Nagar PS,False,False,4
+420,IPC-Fraud,2024-12-14T18:39:00,17.365638,78.411292,"Sector 63, Zone 7",FIR narrative sample #70 for IPC-Fraud.,Adyar PS,False,False,3
+323,IPC-Assault,2025-07-13T10:17:00,17.417189,78.450903,"Sector 11, Zone 8",FIR narrative sample #71 for IPC-Assault.,Adyar PS,False,True,2
+NDPS-21,NDPS-DrugPossession,2024-11-19T17:48:00,13.113197,80.294044,"Sector 12, Zone 10",FIR narrative sample #72 for NDPS-DrugPossession.,T. Nagar PS,False,False,4
+420,IPC-Fraud,2025-02-13T22:15:00,12.997834,77.573643,"Sector 55, Zone 18",FIR narrative sample #73 for IPC-Fraud.,Velachery PS,False,False,3
+323,IPC-Assault,2025-04-08T22:29:00,12.94066,77.551486,"Sector 16, Zone 18",FIR narrative sample #74 for IPC-Assault.,Velachery PS,False,False,2
+379,IPC-Theft,2025-09-19T06:47:00,12.93584,77.608934,"Sector 37, Zone 4",FIR narrative sample #75 for IPC-Theft.,Mylapore PS,False,False,2
+420,IPC-Fraud,2025-06-04T07:23:00,13.051063,80.303983,"Sector 7, Zone 18",FIR narrative sample #76 for IPC-Fraud.,T. Nagar PS,False,False,3
+376,IPC-SexualOffence,2024-04-19T04:40:00,12.908014,77.516562,"Sector 57, Zone 11",FIR narrative sample #77 for IPC-SexualOffence.,Anna Nagar PS,False,False,5
+379,IPC-Theft,2026-02-10T08:55:00,12.909854,77.525055,"Sector 81, Zone 2",FIR narrative sample #78 for IPC-Theft.,Mylapore PS,False,False,2
+379,IPC-Theft,2025-11-02T18:19:00,13.161727,80.209652,"Sector 77, Zone 20",FIR narrative sample #79 for IPC-Theft.,Mylapore PS,False,False,2
+420,IPC-Fraud,2024-10-15T12:28:00,12.939177,77.608764,"Sector 80, Zone 2",FIR narrative sample #80 for IPC-Fraud.,Mylapore PS,False,False,3
+MV-184,Accident-RashDriving,2025-12-23T06:40:00,13.045043,80.20369,"Sector 10, Zone 6",FIR narrative sample #81 for Accident-RashDriving.,Mylapore PS,True,False,3
+302,IPC-Murder,2025-02-09T14:44:00,17.380186,78.411922,"Sector 90, Zone 15",FIR narrative sample #82 for IPC-Murder.,Velachery PS,False,False,5
+307,IPC-AttemptToMurder,2024-04-30T07:59:00,13.017652,77.614609,"Sector 55, Zone 4",FIR narrative sample #83 for IPC-AttemptToMurder.,Adyar PS,False,False,4
+ARMS-25,ArmsAct-IllegalWeapon,2025-08-16T20:09:00,13.023861,77.526026,"Sector 77, Zone 19",FIR narrative sample #84 for ArmsAct-IllegalWeapon.,Velachery PS,False,False,4
+376,IPC-SexualOffence,2025-01-09T03:29:00,17.353655,78.471101,"Sector 64, Zone 15",FIR narrative sample #85 for IPC-SexualOffence.,Mylapore PS,False,True,5
+307,IPC-AttemptToMurder,2024-07-30T01:56:00,13.009125,77.611194,"Sector 87, Zone 19",FIR narrative sample #86 for IPC-AttemptToMurder.,Adyar PS,False,True,4
+MV-184,Accident-RashDriving,2026-03-13T21:52:00,12.9838,77.636697,"Sector 84, Zone 15",FIR narrative sample #87 for Accident-RashDriving.,Mylapore PS,True,False,3
+376,IPC-SexualOffence,2025-09-30T18:27:00,17.435279,78.561749,"Sector 43, Zone 11",FIR narrative sample #88 for IPC-SexualOffence.,Anna Nagar PS,False,False,5
+307,IPC-AttemptToMurder,2025-10-21T10:26:00,17.384275,78.512713,"Sector 5, Zone 15",FIR narrative sample #89 for IPC-AttemptToMurder.,Mylapore PS,False,False,4
+307,IPC-AttemptToMurder,2025-05-16T08:20:00,13.15793,80.255368,"Sector 85, Zone 18",FIR narrative sample #90 for IPC-AttemptToMurder.,T. Nagar PS,False,False,4
+NDPS-27,NDPS-DrugConsumption,2025-02-04T01:12:00,17.362885,78.527731,"Sector 27, Zone 9",FIR narrative sample #91 for NDPS-DrugConsumption.,T. Nagar PS,False,False,3
+ARMS-25,ArmsAct-IllegalWeapon,2025-11-20T09:28:00,17.382554,78.411319,"Sector 91, Zone 6",FIR narrative sample #92 for ArmsAct-IllegalWeapon.,Adyar PS,False,False,4
+376,IPC-SexualOffence,2024-09-16T00:35:00,12.906513,77.673361,"Sector 16, Zone 5",FIR narrative sample #93 for IPC-SexualOffence.,Anna Nagar PS,False,False,5
+NDPS-27,NDPS-DrugConsumption,2025-06-09T16:45:00,12.958078,77.5918,"Sector 71, Zone 5",FIR narrative sample #94 for NDPS-DrugConsumption.,Anna Nagar PS,False,False,3
+NDPS-21,NDPS-DrugPossession,2025-09-20T19:32:00,17.445692,78.544944,"Sector 44, Zone 17",FIR narrative sample #95 for NDPS-DrugPossession.,Anna Nagar PS,False,False,4
+376,IPC-SexualOffence,2026-04-01T09:46:00,13.025596,77.607388,"Sector 58, Zone 18",FIR narrative sample #96 for IPC-SexualOffence.,Adyar PS,False,False,5
+NDPS-27,NDPS-DrugConsumption,2025-04-15T10:35:00,17.365354,78.555956,"Sector 31, Zone 19",FIR narrative sample #97 for NDPS-DrugConsumption.,Tambaram PS,False,False,3
+NDPS-21,NDPS-DrugPossession,2025-08-07T13:02:00,13.010753,77.627436,"Sector 85, Zone 5",FIR narrative sample #98 for NDPS-DrugPossession.,Anna Nagar PS,False,False,4
+NDPS-27,NDPS-DrugConsumption,2026-02-25T04:32:00,17.358119,78.422758,"Sector 68, Zone 15",FIR narrative sample #99 for NDPS-DrugConsumption.,T. Nagar PS,False,False,3
+302,IPC-Murder,2025-11-07T13:55:00,17.460193,78.418673,"Sector 44, Zone 20",FIR narrative sample #100 for IPC-Murder.,Velachery PS,False,False,5
+NDPS-21,NDPS-DrugPossession,2024-06-07T02:54:00,13.027975,77.652095,"Sector 81, Zone 16",FIR narrative sample #101 for NDPS-DrugPossession.,Velachery PS,False,False,4
+ARMS-25,ArmsAct-IllegalWeapon,2026-02-26T19:04:00,13.103686,80.338049,"Sector 12, Zone 14",FIR narrative sample #102 for ArmsAct-IllegalWeapon.,Tambaram PS,False,False,4
+307,IPC-AttemptToMurder,2024-06-24T22:55:00,13.073689,80.30174,"Sector 42, Zone 2",FIR narrative sample #103 for IPC-AttemptToMurder.,T. Nagar PS,False,False,4
+376,IPC-SexualOffence,2025-04-01T11:27:00,13.041772,80.256628,"Sector 22, Zone 6",FIR narrative sample #104 for IPC-SexualOffence.,Adyar PS,False,False,5
+307,IPC-AttemptToMurder,2024-07-18T12:39:00,17.343533,78.552753,"Sector 82, Zone 9",FIR narrative sample #105 for IPC-AttemptToMurder.,Anna Nagar PS,False,False,4
+NDPS-27,NDPS-DrugConsumption,2025-07-16T21:00:00,13.035794,77.623018,"Sector 45, Zone 19",FIR narrative sample #106 for NDPS-DrugConsumption.,Anna Nagar PS,False,False,3
+376,IPC-SexualOffence,2024-06-18T13:44:00,12.964694,77.562939,"Sector 14, Zone 8",FIR narrative sample #107 for IPC-SexualOffence.,Anna Nagar PS,False,False,5
+NDPS-21,NDPS-DrugPossession,2024-08-26T11:36:00,13.050431,77.561837,"Sector 51, Zone 9",FIR narrative sample #108 for NDPS-DrugPossession.,Tambaram PS,False,False,4
+302,IPC-Murder,2024-09-01T21:49:00,17.460776,78.552399,"Sector 30, Zone 20",FIR narrative sample #109 for IPC-Murder.,Velachery PS,False,False,5
+323,IPC-Assault,2025-08-22T20:12:00,17.3451,78.527592,"Sector 18, Zone 4",FIR narrative sample #110 for IPC-Assault.,Tambaram PS,False,False,2
+302,IPC-Murder,2025-05-22T14:02:00,17.363378,78.427726,"Sector 96, Zone 14",FIR narrative sample #111 for IPC-Murder.,Velachery PS,False,False,5
+379,IPC-Theft,2025-09-10T04:50:00,17.445234,78.465237,"Sector 22, Zone 9",FIR narrative sample #112 for IPC-Theft.,Velachery PS,False,False,2
+NDPS-27,NDPS-DrugConsumption,2025-06-05T23:55:00,13.020277,77.589533,"Sector 87, Zone 13",FIR narrative sample #113 for NDPS-DrugConsumption.,Adyar PS,False,False,3
+ARMS-25,ArmsAct-IllegalWeapon,2025-03-25T02:50:00,12.893827,77.600452,"Sector 96, Zone 9",FIR narrative sample #114 for ArmsAct-IllegalWeapon.,Tambaram PS,False,False,4
+MV-184,Accident-RashDriving,2025-03-09T20:23:00,13.110674,80.266136,"Sector 42, Zone 20",FIR narrative sample #115 for Accident-RashDriving.,Mylapore PS,True,False,3
+420,IPC-Fraud,2024-06-09T02:40:00,13.037102,77.56295,"Sector 6, Zone 2",FIR narrative sample #116 for IPC-Fraud.,Adyar PS,False,False,3
+376,IPC-SexualOffence,2024-11-15T03:06:00,13.144661,80.212406,"Sector 96, Zone 18",FIR narrative sample #117 for IPC-SexualOffence.,Tambaram PS,False,False,5
+NDPS-21,NDPS-DrugPossession,2024-08-10T23:46:00,13.144366,80.295488,"Sector 53, Zone 9",FIR narrative sample #118 for NDPS-DrugPossession.,Mylapore PS,False,False,4
+302,IPC-Murder,2024-04-27T11:13:00,12.962751,77.552378,"Sector 48, Zone 18",FIR narrative sample #119 for IPC-Murder.,Tambaram PS,False,False,5
+323,IPC-Assault,2026-01-31T12:17:00,13.157613,80.342542,"Sector 85, Zone 7",FIR narrative sample #120 for IPC-Assault.,T. Nagar PS,False,False,2
+MV-184,Accident-RashDriving,2026-03-13T01:50:00,12.930571,77.534748,"Sector 98, Zone 18",FIR narrative sample #121 for Accident-RashDriving.,T. Nagar PS,True,False,3
+420,IPC-Fraud,2024-08-11T06:52:00,13.05527,80.214309,"Sector 36, Zone 5",FIR narrative sample #122 for IPC-Fraud.,T. Nagar PS,False,False,3
+379,IPC-Theft,2024-09-27T08:51:00,13.020288,80.329332,"Sector 31, Zone 19",FIR narrative sample #123 for IPC-Theft.,Velachery PS,False,False,2
+323,IPC-Assault,2026-03-18T05:16:00,13.022981,80.258054,"Sector 61, Zone 15",FIR narrative sample #124 for IPC-Assault.,T. Nagar PS,False,False,2
+323,IPC-Assault,2024-10-25T18:06:00,12.972214,77.665867,"Sector 67, Zone 10",FIR narrative sample #125 for IPC-Assault.,Tambaram PS,False,True,2
+NDPS-27,NDPS-DrugConsumption,2024-06-14T00:03:00,13.027168,77.582804,"Sector 57, Zone 3",FIR narrative sample #126 for NDPS-DrugConsumption.,Tambaram PS,False,False,3
+307,IPC-AttemptToMurder,2025-05-09T19:09:00,13.022891,80.290591,"Sector 42, Zone 13",FIR narrative sample #127 for IPC-AttemptToMurder.,Tambaram PS,False,False,4
+MV-184,Accident-RashDriving,2024-10-07T09:29:00,17.401868,78.422569,"Sector 84, Zone 18",FIR narrative sample #128 for Accident-RashDriving.,Tambaram PS,True,False,3
+420,IPC-Fraud,2025-01-18T14:56:00,13.06891,80.323087,"Sector 13, Zone 11",FIR narrative sample #129 for IPC-Fraud.,Tambaram PS,False,False,3
+NDPS-21,NDPS-DrugPossession,2025-05-18T21:16:00,13.044175,77.624491,"Sector 11, Zone 3",FIR narrative sample #130 for NDPS-DrugPossession.,T. Nagar PS,False,False,4
+NDPS-21,NDPS-DrugPossession,2025-12-26T23:47:00,13.021483,77.603619,"Sector 72, Zone 11",FIR narrative sample #131 for NDPS-DrugPossession.,Mylapore PS,False,False,4
+307,IPC-AttemptToMurder,2025-02-07T11:55:00,17.455581,78.47437,"Sector 37, Zone 20",FIR narrative sample #132 for IPC-AttemptToMurder.,T. Nagar PS,False,False,4
+376,IPC-SexualOffence,2025-04-08T03:36:00,17.339038,78.511778,"Sector 45, Zone 18",FIR narrative sample #133 for IPC-SexualOffence.,T. Nagar PS,False,True,5
+323,IPC-Assault,2025-12-07T08:36:00,13.131855,80.325925,"Sector 79, Zone 18",FIR narrative sample #134 for IPC-Assault.,Mylapore PS,False,False,2
+302,IPC-Murder,2024-07-19T21:53:00,17.347792,78.435567,"Sector 44, Zone 12",FIR narrative sample #135 for IPC-Murder.,Velachery PS,False,False,5
+302,IPC-Murder,2025-09-30T04:36:00,17.369125,78.4294,"Sector 12, Zone 17",FIR narrative sample #136 for IPC-Murder.,T. Nagar PS,False,False,5
+420,IPC-Fraud,2025-03-14T13:29:00,12.916785,77.564462,"Sector 77, Zone 3",FIR narrative sample #137 for IPC-Fraud.,Mylapore PS,False,False,3
+302,IPC-Murder,2025-10-26T05:48:00,17.312962,78.419753,"Sector 63, Zone 20",FIR narrative sample #138 for IPC-Murder.,Anna Nagar PS,False,False,5
+NDPS-27,NDPS-DrugConsumption,2025-02-03T08:13:00,17.323211,78.475486,"Sector 76, Zone 16",FIR narrative sample #139 for NDPS-DrugConsumption.,Tambaram PS,False,False,3
+ARMS-25,ArmsAct-IllegalWeapon,2024-05-20T09:02:00,13.065942,80.286592,"Sector 28, Zone 5",FIR narrative sample #140 for ArmsAct-IllegalWeapon.,Velachery PS,False,True,4
+376,IPC-SexualOffence,2025-06-11T10:07:00,13.082282,80.259605,"Sector 91, Zone 8",FIR narrative sample #141 for IPC-SexualOffence.,Mylapore PS,False,True,5
+ARMS-25,ArmsAct-IllegalWeapon,2024-09-08T21:51:00,12.903132,77.652482,"Sector 59, Zone 3",FIR narrative sample #142 for ArmsAct-IllegalWeapon.,T. Nagar PS,False,True,4
+323,IPC-Assault,2024-08-22T13:36:00,13.00512,77.581431,"Sector 42, Zone 6",FIR narrative sample #143 for IPC-Assault.,T. Nagar PS,False,False,2
+MV-184,Accident-RashDriving,2024-12-18T22:58:00,12.905701,77.649717,"Sector 52, Zone 17",FIR narrative sample #144 for Accident-RashDriving.,Mylapore PS,True,False,3
+307,IPC-AttemptToMurder,2025-02-22T09:47:00,12.927052,77.639259,"Sector 15, Zone 17",FIR narrative sample #145 for IPC-AttemptToMurder.,Tambaram PS,False,False,4
+ARMS-25,ArmsAct-IllegalWeapon,2025-09-17T11:22:00,17.458316,78.509971,"Sector 19, Zone 9",FIR narrative sample #146 for ArmsAct-IllegalWeapon.,T. Nagar PS,False,False,4
+420,IPC-Fraud,2025-10-08T19:09:00,17.317057,78.558907,"Sector 97, Zone 19",FIR narrative sample #147 for IPC-Fraud.,Anna Nagar PS,False,False,3
+MV-184,Accident-RashDriving,2024-12-30T21:59:00,17.407879,78.564545,"Sector 41, Zone 5",FIR narrative sample #148 for Accident-RashDriving.,Tambaram PS,True,False,3
+NDPS-27,NDPS-DrugConsumption,2026-01-24T15:28:00,17.353451,78.450648,"Sector 10, Zone 10",FIR narrative sample #149 for NDPS-DrugConsumption.,Mylapore PS,False,True,3
+NDPS-27,NDPS-DrugConsumption,2024-12-27T01:03:00,13.024671,77.526877,"Sector 79, Zone 20",FIR narrative sample #150 for NDPS-DrugConsumption.,T. Nagar PS,False,False,3
+ARMS-25,ArmsAct-IllegalWeapon,2025-03-06T14:37:00,17.457677,78.524927,"Sector 84, Zone 7",FIR narrative sample #151 for ArmsAct-IllegalWeapon.,Mylapore PS,False,True,4
+323,IPC-Assault,2024-07-23T15:32:00,13.155936,80.262784,"Sector 92, Zone 3",FIR narrative sample #152 for IPC-Assault.,Velachery PS,False,False,2
+ARMS-25,ArmsAct-IllegalWeapon,2024-06-11T05:02:00,13.115919,80.349258,"Sector 21, Zone 12",FIR narrative sample #153 for ArmsAct-IllegalWeapon.,Mylapore PS,False,False,4
+323,IPC-Assault,2025-06-18T12:26:00,13.000224,77.522978,"Sector 9, Zone 11",FIR narrative sample #154 for IPC-Assault.,Velachery PS,False,False,2
+307,IPC-AttemptToMurder,2024-09-09T21:24:00,12.931919,77.650851,"Sector 20, Zone 11",FIR narrative sample #155 for IPC-AttemptToMurder.,Mylapore PS,False,False,4
+307,IPC-AttemptToMurder,2024-08-15T21:09:00,12.941237,77.619569,"Sector 77, Zone 3",FIR narrative sample #156 for IPC-AttemptToMurder.,Adyar PS,False,False,4
+376,IPC-SexualOffence,2024-09-08T12:41:00,13.02171,77.621819,"Sector 88, Zone 17",FIR narrative sample #157 for IPC-SexualOffence.,Tambaram PS,False,False,5
+307,IPC-AttemptToMurder,2024-06-11T21:27:00,17.362892,78.464716,"Sector 44, Zone 16",FIR narrative sample #158 for IPC-AttemptToMurder.,Adyar PS,False,False,4
+420,IPC-Fraud,2025-08-15T04:09:00,13.050027,80.316799,"Sector 95, Zone 17",FIR narrative sample #159 for IPC-Fraud.,Mylapore PS,False,False,3
+302,IPC-Murder,2024-05-26T10:56:00,17.325968,78.466975,"Sector 99, Zone 20",FIR narrative sample #160 for IPC-Murder.,Tambaram PS,False,False,5
+379,IPC-Theft,2025-01-10T01:26:00,12.999818,77.552605,"Sector 97, Zone 15",FIR narrative sample #161 for IPC-Theft.,Velachery PS,False,False,2
+420,IPC-Fraud,2024-10-04T07:19:00,13.036236,77.545643,"Sector 57, Zone 15",FIR narrative sample #162 for IPC-Fraud.,Mylapore PS,False,False,3
+376,IPC-SexualOffence,2025-03-08T16:33:00,13.046203,77.645303,"Sector 33, Zone 2",FIR narrative sample #163 for IPC-SexualOffence.,Adyar PS,False,False,5
+NDPS-27,NDPS-DrugConsumption,2025-03-19T17:59:00,13.116524,80.273246,"Sector 98, Zone 6",FIR narrative sample #164 for NDPS-DrugConsumption.,T. Nagar PS,False,False,3
+376,IPC-SexualOffence,2024-12-29T16:09:00,12.906274,77.660281,"Sector 4, Zone 14",FIR narrative sample #165 for IPC-SexualOffence.,Velachery PS,False,False,5
+302,IPC-Murder,2025-02-22T16:23:00,13.064487,80.203757,"Sector 13, Zone 11",FIR narrative sample #166 for IPC-Murder.,Velachery PS,False,False,5
+379,IPC-Theft,2025-11-14T01:18:00,13.002972,77.536807,"Sector 79, Zone 1",FIR narrative sample #167 for IPC-Theft.,Anna Nagar PS,False,False,2
+307,IPC-AttemptToMurder,2026-03-15T08:13:00,13.090509,80.307058,"Sector 37, Zone 8",FIR narrative sample #168 for IPC-AttemptToMurder.,T. Nagar PS,False,False,4
+376,IPC-SexualOffence,2025-11-30T01:15:00,12.993832,77.61425,"Sector 77, Zone 18",FIR narrative sample #169 for IPC-SexualOffence.,Anna Nagar PS,False,True,5
+302,IPC-Murder,2024-06-25T16:36:00,13.117667,80.237304,"Sector 31, Zone 19",FIR narrative sample #170 for IPC-Murder.,Velachery PS,False,True,5
+NDPS-21,NDPS-DrugPossession,2025-09-24T21:42:00,13.086458,80.248397,"Sector 65, Zone 17",FIR narrative sample #171 for NDPS-DrugPossession.,Mylapore PS,False,False,4
+ARMS-25,ArmsAct-IllegalWeapon,2026-03-14T12:55:00,12.898566,77.576501,"Sector 3, Zone 12",FIR narrative sample #172 for ArmsAct-IllegalWeapon.,Tambaram PS,False,False,4
+307,IPC-AttemptToMurder,2025-04-15T07:46:00,17.405521,78.53014,"Sector 18, Zone 2",FIR narrative sample #173 for IPC-AttemptToMurder.,Velachery PS,False,False,4
+323,IPC-Assault,2024-09-21T10:52:00,17.333014,78.531363,"Sector 62, Zone 6",FIR narrative sample #174 for IPC-Assault.,Tambaram PS,False,False,2
+379,IPC-Theft,2026-01-29T22:49:00,12.897517,77.546855,"Sector 41, Zone 10",FIR narrative sample #175 for IPC-Theft.,T. Nagar PS,False,False,2
+ARMS-25,ArmsAct-IllegalWeapon,2025-02-20T17:30:00,12.897459,77.618104,"Sector 84, Zone 11",FIR narrative sample #176 for ArmsAct-IllegalWeapon.,T. Nagar PS,False,False,4
+376,IPC-SexualOffence,2025-11-27T11:27:00,13.010529,77.657742,"Sector 64, Zone 16",FIR narrative sample #177 for IPC-SexualOffence.,Adyar PS,False,False,5
+323,IPC-Assault,2024-10-19T08:51:00,13.119033,80.203328,"Sector 70, Zone 10",FIR narrative sample #178 for IPC-Assault.,Adyar PS,False,False,2
+323,IPC-Assault,2025-12-19T02:20:00,17.352302,78.478047,"Sector 89, Zone 15",FIR narrative sample #179 for IPC-Assault.,Adyar PS,False,False,2
+323,IPC-Assault,2025-01-01T01:46:00,12.989976,77.58419,"Sector 10, Zone 13",FIR narrative sample #180 for IPC-Assault.,T. Nagar PS,False,False,2
+323,IPC-Assault,2024-10-25T23:43:00,13.155146,80.213545,"Sector 5, Zone 5",FIR narrative sample #181 for IPC-Assault.,Anna Nagar PS,False,False,2
+307,IPC-AttemptToMurder,2025-08-05T20:23:00,12.952857,77.605359,"Sector 58, Zone 12",FIR narrative sample #182 for IPC-AttemptToMurder.,Tambaram PS,False,False,4
+323,IPC-Assault,2025-01-04T02:36:00,13.087414,80.254385,"Sector 15, Zone 1",FIR narrative sample #183 for IPC-Assault.,Adyar PS,False,False,2
+379,IPC-Theft,2024-11-08T16:24:00,17.323842,78.530694,"Sector 79, Zone 10",FIR narrative sample #184 for IPC-Theft.,Adyar PS,False,False,2
+NDPS-27,NDPS-DrugConsumption,2025-09-11T03:08:00,13.075027,80.334489,"Sector 88, Zone 11",FIR narrative sample #185 for NDPS-DrugConsumption.,T. Nagar PS,False,False,3
+323,IPC-Assault,2024-04-07T02:35:00,17.351458,78.454693,"Sector 90, Zone 6",FIR narrative sample #186 for IPC-Assault.,Tambaram PS,False,False,2
+323,IPC-Assault,2024-10-30T07:07:00,13.129431,80.228578,"Sector 71, Zone 19",FIR narrative sample #187 for IPC-Assault.,Velachery PS,False,False,2
+323,IPC-Assault,2024-12-11T17:08:00,17.446479,78.41722,"Sector 93, Zone 16",FIR narrative sample #188 for IPC-Assault.,Tambaram PS,False,False,2
+ARMS-25,ArmsAct-IllegalWeapon,2025-02-07T13:52:00,17.3168,78.562281,"Sector 60, Zone 17",FIR narrative sample #189 for ArmsAct-IllegalWeapon.,Anna Nagar PS,False,False,4
+323,IPC-Assault,2025-11-23T17:40:00,17.334114,78.561302,"Sector 16, Zone 17",FIR narrative sample #190 for IPC-Assault.,T. Nagar PS,False,False,2
+379,IPC-Theft,2025-05-27T05:10:00,13.041158,77.550675,"Sector 37, Zone 3",FIR narrative sample #191 for IPC-Theft.,Mylapore PS,False,False,2
+376,IPC-SexualOffence,2025-09-14T20:35:00,12.911627,77.563052,"Sector 83, Zone 6",FIR narrative sample #192 for IPC-SexualOffence.,Mylapore PS,False,False,5
+MV-184,Accident-RashDriving,2024-08-17T04:10:00,17.404917,78.55102,"Sector 6, Zone 1",FIR narrative sample #193 for Accident-RashDriving.,Mylapore PS,True,False,3
+307,IPC-AttemptToMurder,2026-02-16T20:49:00,17.347345,78.440429,"Sector 82, Zone 1",FIR narrative sample #194 for IPC-AttemptToMurder.,Mylapore PS,False,False,4
+NDPS-27,NDPS-DrugConsumption,2024-06-30T17:18:00,17.458064,78.483971,"Sector 52, Zone 10",FIR narrative sample #195 for NDPS-DrugConsumption.,Tambaram PS,False,False,3
+NDPS-27,NDPS-DrugConsumption,2026-01-19T22:03:00,13.073037,80.26818,"Sector 19, Zone 11",FIR narrative sample #196 for NDPS-DrugConsumption.,Mylapore PS,False,False,3
+323,IPC-Assault,2025-04-15T12:08:00,12.973997,77.531589,"Sector 35, Zone 15",FIR narrative sample #197 for IPC-Assault.,T. Nagar PS,False,False,2
+420,IPC-Fraud,2025-11-10T03:03:00,13.042862,77.652866,"Sector 42, Zone 19",FIR narrative sample #198 for IPC-Fraud.,Adyar PS,False,False,3
+323,IPC-Assault,2025-09-21T05:31:00,17.37969,78.547352,"Sector 51, Zone 17",FIR narrative sample #199 for IPC-Assault.,T. Nagar PS,False,False,2
+NDPS-27,NDPS-DrugConsumption,2025-07-31T06:37:00,12.899385,77.559617,"Sector 87, Zone 16",FIR narrative sample #200 for NDPS-DrugConsumption.,Tambaram PS,False,False,3
+376,IPC-SexualOffence,2024-10-01T00:54:00,13.071648,80.331893,"Sector 47, Zone 2",FIR narrative sample #201 for IPC-SexualOffence.,Anna Nagar PS,False,False,5
+NDPS-21,NDPS-DrugPossession,2026-02-10T18:35:00,13.060704,80.236876,"Sector 98, Zone 18",FIR narrative sample #202 for NDPS-DrugPossession.,Anna Nagar PS,False,False,4
+376,IPC-SexualOffence,2024-07-04T21:39:00,13.023286,80.206169,"Sector 72, Zone 12",FIR narrative sample #203 for IPC-SexualOffence.,Velachery PS,False,False,5
+379,IPC-Theft,2025-09-12T19:32:00,12.971612,77.521849,"Sector 61, Zone 17",FIR narrative sample #204 for IPC-Theft.,Velachery PS,False,False,2
+NDPS-27,NDPS-DrugConsumption,2025-11-02T19:57:00,17.327365,78.555719,"Sector 79, Zone 10",FIR narrative sample #205 for NDPS-DrugConsumption.,Anna Nagar PS,False,False,3
+MV-184,Accident-RashDriving,2025-04-24T16:53:00,17.390174,78.520098,"Sector 48, Zone 11",FIR narrative sample #206 for Accident-RashDriving.,T. Nagar PS,True,False,3
+307,IPC-AttemptToMurder,2025-02-01T18:19:00,17.444536,78.507382,"Sector 84, Zone 19",FIR narrative sample #207 for IPC-AttemptToMurder.,Velachery PS,False,False,4
+MV-184,Accident-RashDriving,2025-08-13T23:03:00,17.381872,78.490577,"Sector 19, Zone 8",FIR narrative sample #208 for Accident-RashDriving.,Anna Nagar PS,True,False,3
+302,IPC-Murder,2024-08-25T22:07:00,13.00573,80.240891,"Sector 27, Zone 14",FIR narrative sample #209 for IPC-Murder.,Tambaram PS,False,False,5
+ARMS-25,ArmsAct-IllegalWeapon,2024-07-16T15:55:00,17.421384,78.519624,"Sector 42, Zone 16",FIR narrative sample #210 for ArmsAct-IllegalWeapon.,Mylapore PS,False,False,4
+ARMS-25,ArmsAct-IllegalWeapon,2025-03-14T10:11:00,13.03754,77.569372,"Sector 88, Zone 9",FIR narrative sample #211 for ArmsAct-IllegalWeapon.,Tambaram PS,False,False,4
+MV-184,Accident-RashDriving,2024-11-24T06:15:00,12.980894,77.550579,"Sector 99, Zone 10",FIR narrative sample #212 for Accident-RashDriving.,Velachery PS,True,False,3
+420,IPC-Fraud,2024-04-27T22:31:00,12.968369,77.604278,"Sector 36, Zone 10",FIR narrative sample #213 for IPC-Fraud.,Tambaram PS,False,False,3
+307,IPC-AttemptToMurder,2024-08-24T21:34:00,13.034922,77.577725,"Sector 38, Zone 2",FIR narrative sample #214 for IPC-AttemptToMurder.,Adyar PS,False,False,4
+376,IPC-SexualOffence,2026-01-13T11:59:00,12.996556,77.634174,"Sector 35, Zone 18",FIR narrative sample #215 for IPC-SexualOffence.,Mylapore PS,False,True,5
+376,IPC-SexualOffence,2025-11-14T03:39:00,17.398893,78.445493,"Sector 29, Zone 8",FIR narrative sample #216 for IPC-SexualOffence.,Mylapore PS,False,False,5
+302,IPC-Murder,2025-12-22T13:21:00,17.380585,78.515691,"Sector 21, Zone 14",FIR narrative sample #217 for IPC-Murder.,Mylapore PS,False,False,5
+NDPS-27,NDPS-DrugConsumption,2024-12-01T20:12:00,12.942987,77.617944,"Sector 84, Zone 19",FIR narrative sample #218 for NDPS-DrugConsumption.,T. Nagar PS,False,False,3
+420,IPC-Fraud,2024-10-03T23:46:00,13.148817,80.21871,"Sector 5, Zone 13",FIR narrative sample #219 for IPC-Fraud.,Adyar PS,False,False,3
+NDPS-27,NDPS-DrugConsumption,2025-09-25T23:55:00,13.031879,77.516083,"Sector 43, Zone 10",FIR narrative sample #220 for NDPS-DrugConsumption.,T. Nagar PS,False,False,3
+NDPS-27,NDPS-DrugConsumption,2024-06-16T17:33:00,13.033882,77.536072,"Sector 25, Zone 4",FIR narrative sample #221 for NDPS-DrugConsumption.,Velachery PS,False,False,3
+323,IPC-Assault,2025-10-19T23:29:00,17.346162,78.436492,"Sector 73, Zone 7",FIR narrative sample #222 for IPC-Assault.,Velachery PS,False,False,2
+379,IPC-Theft,2024-07-17T20:57:00,13.023918,77.597045,"Sector 13, Zone 6",FIR narrative sample #223 for IPC-Theft.,Tambaram PS,False,False,2
+379,IPC-Theft,2024-12-01T10:59:00,13.003793,80.252072,"Sector 43, Zone 10",FIR narrative sample #224 for IPC-Theft.,Velachery PS,False,False,2
+MV-184,Accident-RashDriving,2024-08-25T00:16:00,17.362528,78.444508,"Sector 40, Zone 6",FIR narrative sample #225 for Accident-RashDriving.,Anna Nagar PS,True,False,3
+NDPS-21,NDPS-DrugPossession,2024-05-01T16:59:00,17.428175,78.517146,"Sector 48, Zone 20",FIR narrative sample #226 for NDPS-DrugPossession.,Velachery PS,False,False,4
+420,IPC-Fraud,2025-08-22T04:30:00,13.075497,80.348914,"Sector 71, Zone 16",FIR narrative sample #227 for IPC-Fraud.,Tambaram PS,False,False,3
+ARMS-25,ArmsAct-IllegalWeapon,2024-05-23T06:48:00,13.111555,80.28603,"Sector 58, Zone 17",FIR narrative sample #228 for ArmsAct-IllegalWeapon.,Mylapore PS,False,False,4
+323,IPC-Assault,2026-01-14T18:07:00,13.135304,80.335162,"Sector 20, Zone 6",FIR narrative sample #229 for IPC-Assault.,Mylapore PS,False,False,2
+323,IPC-Assault,2024-10-18T14:07:00,17.337864,78.500004,"Sector 58, Zone 2",FIR narrative sample #230 for IPC-Assault.,Mylapore PS,False,False,2
+NDPS-27,NDPS-DrugConsumption,2025-11-19T16:26:00,12.981826,77.604008,"Sector 93, Zone 1",FIR narrative sample #231 for NDPS-DrugConsumption.,Velachery PS,False,False,3
+NDPS-21,NDPS-DrugPossession,2025-07-17T00:47:00,13.09523,80.197946,"Sector 70, Zone 2",FIR narrative sample #232 for NDPS-DrugPossession.,T. Nagar PS,False,False,4
+307,IPC-AttemptToMurder,2024-12-06T01:18:00,12.920397,77.536269,"Sector 83, Zone 14",FIR narrative sample #233 for IPC-AttemptToMurder.,Tambaram PS,False,False,4
+323,IPC-Assault,2025-03-08T14:55:00,12.951703,77.623837,"Sector 18, Zone 12",FIR narrative sample #234 for IPC-Assault.,Mylapore PS,False,False,2
+307,IPC-AttemptToMurder,2025-10-03T17:25:00,17.325376,78.563296,"Sector 39, Zone 15",FIR narrative sample #235 for IPC-AttemptToMurder.,T. Nagar PS,False,False,4
+ARMS-25,ArmsAct-IllegalWeapon,2025-01-24T17:24:00,13.042302,80.246086,"Sector 98, Zone 4",FIR narrative sample #236 for ArmsAct-IllegalWeapon.,Tambaram PS,False,False,4
+302,IPC-Murder,2024-05-27T13:39:00,13.041207,80.201467,"Sector 77, Zone 2",FIR narrative sample #237 for IPC-Murder.,Anna Nagar PS,False,False,5
+420,IPC-Fraud,2026-02-17T12:28:00,13.089062,80.311402,"Sector 65, Zone 10",FIR narrative sample #238 for IPC-Fraud.,Adyar PS,False,False,3
+420,IPC-Fraud,2024-08-22T10:36:00,17.428606,78.537641,"Sector 85, Zone 17",FIR narrative sample #239 for IPC-Fraud.,Adyar PS,False,False,3
+420,IPC-Fraud,2025-02-04T09:17:00,13.091775,80.285367,"Sector 81, Zone 14",FIR narrative sample #240 for IPC-Fraud.,Adyar PS,False,False,3
+ARMS-25,ArmsAct-IllegalWeapon,2024-11-12T01:22:00,17.412415,78.532429,"Sector 53, Zone 5",FIR narrative sample #241 for ArmsAct-IllegalWeapon.,Anna Nagar PS,False,False,4
+376,IPC-SexualOffence,2025-03-14T05:48:00,17.380763,78.542595,"Sector 19, Zone 15",FIR narrative sample #242 for IPC-SexualOffence.,Tambaram PS,False,False,5
+302,IPC-Murder,2024-09-05T13:26:00,17.389799,78.468847,"Sector 83, Zone 3",FIR narrative sample #243 for IPC-Murder.,Velachery PS,False,False,5
+NDPS-27,NDPS-DrugConsumption,2025-03-20T02:34:00,17.437705,78.414946,"Sector 78, Zone 2",FIR narrative sample #244 for NDPS-DrugConsumption.,Mylapore PS,False,False,3
+307,IPC-AttemptToMurder,2025-09-23T18:46:00,17.394416,78.483403,"Sector 39, Zone 1",FIR narrative sample #245 for IPC-AttemptToMurder.,Velachery PS,False,False,4
+420,IPC-Fraud,2025-09-21T23:07:00,17.464932,78.483327,"Sector 91, Zone 7",FIR narrative sample #246 for IPC-Fraud.,Mylapore PS,False,False,3
+NDPS-21,NDPS-DrugPossession,2025-08-01T17:20:00,12.952506,77.599984,"Sector 47, Zone 17",FIR narrative sample #247 for NDPS-DrugPossession.,Velachery PS,False,False,4
+NDPS-27,NDPS-DrugConsumption,2024-12-12T03:51:00,17.380118,78.541057,"Sector 41, Zone 14",FIR narrative sample #248 for NDPS-DrugConsumption.,Velachery PS,False,False,3
+302,IPC-Murder,2024-09-04T07:47:00,13.005295,80.27923,"Sector 54, Zone 10",FIR narrative sample #249 for IPC-Murder.,Tambaram PS,False,False,5
+379,IPC-Theft,2025-09-15T10:14:00,12.982766,77.553917,"Sector 44, Zone 9",FIR narrative sample #250 for IPC-Theft.,Tambaram PS,False,False,2
+NDPS-27,NDPS-DrugConsumption,2024-06-15T23:31:00,12.918517,77.641796,"Sector 70, Zone 16",FIR narrative sample #251 for NDPS-DrugConsumption.,Tambaram PS,False,False,3
+379,IPC-Theft,2024-09-25T20:03:00,17.310412,78.542172,"Sector 7, Zone 1",FIR narrative sample #252 for IPC-Theft.,Tambaram PS,False,False,2
+NDPS-21,NDPS-DrugPossession,2025-11-14T20:14:00,13.115847,80.192163,"Sector 8, Zone 20",FIR narrative sample #253 for NDPS-DrugPossession.,Velachery PS,False,False,4
+MV-184,Accident-RashDriving,2024-11-25T21:31:00,13.003758,80.278963,"Sector 93, Zone 9",FIR narrative sample #254 for Accident-RashDriving.,Mylapore PS,True,True,3
+ARMS-25,ArmsAct-IllegalWeapon,2025-06-14T00:32:00,17.412845,78.535687,"Sector 13, Zone 17",FIR narrative sample #255 for ArmsAct-IllegalWeapon.,T. Nagar PS,False,False,4
+379,IPC-Theft,2025-07-31T06:39:00,17.345387,78.463411,"Sector 48, Zone 13",FIR narrative sample #256 for IPC-Theft.,T. Nagar PS,False,False,2
+NDPS-27,NDPS-DrugConsumption,2024-09-02T07:44:00,13.050696,80.32319,"Sector 98, Zone 2",FIR narrative sample #257 for NDPS-DrugConsumption.,Tambaram PS,False,False,3
+307,IPC-AttemptToMurder,2025-02-12T12:24:00,17.381161,78.50858,"Sector 64, Zone 14",FIR narrative sample #258 for IPC-AttemptToMurder.,T. Nagar PS,False,False,4
+323,IPC-Assault,2024-09-01T03:57:00,17.452064,78.443463,"Sector 73, Zone 16",FIR narrative sample #259 for IPC-Assault.,Tambaram PS,False,False,2
+376,IPC-SexualOffence,2026-02-15T02:43:00,13.03549,77.604762,"Sector 3, Zone 7",FIR narrative sample #260 for IPC-SexualOffence.,Velachery PS,False,True,5
+MV-184,Accident-RashDriving,2025-11-07T22:52:00,13.04022,77.562484,"Sector 50, Zone 18",FIR narrative sample #261 for Accident-RashDriving.,Mylapore PS,True,False,3
+323,IPC-Assault,2025-03-06T23:08:00,17.420866,78.486827,"Sector 13, Zone 14",FIR narrative sample #262 for IPC-Assault.,T. Nagar PS,False,False,2
+420,IPC-Fraud,2026-01-16T10:38:00,17.457777,78.470172,"Sector 82, Zone 9",FIR narrative sample #263 for IPC-Fraud.,T. Nagar PS,False,False,3
+NDPS-27,NDPS-DrugConsumption,2024-11-17T07:22:00,17.455583,78.475796,"Sector 49, Zone 3",FIR narrative sample #264 for NDPS-DrugConsumption.,Tambaram PS,False,False,3
+MV-184,Accident-RashDriving,2025-06-05T07:45:00,13.015826,80.215375,"Sector 20, Zone 13",FIR narrative sample #265 for Accident-RashDriving.,Tambaram PS,True,False,3
+323,IPC-Assault,2025-03-30T03:05:00,13.153574,80.261858,"Sector 17, Zone 3",FIR narrative sample #266 for IPC-Assault.,T. Nagar PS,False,False,2
+379,IPC-Theft,2025-01-17T14:35:00,17.386991,78.423227,"Sector 12, Zone 20",FIR narrative sample #267 for IPC-Theft.,Mylapore PS,False,False,2
+MV-184,Accident-RashDriving,2025-05-06T12:00:00,12.95781,77.639267,"Sector 32, Zone 19",FIR narrative sample #268 for Accident-RashDriving.,Mylapore PS,True,False,3
+ARMS-25,ArmsAct-IllegalWeapon,2025-10-12T21:24:00,13.024914,80.238881,"Sector 22, Zone 14",FIR narrative sample #269 for ArmsAct-IllegalWeapon.,T. Nagar PS,False,False,4
+376,IPC-SexualOffence,2025-01-27T09:30:00,13.06048,80.341776,"Sector 77, Zone 20",FIR narrative sample #270 for IPC-SexualOffence.,Anna Nagar PS,False,False,5
+420,IPC-Fraud,2024-12-21T03:08:00,12.892683,77.577911,"Sector 43, Zone 15",FIR narrative sample #271 for IPC-Fraud.,Anna Nagar PS,False,False,3
+323,IPC-Assault,2025-01-18T20:38:00,13.05077,80.287214,"Sector 41, Zone 6",FIR narrative sample #272 for IPC-Assault.,Anna Nagar PS,False,False,2
+NDPS-21,NDPS-DrugPossession,2025-05-12T09:47:00,17.406264,78.561542,"Sector 49, Zone 9",FIR narrative sample #273 for NDPS-DrugPossession.,Velachery PS,False,False,4
+NDPS-21,NDPS-DrugPossession,2025-03-26T03:59:00,17.336968,78.566262,"Sector 4, Zone 15",FIR narrative sample #274 for NDPS-DrugPossession.,Mylapore PS,False,False,4
+420,IPC-Fraud,2025-01-10T09:53:00,17.316065,78.542346,"Sector 64, Zone 5",FIR narrative sample #275 for IPC-Fraud.,Tambaram PS,False,False,3
+376,IPC-SexualOffence,2025-07-30T08:42:00,13.117138,80.316952,"Sector 62, Zone 19",FIR narrative sample #276 for IPC-SexualOffence.,Mylapore PS,False,True,5
+NDPS-21,NDPS-DrugPossession,2024-10-03T16:59:00,17.371928,78.412582,"Sector 69, Zone 20",FIR narrative sample #277 for NDPS-DrugPossession.,Tambaram PS,False,False,4
+307,IPC-AttemptToMurder,2025-12-13T07:42:00,17.361801,78.51022,"Sector 87, Zone 13",FIR narrative sample #278 for IPC-AttemptToMurder.,Tambaram PS,False,True,4
+323,IPC-Assault,2025-01-18T03:00:00,13.044098,80.272408,"Sector 89, Zone 19",FIR narrative sample #279 for IPC-Assault.,Mylapore PS,False,False,2
+420,IPC-Fraud,2025-01-02T11:25:00,13.015175,77.608774,"Sector 4, Zone 16",FIR narrative sample #280 for IPC-Fraud.,Velachery PS,False,False,3
+307,IPC-AttemptToMurder,2025-06-05T13:58:00,13.021271,80.341208,"Sector 44, Zone 15",FIR narrative sample #281 for IPC-AttemptToMurder.,Velachery PS,False,False,4
+420,IPC-Fraud,2024-10-17T15:22:00,12.90722,77.630119,"Sector 39, Zone 2",FIR narrative sample #282 for IPC-Fraud.,T. Nagar PS,False,False,3
+307,IPC-AttemptToMurder,2026-03-11T10:41:00,13.111042,80.216997,"Sector 67, Zone 6",FIR narrative sample #283 for IPC-AttemptToMurder.,Adyar PS,False,False,4
+ARMS-25,ArmsAct-IllegalWeapon,2025-10-22T10:35:00,13.044954,77.551697,"Sector 24, Zone 14",FIR narrative sample #284 for ArmsAct-IllegalWeapon.,Adyar PS,False,False,4
+NDPS-21,NDPS-DrugPossession,2026-03-05T23:39:00,13.074632,80.259428,"Sector 27, Zone 9",FIR narrative sample #285 for NDPS-DrugPossession.,Adyar PS,False,True,4
+307,IPC-AttemptToMurder,2024-08-20T03:51:00,17.334914,78.458858,"Sector 86, Zone 16",FIR narrative sample #286 for IPC-AttemptToMurder.,Velachery PS,False,False,4
+ARMS-25,ArmsAct-IllegalWeapon,2024-06-18T10:38:00,12.989409,77.608521,"Sector 80, Zone 6",FIR narrative sample #287 for ArmsAct-IllegalWeapon.,Anna Nagar PS,False,False,4
+376,IPC-SexualOffence,2024-07-13T18:05:00,17.326432,78.425558,"Sector 48, Zone 5",FIR narrative sample #288 for IPC-SexualOffence.,Adyar PS,False,False,5
+ARMS-25,ArmsAct-IllegalWeapon,2025-03-02T13:38:00,13.094669,80.258386,"Sector 89, Zone 6",FIR narrative sample #289 for ArmsAct-IllegalWeapon.,Mylapore PS,False,False,4
+ARMS-25,ArmsAct-IllegalWeapon,2025-10-15T15:18:00,13.032636,80.325418,"Sector 2, Zone 16",FIR narrative sample #290 for ArmsAct-IllegalWeapon.,Velachery PS,False,False,4
+379,IPC-Theft,2025-09-16T12:35:00,17.409491,78.472161,"Sector 57, Zone 16",FIR narrative sample #291 for IPC-Theft.,Tambaram PS,False,False,2
+379,IPC-Theft,2026-01-09T18:01:00,13.049434,80.234676,"Sector 59, Zone 19",FIR narrative sample #292 for IPC-Theft.,Adyar PS,False,False,2
+NDPS-27,NDPS-DrugConsumption,2024-09-18T16:07:00,17.323273,78.530718,"Sector 70, Zone 2",FIR narrative sample #293 for NDPS-DrugConsumption.,Velachery PS,False,False,3
+NDPS-27,NDPS-DrugConsumption,2024-09-21T06:27:00,13.120458,80.295287,"Sector 58, Zone 9",FIR narrative sample #294 for NDPS-DrugConsumption.,T. Nagar PS,False,False,3
+323,IPC-Assault,2026-01-04T14:55:00,13.126801,80.228611,"Sector 89, Zone 12",FIR narrative sample #295 for IPC-Assault.,Mylapore PS,False,False,2
+MV-184,Accident-RashDriving,2024-06-25T13:10:00,17.327278,78.439759,"Sector 73, Zone 12",FIR narrative sample #296 for Accident-RashDriving.,T. Nagar PS,True,False,3
+ARMS-25,ArmsAct-IllegalWeapon,2025-06-20T19:34:00,13.054485,80.303349,"Sector 66, Zone 4",FIR narrative sample #297 for ArmsAct-IllegalWeapon.,Velachery PS,False,False,4
+379,IPC-Theft,2025-02-06T01:17:00,17.325302,78.545273,"Sector 42, Zone 8",FIR narrative sample #298 for IPC-Theft.,Tambaram PS,False,False,2
+NDPS-21,NDPS-DrugPossession,2024-11-18T04:36:00,17.347995,78.472976,"Sector 99, Zone 3",FIR narrative sample #299 for NDPS-DrugPossession.,Tambaram PS,False,False,4
+NDPS-21,NDPS-DrugPossession,2024-10-23T23:17:00,17.454814,78.465751,"Sector 75, Zone 1",FIR narrative sample #300 for NDPS-DrugPossession.,Velachery PS,False,False,4
+307,IPC-AttemptToMurder,2024-12-20T20:42:00,17.362316,78.416833,"Sector 55, Zone 7",FIR narrative sample #301 for IPC-AttemptToMurder.,Adyar PS,False,False,4
+NDPS-27,NDPS-DrugConsumption,2025-07-03T10:53:00,12.945641,77.607069,"Sector 44, Zone 2",FIR narrative sample #302 for NDPS-DrugConsumption.,Anna Nagar PS,False,False,3
+302,IPC-Murder,2025-12-23T20:50:00,12.894205,77.663309,"Sector 1, Zone 14",FIR narrative sample #303 for IPC-Murder.,Anna Nagar PS,False,False,5
+420,IPC-Fraud,2024-04-28T04:56:00,17.353298,78.546608,"Sector 84, Zone 12",FIR narrative sample #304 for IPC-Fraud.,T. Nagar PS,False,False,3
+376,IPC-SexualOffence,2026-01-09T11:42:00,17.331484,78.470115,"Sector 97, Zone 8",FIR narrative sample #305 for IPC-SexualOffence.,Tambaram PS,False,False,5
+NDPS-21,NDPS-DrugPossession,2024-06-01T02:45:00,13.002874,80.266989,"Sector 67, Zone 15",FIR narrative sample #306 for NDPS-DrugPossession.,Adyar PS,False,False,4
+302,IPC-Murder,2026-03-26T22:21:00,13.160805,80.25827,"Sector 30, Zone 13",FIR narrative sample #307 for IPC-Murder.,T. Nagar PS,False,False,5
+307,IPC-AttemptToMurder,2025-12-20T03:20:00,13.032558,77.536541,"Sector 83, Zone 5",FIR narrative sample #308 for IPC-AttemptToMurder.,Adyar PS,False,False,4
+307,IPC-AttemptToMurder,2024-10-07T18:00:00,17.409003,78.477116,"Sector 96, Zone 5",FIR narrative sample #309 for IPC-AttemptToMurder.,Tambaram PS,False,False,4
+NDPS-21,NDPS-DrugPossession,2024-07-12T21:28:00,13.01657,80.206774,"Sector 94, Zone 13",FIR narrative sample #310 for NDPS-DrugPossession.,Mylapore PS,False,False,4
+323,IPC-Assault,2025-01-19T10:50:00,13.042346,80.293839,"Sector 77, Zone 20",FIR narrative sample #311 for IPC-Assault.,Mylapore PS,False,False,2
+376,IPC-SexualOffence,2024-04-26T00:54:00,17.445132,78.439571,"Sector 96, Zone 13",FIR narrative sample #312 for IPC-SexualOffence.,Adyar PS,False,False,5
+376,IPC-SexualOffence,2024-06-11T01:50:00,13.081882,80.208739,"Sector 10, Zone 17",FIR narrative sample #313 for IPC-SexualOffence.,Mylapore PS,False,False,5
+302,IPC-Murder,2025-03-30T10:08:00,13.02933,77.605541,"Sector 23, Zone 16",FIR narrative sample #314 for IPC-Murder.,Tambaram PS,False,False,5
+307,IPC-AttemptToMurder,2026-03-17T18:04:00,13.04465,80.197072,"Sector 65, Zone 10",FIR narrative sample #315 for IPC-AttemptToMurder.,Anna Nagar PS,False,False,4
+ARMS-25,ArmsAct-IllegalWeapon,2025-02-02T13:44:00,12.904788,77.60045,"Sector 11, Zone 10",FIR narrative sample #316 for ArmsAct-IllegalWeapon.,Velachery PS,False,False,4
+307,IPC-AttemptToMurder,2024-10-27T06:51:00,13.088522,80.253217,"Sector 88, Zone 3",FIR narrative sample #317 for IPC-AttemptToMurder.,Tambaram PS,False,False,4
+376,IPC-SexualOffence,2024-04-18T13:46:00,13.011965,80.204494,"Sector 79, Zone 20",FIR narrative sample #318 for IPC-SexualOffence.,Anna Nagar PS,False,False,5
+302,IPC-Murder,2025-05-22T21:47:00,17.423505,78.425811,"Sector 2, Zone 6",FIR narrative sample #319 for IPC-Murder.,Tambaram PS,False,False,5
+NDPS-27,NDPS-DrugConsumption,2025-04-13T16:33:00,17.34648,78.466199,"Sector 94, Zone 4",FIR narrative sample #320 for NDPS-DrugConsumption.,Velachery PS,False,False,3
+302,IPC-Murder,2025-04-25T13:17:00,17.31522,78.520672,"Sector 64, Zone 15",FIR narrative sample #321 for IPC-Murder.,T. Nagar PS,False,False,5
+ARMS-25,ArmsAct-IllegalWeapon,2025-03-31T01:31:00,17.331701,78.43187,"Sector 87, Zone 4",FIR narrative sample #322 for ArmsAct-IllegalWeapon.,Mylapore PS,False,False,4
+420,IPC-Fraud,2024-10-29T00:02:00,13.041828,80.266182,"Sector 23, Zone 2",FIR narrative sample #323 for IPC-Fraud.,Adyar PS,False,False,3
+ARMS-25,ArmsAct-IllegalWeapon,2024-06-01T13:14:00,12.931322,77.661137,"Sector 74, Zone 12",FIR narrative sample #324 for ArmsAct-IllegalWeapon.,T. Nagar PS,False,False,4
+307,IPC-AttemptToMurder,2024-11-05T21:57:00,13.031395,80.319394,"Sector 9, Zone 15",FIR narrative sample #325 for IPC-AttemptToMurder.,Anna Nagar PS,False,False,4
+376,IPC-SexualOffence,2025-05-20T10:05:00,17.378079,78.465727,"Sector 95, Zone 20",FIR narrative sample #326 for IPC-SexualOffence.,Velachery PS,False,False,5
+420,IPC-Fraud,2024-12-14T11:37:00,13.051246,77.638742,"Sector 98, Zone 8",FIR narrative sample #327 for IPC-Fraud.,Mylapore PS,False,False,3
+379,IPC-Theft,2026-03-28T13:01:00,13.089347,80.292451,"Sector 43, Zone 1",FIR narrative sample #328 for IPC-Theft.,T. Nagar PS,False,False,2
+NDPS-21,NDPS-DrugPossession,2025-05-24T03:13:00,17.462299,78.473871,"Sector 92, Zone 9",FIR narrative sample #329 for NDPS-DrugPossession.,Adyar PS,False,False,4
+307,IPC-AttemptToMurder,2026-02-18T07:57:00,17.371089,78.549992,"Sector 11, Zone 19",FIR narrative sample #330 for IPC-AttemptToMurder.,Tambaram PS,False,False,4
+307,IPC-AttemptToMurder,2024-11-02T04:40:00,12.903573,77.605451,"Sector 31, Zone 10",FIR narrative sample #331 for IPC-AttemptToMurder.,Adyar PS,False,False,4
+376,IPC-SexualOffence,2025-05-16T12:44:00,17.3572,78.479141,"Sector 18, Zone 19",FIR narrative sample #332 for IPC-SexualOffence.,Adyar PS,False,True,5
+307,IPC-AttemptToMurder,2025-10-26T03:10:00,12.966169,77.579642,"Sector 58, Zone 10",FIR narrative sample #333 for IPC-AttemptToMurder.,Adyar PS,False,False,4
+NDPS-27,NDPS-DrugConsumption,2025-07-06T03:05:00,13.131916,80.239374,"Sector 6, Zone 7",FIR narrative sample #334 for NDPS-DrugConsumption.,Mylapore PS,False,False,3
+323,IPC-Assault,2025-11-03T02:45:00,13.157644,80.254099,"Sector 34, Zone 6",FIR narrative sample #335 for IPC-Assault.,Velachery PS,False,True,2
+302,IPC-Murder,2025-02-13T14:35:00,17.393019,78.421856,"Sector 16, Zone 1",FIR narrative sample #336 for IPC-Murder.,Adyar PS,False,False,5
+302,IPC-Murder,2025-08-19T04:12:00,12.951158,77.615448,"Sector 76, Zone 9",FIR narrative sample #337 for IPC-Murder.,Mylapore PS,False,False,5
+307,IPC-AttemptToMurder,2026-03-12T02:12:00,17.375949,78.427307,"Sector 16, Zone 2",FIR narrative sample #338 for IPC-AttemptToMurder.,Velachery PS,False,False,4
+NDPS-27,NDPS-DrugConsumption,2026-02-11T05:59:00,17.374305,78.522609,"Sector 88, Zone 14",FIR narrative sample #339 for NDPS-DrugConsumption.,Anna Nagar PS,False,False,3
+379,IPC-Theft,2025-04-06T06:58:00,13.046697,80.262062,"Sector 80, Zone 20",FIR narrative sample #340 for IPC-Theft.,Mylapore PS,False,False,2
+420,IPC-Fraud,2024-06-10T09:31:00,13.032845,77.591245,"Sector 18, Zone 14",FIR narrative sample #341 for IPC-Fraud.,Anna Nagar PS,False,False,3
+420,IPC-Fraud,2024-06-14T16:15:00,17.464054,78.493685,"Sector 92, Zone 12",FIR narrative sample #342 for IPC-Fraud.,Anna Nagar PS,False,True,3
+NDPS-27,NDPS-DrugConsumption,2024-09-23T15:22:00,17.385383,78.468841,"Sector 77, Zone 8",FIR narrative sample #343 for NDPS-DrugConsumption.,Velachery PS,False,False,3
+302,IPC-Murder,2025-06-20T01:51:00,12.976309,77.637295,"Sector 13, Zone 8",FIR narrative sample #344 for IPC-Murder.,Adyar PS,False,False,5
+420,IPC-Fraud,2025-07-05T17:52:00,17.313945,78.566123,"Sector 46, Zone 6",FIR narrative sample #345 for IPC-Fraud.,Anna Nagar PS,False,False,3
+379,IPC-Theft,2025-08-04T18:20:00,17.41662,78.552937,"Sector 46, Zone 19",FIR narrative sample #346 for IPC-Theft.,Tambaram PS,False,True,2
+MV-184,Accident-RashDriving,2025-11-09T18:12:00,12.97834,77.542689,"Sector 30, Zone 20",FIR narrative sample #347 for Accident-RashDriving.,T. Nagar PS,True,True,3
+420,IPC-Fraud,2026-03-14T16:30:00,13.055777,80.288962,"Sector 92, Zone 6",FIR narrative sample #348 for IPC-Fraud.,Velachery PS,False,False,3
+323,IPC-Assault,2026-02-02T00:09:00,17.417751,78.429364,"Sector 47, Zone 3",FIR narrative sample #349 for IPC-Assault.,Mylapore PS,False,False,2
+323,IPC-Assault,2024-04-12T21:25:00,17.321165,78.454982,"Sector 94, Zone 14",FIR narrative sample #350 for IPC-Assault.,Adyar PS,False,False,2
+NDPS-27,NDPS-DrugConsumption,2024-06-08T10:11:00,17.459999,78.51767,"Sector 29, Zone 19",FIR narrative sample #351 for NDPS-DrugConsumption.,Velachery PS,False,False,3
+379,IPC-Theft,2025-03-12T09:46:00,17.352123,78.435133,"Sector 74, Zone 13",FIR narrative sample #352 for IPC-Theft.,Tambaram PS,False,True,2
+MV-184,Accident-RashDriving,2026-03-01T05:38:00,13.038966,77.669405,"Sector 14, Zone 16",FIR narrative sample #353 for Accident-RashDriving.,Mylapore PS,True,False,3
+379,IPC-Theft,2025-04-29T23:04:00,13.05819,80.241823,"Sector 91, Zone 11",FIR narrative sample #354 for IPC-Theft.,T. Nagar PS,False,False,2
+NDPS-27,NDPS-DrugConsumption,2026-03-23T08:13:00,13.113608,80.246777,"Sector 1, Zone 2",FIR narrative sample #355 for NDPS-DrugConsumption.,Tambaram PS,False,False,3
+NDPS-21,NDPS-DrugPossession,2025-01-10T23:26:00,13.144228,80.269593,"Sector 49, Zone 4",FIR narrative sample #356 for NDPS-DrugPossession.,Mylapore PS,False,False,4
+NDPS-27,NDPS-DrugConsumption,2024-08-20T20:48:00,17.341093,78.478906,"Sector 38, Zone 1",FIR narrative sample #357 for NDPS-DrugConsumption.,T. Nagar PS,False,False,3
+323,IPC-Assault,2025-07-10T03:04:00,12.918817,77.574673,"Sector 12, Zone 11",FIR narrative sample #358 for IPC-Assault.,Mylapore PS,False,False,2
+MV-184,Accident-RashDriving,2024-07-14T15:45:00,13.071712,80.295282,"Sector 21, Zone 2",FIR narrative sample #359 for Accident-RashDriving.,Anna Nagar PS,True,False,3
+307,IPC-AttemptToMurder,2025-04-29T06:12:00,13.003151,77.630126,"Sector 85, Zone 10",FIR narrative sample #360 for IPC-AttemptToMurder.,Velachery PS,False,False,4
+376,IPC-SexualOffence,2025-08-03T03:03:00,12.983083,77.648977,"Sector 1, Zone 14",FIR narrative sample #361 for IPC-SexualOffence.,Velachery PS,False,True,5
+307,IPC-AttemptToMurder,2025-06-06T21:40:00,17.381853,78.422218,"Sector 38, Zone 3",FIR narrative sample #362 for IPC-AttemptToMurder.,Tambaram PS,False,False,4
+NDPS-27,NDPS-DrugConsumption,2025-12-06T09:50:00,12.966951,77.65778,"Sector 70, Zone 13",FIR narrative sample #363 for NDPS-DrugConsumption.,Tambaram PS,False,False,3
+379,IPC-Theft,2025-03-20T12:23:00,13.074024,80.232827,"Sector 35, Zone 19",FIR narrative sample #364 for IPC-Theft.,Adyar PS,False,False,2
+302,IPC-Murder,2025-10-31T22:42:00,13.016413,80.245707,"Sector 30, Zone 18",FIR narrative sample #365 for IPC-Murder.,Mylapore PS,False,False,5
+302,IPC-Murder,2025-03-03T16:26:00,17.414931,78.556518,"Sector 61, Zone 10",FIR narrative sample #366 for IPC-Murder.,Adyar PS,False,False,5
+307,IPC-AttemptToMurder,2025-02-23T22:02:00,17.396395,78.489391,"Sector 19, Zone 4",FIR narrative sample #367 for IPC-AttemptToMurder.,Mylapore PS,False,False,4
+NDPS-27,NDPS-DrugConsumption,2025-10-08T05:13:00,13.02289,80.25844,"Sector 26, Zone 5",FIR narrative sample #368 for NDPS-DrugConsumption.,Anna Nagar PS,False,False,3
+MV-184,Accident-RashDriving,2025-07-13T10:58:00,17.451268,78.417422,"Sector 71, Zone 11",FIR narrative sample #369 for Accident-RashDriving.,Anna Nagar PS,True,False,3
+376,IPC-SexualOffence,2024-10-18T14:58:00,13.128548,80.290389,"Sector 15, Zone 14",FIR narrative sample #370 for IPC-SexualOffence.,Anna Nagar PS,False,False,5
+379,IPC-Theft,2025-11-03T18:37:00,17.42634,78.557044,"Sector 13, Zone 10",FIR narrative sample #371 for IPC-Theft.,Mylapore PS,False,False,2
+ARMS-25,ArmsAct-IllegalWeapon,2025-04-16T13:16:00,12.996366,77.606124,"Sector 36, Zone 13",FIR narrative sample #372 for ArmsAct-IllegalWeapon.,Adyar PS,False,False,4
+379,IPC-Theft,2024-07-09T19:43:00,17.369275,78.470027,"Sector 31, Zone 2",FIR narrative sample #373 for IPC-Theft.,Tambaram PS,False,False,2
+NDPS-27,NDPS-DrugConsumption,2025-07-02T11:01:00,13.022382,77.563089,"Sector 90, Zone 4",FIR narrative sample #374 for NDPS-DrugConsumption.,Anna Nagar PS,False,False,3
+420,IPC-Fraud,2025-11-17T09:47:00,13.015445,77.565939,"Sector 83, Zone 3",FIR narrative sample #375 for IPC-Fraud.,Mylapore PS,False,False,3
+420,IPC-Fraud,2025-01-06T06:58:00,13.010151,77.636119,"Sector 66, Zone 6",FIR narrative sample #376 for IPC-Fraud.,T. Nagar PS,False,False,3
+307,IPC-AttemptToMurder,2025-05-20T22:32:00,12.913304,77.650807,"Sector 23, Zone 7",FIR narrative sample #377 for IPC-AttemptToMurder.,T. Nagar PS,False,False,4
+420,IPC-Fraud,2026-02-03T07:02:00,12.899689,77.57226,"Sector 60, Zone 17",FIR narrative sample #378 for IPC-Fraud.,Velachery PS,False,False,3
+NDPS-21,NDPS-DrugPossession,2024-06-22T03:43:00,13.04141,80.268906,"Sector 76, Zone 18",FIR narrative sample #379 for NDPS-DrugPossession.,Anna Nagar PS,False,False,4
+323,IPC-Assault,2025-04-16T05:53:00,13.011434,77.624816,"Sector 7, Zone 6",FIR narrative sample #380 for IPC-Assault.,Anna Nagar PS,False,False,2
+MV-184,Accident-RashDriving,2025-08-27T07:41:00,13.111131,80.233753,"Sector 99, Zone 1",FIR narrative sample #381 for Accident-RashDriving.,T. Nagar PS,True,False,3
+NDPS-27,NDPS-DrugConsumption,2025-11-19T20:11:00,17.433138,78.442503,"Sector 92, Zone 9",FIR narrative sample #382 for NDPS-DrugConsumption.,Velachery PS,False,False,3
+NDPS-21,NDPS-DrugPossession,2025-03-14T11:29:00,12.926513,77.562943,"Sector 51, Zone 19",FIR narrative sample #383 for NDPS-DrugPossession.,Mylapore PS,False,False,4
+307,IPC-AttemptToMurder,2026-03-27T16:42:00,12.981433,77.609604,"Sector 14, Zone 16",FIR narrative sample #384 for IPC-AttemptToMurder.,Tambaram PS,False,False,4
+307,IPC-AttemptToMurder,2025-04-24T08:40:00,13.029439,77.556384,"Sector 39, Zone 7",FIR narrative sample #385 for IPC-AttemptToMurder.,Tambaram PS,False,False,4
+379,IPC-Theft,2024-10-21T07:57:00,13.131569,80.319078,"Sector 41, Zone 5",FIR narrative sample #386 for IPC-Theft.,Tambaram PS,False,False,2
+302,IPC-Murder,2024-06-01T15:18:00,13.036706,77.579336,"Sector 91, Zone 19",FIR narrative sample #387 for IPC-Murder.,Mylapore PS,False,False,5
+420,IPC-Fraud,2025-04-17T23:45:00,13.112511,80.29283,"Sector 46, Zone 17",FIR narrative sample #388 for IPC-Fraud.,Tambaram PS,False,False,3
+376,IPC-SexualOffence,2025-10-11T21:56:00,17.333982,78.422316,"Sector 93, Zone 18",FIR narrative sample #389 for IPC-SexualOffence.,Velachery PS,False,True,5
+379,IPC-Theft,2024-05-07T10:41:00,13.038261,80.226432,"Sector 43, Zone 12",FIR narrative sample #390 for IPC-Theft.,Anna Nagar PS,False,False,2
+376,IPC-SexualOffence,2024-08-12T09:29:00,13.077986,80.329323,"Sector 10, Zone 16",FIR narrative sample #391 for IPC-SexualOffence.,Mylapore PS,False,False,5
+420,IPC-Fraud,2024-11-07T03:55:00,17.366067,78.454437,"Sector 18, Zone 7",FIR narrative sample #392 for IPC-Fraud.,Adyar PS,False,True,3
+323,IPC-Assault,2025-02-08T18:57:00,12.914516,77.652583,"Sector 63, Zone 11",FIR narrative sample #393 for IPC-Assault.,T. Nagar PS,False,False,2
+379,IPC-Theft,2025-05-18T20:03:00,13.075029,80.224201,"Sector 98, Zone 6",FIR narrative sample #394 for IPC-Theft.,Mylapore PS,False,False,2
+NDPS-27,NDPS-DrugConsumption,2026-01-03T04:39:00,12.992958,77.579143,"Sector 1, Zone 2",FIR narrative sample #395 for NDPS-DrugConsumption.,Anna Nagar PS,False,False,3
+ARMS-25,ArmsAct-IllegalWeapon,2025-09-11T23:23:00,13.145421,80.311796,"Sector 87, Zone 1",FIR narrative sample #396 for ArmsAct-IllegalWeapon.,T. Nagar PS,False,False,4
+420,IPC-Fraud,2025-08-15T22:56:00,12.941535,77.531033,"Sector 22, Zone 3",FIR narrative sample #397 for IPC-Fraud.,Velachery PS,False,False,3
+302,IPC-Murder,2025-06-02T09:29:00,17.388246,78.490559,"Sector 18, Zone 11",FIR narrative sample #398 for IPC-Murder.,Tambaram PS,False,False,5
+NDPS-27,NDPS-DrugConsumption,2025-04-01T06:10:00,12.89466,77.550491,"Sector 94, Zone 1",FIR narrative sample #399 for NDPS-DrugConsumption.,Adyar PS,False,False,3
+MV-184,Accident-RashDriving,2024-11-03T05:07:00,13.005378,77.64134,"Sector 33, Zone 18",FIR narrative sample #400 for Accident-RashDriving.,Tambaram PS,True,False,3
+MV-184,Accident-RashDriving,2026-02-13T19:03:00,17.322298,78.540479,"Sector 54, Zone 15",FIR narrative sample #401 for Accident-RashDriving.,T. Nagar PS,True,True,3
+NDPS-21,NDPS-DrugPossession,2025-11-28T17:16:00,13.003899,77.547479,"Sector 39, Zone 14",FIR narrative sample #402 for NDPS-DrugPossession.,T. Nagar PS,False,False,4
+307,IPC-AttemptToMurder,2024-05-25T16:17:00,17.401901,78.428646,"Sector 66, Zone 20",FIR narrative sample #403 for IPC-AttemptToMurder.,T. Nagar PS,False,False,4
+307,IPC-AttemptToMurder,2025-06-18T03:50:00,13.082338,80.28814,"Sector 26, Zone 12",FIR narrative sample #404 for IPC-AttemptToMurder.,Mylapore PS,False,False,4
+NDPS-21,NDPS-DrugPossession,2025-06-05T05:02:00,17.384417,78.439931,"Sector 31, Zone 1",FIR narrative sample #405 for NDPS-DrugPossession.,Velachery PS,False,False,4
+302,IPC-Murder,2024-05-16T02:58:00,13.136337,80.297744,"Sector 66, Zone 3",FIR narrative sample #406 for IPC-Murder.,T. Nagar PS,False,False,5
+307,IPC-AttemptToMurder,2025-07-15T20:14:00,13.049787,77.561964,"Sector 23, Zone 2",FIR narrative sample #407 for IPC-AttemptToMurder.,T. Nagar PS,False,False,4
+376,IPC-SexualOffence,2025-03-31T21:20:00,13.009766,77.5298,"Sector 2, Zone 5",FIR narrative sample #408 for IPC-SexualOffence.,T. Nagar PS,False,False,5
+379,IPC-Theft,2025-05-02T11:57:00,13.044414,77.55753,"Sector 44, Zone 6",FIR narrative sample #409 for IPC-Theft.,Velachery PS,False,False,2
+307,IPC-AttemptToMurder,2025-02-17T12:29:00,13.025313,77.624984,"Sector 84, Zone 6",FIR narrative sample #410 for IPC-AttemptToMurder.,Anna Nagar PS,False,False,4
+307,IPC-AttemptToMurder,2025-11-19T22:46:00,13.159751,80.325796,"Sector 62, Zone 19",FIR narrative sample #411 for IPC-AttemptToMurder.,Mylapore PS,False,False,4
+NDPS-27,NDPS-DrugConsumption,2025-09-30T19:24:00,12.989417,77.652612,"Sector 17, Zone 16",FIR narrative sample #412 for NDPS-DrugConsumption.,Tambaram PS,False,False,3
+NDPS-27,NDPS-DrugConsumption,2025-12-09T13:28:00,13.012834,80.295496,"Sector 68, Zone 19",FIR narrative sample #413 for NDPS-DrugConsumption.,Tambaram PS,False,True,3
+MV-184,Accident-RashDriving,2025-08-17T21:55:00,12.974656,77.624719,"Sector 85, Zone 8",FIR narrative sample #414 for Accident-RashDriving.,Anna Nagar PS,True,False,3
+NDPS-27,NDPS-DrugConsumption,2025-04-14T21:43:00,17.36658,78.540945,"Sector 7, Zone 1",FIR narrative sample #415 for NDPS-DrugConsumption.,Mylapore PS,False,False,3
+379,IPC-Theft,2024-11-02T15:54:00,13.030707,77.526578,"Sector 43, Zone 9",FIR narrative sample #416 for IPC-Theft.,Adyar PS,False,False,2
+302,IPC-Murder,2024-10-31T07:35:00,17.365582,78.537437,"Sector 74, Zone 15",FIR narrative sample #417 for IPC-Murder.,Anna Nagar PS,False,False,5
+307,IPC-AttemptToMurder,2024-11-09T14:20:00,13.159607,80.309938,"Sector 53, Zone 2",FIR narrative sample #418 for IPC-AttemptToMurder.,Anna Nagar PS,False,True,4
+ARMS-25,ArmsAct-IllegalWeapon,2024-09-18T00:52:00,13.129385,80.344807,"Sector 72, Zone 7",FIR narrative sample #419 for ArmsAct-IllegalWeapon.,Mylapore PS,False,False,4
+NDPS-27,NDPS-DrugConsumption,2025-04-19T11:52:00,13.133354,80.325791,"Sector 77, Zone 16",FIR narrative sample #420 for NDPS-DrugConsumption.,Mylapore PS,False,False,3
+323,IPC-Assault,2024-12-26T03:06:00,17.34048,78.461317,"Sector 71, Zone 17",FIR narrative sample #421 for IPC-Assault.,Velachery PS,False,False,2
+323,IPC-Assault,2024-04-15T03:02:00,13.081488,80.322194,"Sector 14, Zone 9",FIR narrative sample #422 for IPC-Assault.,Anna Nagar PS,False,False,2
+MV-184,Accident-RashDriving,2025-09-15T06:07:00,12.926094,77.646529,"Sector 14, Zone 14",FIR narrative sample #423 for Accident-RashDriving.,Velachery PS,True,False,3
+302,IPC-Murder,2024-06-24T21:37:00,13.126243,80.262781,"Sector 18, Zone 16",FIR narrative sample #424 for IPC-Murder.,Mylapore PS,False,False,5
+302,IPC-Murder,2024-10-07T23:03:00,17.454649,78.540911,"Sector 23, Zone 19",FIR narrative sample #425 for IPC-Murder.,Mylapore PS,False,False,5
+379,IPC-Theft,2025-11-23T03:24:00,17.401087,78.547931,"Sector 54, Zone 20",FIR narrative sample #426 for IPC-Theft.,Anna Nagar PS,False,False,2
+420,IPC-Fraud,2025-06-27T12:21:00,12.964055,77.535939,"Sector 96, Zone 17",FIR narrative sample #427 for IPC-Fraud.,Tambaram PS,False,False,3
+376,IPC-SexualOffence,2024-04-15T17:55:00,13.0055,77.664282,"Sector 27, Zone 20",FIR narrative sample #428 for IPC-SexualOffence.,Adyar PS,False,False,5
+376,IPC-SexualOffence,2024-04-30T11:58:00,17.326227,78.520363,"Sector 65, Zone 18",FIR narrative sample #429 for IPC-SexualOffence.,Adyar PS,False,False,5
+323,IPC-Assault,2024-04-06T03:48:00,12.981565,77.607849,"Sector 54, Zone 18",FIR narrative sample #430 for IPC-Assault.,Tambaram PS,False,False,2
+376,IPC-SexualOffence,2025-01-26T00:33:00,13.006744,80.213952,"Sector 35, Zone 6",FIR narrative sample #431 for IPC-SexualOffence.,Adyar PS,False,False,5
+376,IPC-SexualOffence,2024-05-04T08:09:00,13.113195,80.237922,"Sector 46, Zone 15",FIR narrative sample #432 for IPC-SexualOffence.,T. Nagar PS,False,False,5
+307,IPC-AttemptToMurder,2024-07-12T21:47:00,17.443375,78.525486,"Sector 66, Zone 10",FIR narrative sample #433 for IPC-AttemptToMurder.,Adyar PS,False,False,4
+302,IPC-Murder,2025-03-09T12:26:00,17.355025,78.49504,"Sector 26, Zone 20",FIR narrative sample #434 for IPC-Murder.,Velachery PS,False,True,5
+NDPS-27,NDPS-DrugConsumption,2025-08-16T20:45:00,17.408621,78.527517,"Sector 26, Zone 7",FIR narrative sample #435 for NDPS-DrugConsumption.,Mylapore PS,False,False,3
+376,IPC-SexualOffence,2024-12-30T05:43:00,13.032616,80.218507,"Sector 6, Zone 14",FIR narrative sample #436 for IPC-SexualOffence.,Anna Nagar PS,False,False,5
+376,IPC-SexualOffence,2024-09-11T08:08:00,13.096138,80.231503,"Sector 20, Zone 2",FIR narrative sample #437 for IPC-SexualOffence.,Tambaram PS,False,False,5
+379,IPC-Theft,2025-05-08T19:03:00,17.403497,78.512602,"Sector 71, Zone 12",FIR narrative sample #438 for IPC-Theft.,Mylapore PS,False,False,2
+307,IPC-AttemptToMurder,2024-04-09T10:33:00,13.155818,80.273997,"Sector 54, Zone 18",FIR narrative sample #439 for IPC-AttemptToMurder.,Adyar PS,False,False,4
+ARMS-25,ArmsAct-IllegalWeapon,2025-02-14T02:22:00,13.144043,80.296834,"Sector 28, Zone 20",FIR narrative sample #440 for ArmsAct-IllegalWeapon.,Velachery PS,False,False,4
+ARMS-25,ArmsAct-IllegalWeapon,2024-12-03T17:52:00,17.306409,78.51373,"Sector 79, Zone 20",FIR narrative sample #441 for ArmsAct-IllegalWeapon.,Tambaram PS,False,False,4
+420,IPC-Fraud,2026-02-22T21:56:00,12.95262,77.641993,"Sector 70, Zone 10",FIR narrative sample #442 for IPC-Fraud.,Velachery PS,False,False,3
+302,IPC-Murder,2024-10-21T11:32:00,17.376289,78.413716,"Sector 42, Zone 17",FIR narrative sample #443 for IPC-Murder.,Adyar PS,False,False,5
+307,IPC-AttemptToMurder,2025-12-26T05:49:00,17.390313,78.507009,"Sector 28, Zone 14",FIR narrative sample #444 for IPC-AttemptToMurder.,Tambaram PS,False,False,4
+307,IPC-AttemptToMurder,2025-09-05T17:53:00,17.445582,78.52532,"Sector 96, Zone 5",FIR narrative sample #445 for IPC-AttemptToMurder.,T. Nagar PS,False,False,4
+302,IPC-Murder,2024-12-19T22:21:00,13.016703,80.199383,"Sector 10, Zone 19",FIR narrative sample #446 for IPC-Murder.,Mylapore PS,False,False,5
+420,IPC-Fraud,2025-07-13T13:24:00,12.992435,77.583884,"Sector 16, Zone 18",FIR narrative sample #447 for IPC-Fraud.,Tambaram PS,False,True,3
+302,IPC-Murder,2024-06-16T23:39:00,13.123654,80.284397,"Sector 46, Zone 17",FIR narrative sample #448 for IPC-Murder.,T. Nagar PS,False,False,5
+307,IPC-AttemptToMurder,2025-06-11T21:19:00,17.318841,78.529144,"Sector 85, Zone 1",FIR narrative sample #449 for IPC-AttemptToMurder.,Anna Nagar PS,False,False,4
+NDPS-27,NDPS-DrugConsumption,2025-10-25T17:14:00,13.122181,80.318183,"Sector 82, Zone 5",FIR narrative sample #450 for NDPS-DrugConsumption.,Velachery PS,False,False,3
+376,IPC-SexualOffence,2024-05-10T23:41:00,13.044783,77.516384,"Sector 16, Zone 2",FIR narrative sample #451 for IPC-SexualOffence.,Adyar PS,False,False,5
+302,IPC-Murder,2024-08-25T19:25:00,17.392604,78.42032,"Sector 93, Zone 12",FIR narrative sample #452 for IPC-Murder.,Tambaram PS,False,False,5
+420,IPC-Fraud,2025-02-05T20:54:00,17.327793,78.436139,"Sector 25, Zone 4",FIR narrative sample #453 for IPC-Fraud.,Velachery PS,False,False,3
+379,IPC-Theft,2024-05-16T18:54:00,13.138922,80.339879,"Sector 83, Zone 18",FIR narrative sample #454 for IPC-Theft.,Anna Nagar PS,False,False,2
+307,IPC-AttemptToMurder,2025-06-10T21:04:00,12.907312,77.630694,"Sector 46, Zone 5",FIR narrative sample #455 for IPC-AttemptToMurder.,Velachery PS,False,False,4
+420,IPC-Fraud,2025-12-22T09:39:00,13.146719,80.241546,"Sector 85, Zone 10",FIR narrative sample #456 for IPC-Fraud.,Mylapore PS,False,False,3
+MV-184,Accident-RashDriving,2025-10-29T18:36:00,13.020832,77.667985,"Sector 32, Zone 8",FIR narrative sample #457 for Accident-RashDriving.,Velachery PS,True,False,3
+NDPS-21,NDPS-DrugPossession,2025-06-24T11:08:00,17.422276,78.547162,"Sector 40, Zone 16",FIR narrative sample #458 for NDPS-DrugPossession.,Velachery PS,False,False,4
+ARMS-25,ArmsAct-IllegalWeapon,2025-12-13T05:41:00,17.318116,78.451599,"Sector 26, Zone 9",FIR narrative sample #459 for ArmsAct-IllegalWeapon.,Mylapore PS,False,False,4
+307,IPC-AttemptToMurder,2026-01-16T00:54:00,17.40606,78.536723,"Sector 28, Zone 2",FIR narrative sample #460 for IPC-AttemptToMurder.,Mylapore PS,False,False,4
+ARMS-25,ArmsAct-IllegalWeapon,2025-07-11T17:57:00,17.380537,78.530732,"Sector 99, Zone 19",FIR narrative sample #461 for ArmsAct-IllegalWeapon.,Adyar PS,False,False,4
+376,IPC-SexualOffence,2025-11-17T14:32:00,17.319489,78.464918,"Sector 79, Zone 6",FIR narrative sample #462 for IPC-SexualOffence.,Adyar PS,False,True,5
+ARMS-25,ArmsAct-IllegalWeapon,2025-11-11T14:10:00,13.093317,80.28123,"Sector 95, Zone 16",FIR narrative sample #463 for ArmsAct-IllegalWeapon.,Adyar PS,False,False,4
+323,IPC-Assault,2026-02-21T07:48:00,12.92868,77.556897,"Sector 27, Zone 17",FIR narrative sample #464 for IPC-Assault.,Tambaram PS,False,False,2
+323,IPC-Assault,2025-03-02T15:58:00,13.032648,77.520985,"Sector 91, Zone 17",FIR narrative sample #465 for IPC-Assault.,T. Nagar PS,False,False,2
+376,IPC-SexualOffence,2025-07-08T18:34:00,17.332816,78.511288,"Sector 10, Zone 17",FIR narrative sample #466 for IPC-SexualOffence.,Tambaram PS,False,False,5
+376,IPC-SexualOffence,2025-03-14T07:33:00,12.948064,77.653435,"Sector 78, Zone 1",FIR narrative sample #467 for IPC-SexualOffence.,Anna Nagar PS,False,False,5
+ARMS-25,ArmsAct-IllegalWeapon,2025-11-12T14:10:00,13.015034,80.293656,"Sector 21, Zone 12",FIR narrative sample #468 for ArmsAct-IllegalWeapon.,Adyar PS,False,False,4
+MV-184,Accident-RashDriving,2025-12-03T21:14:00,13.021388,77.629841,"Sector 62, Zone 7",FIR narrative sample #469 for Accident-RashDriving.,Anna Nagar PS,True,False,3
+MV-184,Accident-RashDriving,2025-10-20T20:53:00,12.895191,77.521503,"Sector 18, Zone 17",FIR narrative sample #470 for Accident-RashDriving.,Adyar PS,True,False,3
+302,IPC-Murder,2024-08-25T04:03:00,13.044022,80.219506,"Sector 73, Zone 1",FIR narrative sample #471 for IPC-Murder.,Mylapore PS,False,False,5
+376,IPC-SexualOffence,2026-01-06T06:28:00,17.463844,78.545468,"Sector 77, Zone 5",FIR narrative sample #472 for IPC-SexualOffence.,Anna Nagar PS,False,True,5
+MV-184,Accident-RashDriving,2025-09-29T19:42:00,17.347323,78.52257,"Sector 77, Zone 19",FIR narrative sample #473 for Accident-RashDriving.,Anna Nagar PS,True,False,3
+307,IPC-AttemptToMurder,2025-08-11T12:24:00,13.020071,80.223076,"Sector 88, Zone 14",FIR narrative sample #474 for IPC-AttemptToMurder.,Mylapore PS,False,False,4
+379,IPC-Theft,2024-07-22T03:11:00,13.035857,77.61057,"Sector 65, Zone 4",FIR narrative sample #475 for IPC-Theft.,Mylapore PS,False,False,2
+307,IPC-AttemptToMurder,2024-11-26T21:08:00,17.391286,78.406892,"Sector 84, Zone 14",FIR narrative sample #476 for IPC-AttemptToMurder.,Tambaram PS,False,False,4
+ARMS-25,ArmsAct-IllegalWeapon,2025-01-28T11:55:00,13.114323,80.259333,"Sector 99, Zone 13",FIR narrative sample #477 for ArmsAct-IllegalWeapon.,Anna Nagar PS,False,False,4
+323,IPC-Assault,2024-08-08T23:58:00,17.397179,78.474778,"Sector 11, Zone 10",FIR narrative sample #478 for IPC-Assault.,Adyar PS,False,False,2
+MV-184,Accident-RashDriving,2024-09-24T13:16:00,13.003575,80.309683,"Sector 16, Zone 17",FIR narrative sample #479 for Accident-RashDriving.,Mylapore PS,True,True,3
+302,IPC-Murder,2025-03-15T20:13:00,17.433686,78.472115,"Sector 84, Zone 19",FIR narrative sample #480 for IPC-Murder.,Anna Nagar PS,False,False,5
+376,IPC-SexualOffence,2025-07-10T17:27:00,17.363503,78.45079,"Sector 53, Zone 18",FIR narrative sample #481 for IPC-SexualOffence.,Adyar PS,False,False,5
+ARMS-25,ArmsAct-IllegalWeapon,2024-11-25T05:23:00,17.393786,78.447304,"Sector 91, Zone 13",FIR narrative sample #482 for ArmsAct-IllegalWeapon.,Velachery PS,False,False,4
+379,IPC-Theft,2024-05-28T03:47:00,13.074155,80.30259,"Sector 66, Zone 13",FIR narrative sample #483 for IPC-Theft.,Adyar PS,False,False,2
+323,IPC-Assault,2024-09-17T19:44:00,17.418086,78.432418,"Sector 12, Zone 5",FIR narrative sample #484 for IPC-Assault.,T. Nagar PS,False,False,2
+NDPS-27,NDPS-DrugConsumption,2024-07-28T13:05:00,13.044795,80.250034,"Sector 50, Zone 13",FIR narrative sample #485 for NDPS-DrugConsumption.,Tambaram PS,False,False,3
+MV-184,Accident-RashDriving,2024-06-01T16:18:00,17.459165,78.415894,"Sector 82, Zone 16",FIR narrative sample #486 for Accident-RashDriving.,Adyar PS,True,False,3
+NDPS-27,NDPS-DrugConsumption,2026-03-24T06:54:00,17.453921,78.489605,"Sector 66, Zone 17",FIR narrative sample #487 for NDPS-DrugConsumption.,Mylapore PS,False,False,3
+420,IPC-Fraud,2024-07-13T05:43:00,13.060258,80.295503,"Sector 36, Zone 13",FIR narrative sample #488 for IPC-Fraud.,T. Nagar PS,False,False,3
+323,IPC-Assault,2024-05-18T12:25:00,17.33705,78.409159,"Sector 71, Zone 10",FIR narrative sample #489 for IPC-Assault.,T. Nagar PS,False,False,2
+ARMS-25,ArmsAct-IllegalWeapon,2024-08-15T11:22:00,12.927807,77.668689,"Sector 74, Zone 1",FIR narrative sample #490 for ArmsAct-IllegalWeapon.,Anna Nagar PS,False,False,4
+376,IPC-SexualOffence,2025-10-06T13:32:00,13.092081,80.271207,"Sector 66, Zone 9",FIR narrative sample #491 for IPC-SexualOffence.,T. Nagar PS,False,False,5
+ARMS-25,ArmsAct-IllegalWeapon,2024-08-23T08:44:00,13.046169,77.604707,"Sector 59, Zone 15",FIR narrative sample #492 for ArmsAct-IllegalWeapon.,Velachery PS,False,False,4
+MV-184,Accident-RashDriving,2026-03-06T15:07:00,12.902409,77.615986,"Sector 90, Zone 8",FIR narrative sample #493 for Accident-RashDriving.,Tambaram PS,True,False,3
+323,IPC-Assault,2025-02-05T11:33:00,17.306556,78.539848,"Sector 52, Zone 11",FIR narrative sample #494 for IPC-Assault.,T. Nagar PS,False,False,2
+307,IPC-AttemptToMurder,2024-09-13T05:30:00,12.948166,77.657691,"Sector 88, Zone 7",FIR narrative sample #495 for IPC-AttemptToMurder.,Tambaram PS,False,False,4
+NDPS-27,NDPS-DrugConsumption,2025-09-11T07:47:00,13.142339,80.223785,"Sector 80, Zone 12",FIR narrative sample #496 for NDPS-DrugConsumption.,Adyar PS,False,False,3
+379,IPC-Theft,2025-12-15T03:58:00,13.11083,80.296848,"Sector 6, Zone 16",FIR narrative sample #497 for IPC-Theft.,Mylapore PS,False,False,2
+323,IPC-Assault,2024-07-07T10:31:00,17.444003,78.485229,"Sector 36, Zone 13",FIR narrative sample #498 for IPC-Assault.,Mylapore PS,False,False,2
+420,IPC-Fraud,2024-08-21T04:03:00,17.432883,78.483231,"Sector 45, Zone 13",FIR narrative sample #499 for IPC-Fraud.,Mylapore PS,False,False,3
+379,IPC-Theft,2024-12-21T03:44:00,17.378611,78.516974,"Sector 49, Zone 19",FIR narrative sample #500 for IPC-Theft.,Adyar PS,False,True,2
+307,IPC-AttemptToMurder,2025-05-05T11:39:00,12.921544,77.556656,"Sector 44, Zone 12",FIR narrative sample #501 for IPC-AttemptToMurder.,Mylapore PS,False,False,4
+379,IPC-Theft,2024-11-09T13:13:00,13.003714,77.57417,"Sector 58, Zone 6",FIR narrative sample #502 for IPC-Theft.,Velachery PS,False,False,2
+MV-184,Accident-RashDriving,2025-11-20T18:43:00,13.132971,80.30603,"Sector 56, Zone 13",FIR narrative sample #503 for Accident-RashDriving.,Mylapore PS,True,False,3
+420,IPC-Fraud,2025-11-05T23:09:00,13.020507,77.542857,"Sector 67, Zone 18",FIR narrative sample #504 for IPC-Fraud.,Tambaram PS,False,False,3
+323,IPC-Assault,2024-11-21T09:16:00,17.44236,78.414333,"Sector 8, Zone 7",FIR narrative sample #505 for IPC-Assault.,Adyar PS,False,False,2
+376,IPC-SexualOffence,2024-12-02T20:06:00,13.010735,77.556163,"Sector 33, Zone 12",FIR narrative sample #506 for IPC-SexualOffence.,Mylapore PS,False,False,5
+302,IPC-Murder,2025-02-06T03:22:00,17.459099,78.438533,"Sector 69, Zone 6",FIR narrative sample #507 for IPC-Murder.,Tambaram PS,False,False,5
+376,IPC-SexualOffence,2025-04-05T10:43:00,17.382999,78.524544,"Sector 79, Zone 10",FIR narrative sample #508 for IPC-SexualOffence.,Anna Nagar PS,False,False,5
+NDPS-27,NDPS-DrugConsumption,2024-06-26T04:55:00,13.105193,80.339271,"Sector 74, Zone 13",FIR narrative sample #509 for NDPS-DrugConsumption.,Mylapore PS,False,False,3
+307,IPC-AttemptToMurder,2026-01-12T05:21:00,13.052857,80.295182,"Sector 83, Zone 13",FIR narrative sample #510 for IPC-AttemptToMurder.,Mylapore PS,False,False,4
+376,IPC-SexualOffence,2025-01-03T11:47:00,17.38835,78.478746,"Sector 17, Zone 8",FIR narrative sample #511 for IPC-SexualOffence.,T. Nagar PS,False,True,5
+376,IPC-SexualOffence,2024-04-16T23:05:00,13.029406,80.207181,"Sector 71, Zone 2",FIR narrative sample #512 for IPC-SexualOffence.,Anna Nagar PS,False,True,5
+302,IPC-Murder,2025-02-21T16:48:00,13.019329,80.289596,"Sector 40, Zone 8",FIR narrative sample #513 for IPC-Murder.,Anna Nagar PS,False,False,5
+420,IPC-Fraud,2025-06-17T14:40:00,13.023704,80.324863,"Sector 46, Zone 11",FIR narrative sample #514 for IPC-Fraud.,Tambaram PS,False,True,3
+NDPS-27,NDPS-DrugConsumption,2024-12-11T17:59:00,12.979367,77.536218,"Sector 23, Zone 19",FIR narrative sample #515 for NDPS-DrugConsumption.,Mylapore PS,False,False,3
+MV-184,Accident-RashDriving,2024-12-22T20:47:00,17.445367,78.476296,"Sector 40, Zone 12",FIR narrative sample #516 for Accident-RashDriving.,Mylapore PS,True,False,3
+NDPS-27,NDPS-DrugConsumption,2024-09-28T07:51:00,13.073398,80.249225,"Sector 2, Zone 1",FIR narrative sample #517 for NDPS-DrugConsumption.,Velachery PS,False,False,3
+ARMS-25,ArmsAct-IllegalWeapon,2025-11-15T11:18:00,12.977216,77.624643,"Sector 39, Zone 1",FIR narrative sample #518 for ArmsAct-IllegalWeapon.,Anna Nagar PS,False,False,4
+NDPS-21,NDPS-DrugPossession,2025-06-08T19:14:00,13.090414,80.220871,"Sector 51, Zone 8",FIR narrative sample #519 for NDPS-DrugPossession.,Anna Nagar PS,False,False,4
+379,IPC-Theft,2024-06-11T12:53:00,12.926895,77.527274,"Sector 98, Zone 20",FIR narrative sample #520 for IPC-Theft.,Mylapore PS,False,False,2
+376,IPC-SexualOffence,2025-06-16T20:47:00,17.434409,78.472765,"Sector 18, Zone 10",FIR narrative sample #521 for IPC-SexualOffence.,Adyar PS,False,False,5
+307,IPC-AttemptToMurder,2024-06-20T14:39:00,12.935141,77.614241,"Sector 20, Zone 2",FIR narrative sample #522 for IPC-AttemptToMurder.,T. Nagar PS,False,False,4
+ARMS-25,ArmsAct-IllegalWeapon,2026-03-12T05:06:00,12.934671,77.629031,"Sector 12, Zone 5",FIR narrative sample #523 for ArmsAct-IllegalWeapon.,Adyar PS,False,False,4
+302,IPC-Murder,2024-11-14T06:21:00,12.941452,77.642514,"Sector 90, Zone 2",FIR narrative sample #524 for IPC-Murder.,Anna Nagar PS,False,False,5
+323,IPC-Assault,2026-01-11T04:03:00,13.015704,77.526022,"Sector 33, Zone 13",FIR narrative sample #525 for IPC-Assault.,Adyar PS,False,False,2
+302,IPC-Murder,2025-11-30T22:15:00,13.014996,77.585474,"Sector 26, Zone 15",FIR narrative sample #526 for IPC-Murder.,T. Nagar PS,False,False,5
+307,IPC-AttemptToMurder,2024-10-17T21:13:00,12.95386,77.668394,"Sector 81, Zone 2",FIR narrative sample #527 for IPC-AttemptToMurder.,Adyar PS,False,False,4
+ARMS-25,ArmsAct-IllegalWeapon,2024-10-17T03:16:00,12.993763,77.546396,"Sector 28, Zone 4",FIR narrative sample #528 for ArmsAct-IllegalWeapon.,Tambaram PS,False,False,4
+420,IPC-Fraud,2024-06-24T13:20:00,13.029478,80.234876,"Sector 2, Zone 2",FIR narrative sample #529 for IPC-Fraud.,Adyar PS,False,False,3
+MV-184,Accident-RashDriving,2024-04-26T15:44:00,17.329799,78.530028,"Sector 12, Zone 20",FIR narrative sample #530 for Accident-RashDriving.,Anna Nagar PS,True,False,3
+323,IPC-Assault,2024-07-02T01:03:00,12.994732,77.626813,"Sector 63, Zone 8",FIR narrative sample #531 for IPC-Assault.,Adyar PS,False,False,2
+323,IPC-Assault,2024-09-09T20:48:00,13.020484,77.584795,"Sector 49, Zone 12",FIR narrative sample #532 for IPC-Assault.,Tambaram PS,False,False,2
+379,IPC-Theft,2025-07-21T01:31:00,17.375,78.453854,"Sector 73, Zone 6",FIR narrative sample #533 for IPC-Theft.,Adyar PS,False,False,2
+ARMS-25,ArmsAct-IllegalWeapon,2025-04-12T10:46:00,12.935652,77.647616,"Sector 21, Zone 3",FIR narrative sample #534 for ArmsAct-IllegalWeapon.,Mylapore PS,False,False,4
+ARMS-25,ArmsAct-IllegalWeapon,2025-10-27T14:18:00,12.978257,77.587253,"Sector 49, Zone 6",FIR narrative sample #535 for ArmsAct-IllegalWeapon.,Mylapore PS,False,False,4
+302,IPC-Murder,2024-07-08T11:49:00,17.343206,78.522061,"Sector 50, Zone 7",FIR narrative sample #536 for IPC-Murder.,Mylapore PS,False,False,5
+ARMS-25,ArmsAct-IllegalWeapon,2024-05-04T15:49:00,17.329661,78.452001,"Sector 15, Zone 4",FIR narrative sample #537 for ArmsAct-IllegalWeapon.,Velachery PS,False,False,4
+ARMS-25,ArmsAct-IllegalWeapon,2024-05-29T02:02:00,13.031282,80.195704,"Sector 13, Zone 2",FIR narrative sample #538 for ArmsAct-IllegalWeapon.,Adyar PS,False,False,4
+MV-184,Accident-RashDriving,2024-06-15T12:42:00,12.975731,77.62681,"Sector 29, Zone 20",FIR narrative sample #539 for Accident-RashDriving.,Velachery PS,True,False,3
+307,IPC-AttemptToMurder,2026-03-21T06:41:00,13.040145,77.647732,"Sector 8, Zone 12",FIR narrative sample #540 for IPC-AttemptToMurder.,Tambaram PS,False,False,4
+ARMS-25,ArmsAct-IllegalWeapon,2025-02-02T11:50:00,17.314328,78.505409,"Sector 10, Zone 10",FIR narrative sample #541 for ArmsAct-IllegalWeapon.,Tambaram PS,False,False,4
+307,IPC-AttemptToMurder,2025-08-25T16:06:00,13.118728,80.275766,"Sector 85, Zone 8",FIR narrative sample #542 for IPC-AttemptToMurder.,Mylapore PS,False,False,4
+MV-184,Accident-RashDriving,2024-07-02T05:35:00,17.394303,78.526077,"Sector 46, Zone 15",FIR narrative sample #543 for Accident-RashDriving.,Mylapore PS,True,False,3
+NDPS-21,NDPS-DrugPossession,2025-12-18T05:50:00,13.090694,80.271451,"Sector 77, Zone 15",FIR narrative sample #544 for NDPS-DrugPossession.,Mylapore PS,False,False,4
+323,IPC-Assault,2025-05-16T17:20:00,12.957575,77.615919,"Sector 78, Zone 8",FIR narrative sample #545 for IPC-Assault.,Velachery PS,False,False,2
+MV-184,Accident-RashDriving,2024-09-22T06:24:00,17.453184,78.447354,"Sector 51, Zone 1",FIR narrative sample #546 for Accident-RashDriving.,Anna Nagar PS,True,False,3
+302,IPC-Murder,2025-06-16T19:01:00,17.326614,78.549152,"Sector 28, Zone 11",FIR narrative sample #547 for IPC-Murder.,Adyar PS,False,True,5
+302,IPC-Murder,2024-04-27T08:58:00,17.386803,78.498007,"Sector 5, Zone 15",FIR narrative sample #548 for IPC-Murder.,T. Nagar PS,False,False,5
+323,IPC-Assault,2025-10-26T04:16:00,13.03394,77.554577,"Sector 12, Zone 19",FIR narrative sample #549 for IPC-Assault.,Velachery PS,False,False,2
+NDPS-21,NDPS-DrugPossession,2024-08-29T06:46:00,13.118473,80.317565,"Sector 90, Zone 19",FIR narrative sample #550 for NDPS-DrugPossession.,Tambaram PS,False,False,4
+307,IPC-AttemptToMurder,2024-08-02T20:19:00,13.119626,80.282905,"Sector 99, Zone 11",FIR narrative sample #551 for IPC-AttemptToMurder.,T. Nagar PS,False,False,4
+323,IPC-Assault,2025-01-14T13:59:00,13.141866,80.226975,"Sector 2, Zone 13",FIR narrative sample #552 for IPC-Assault.,Mylapore PS,False,False,2
+302,IPC-Murder,2025-05-26T16:02:00,12.977989,77.538533,"Sector 20, Zone 2",FIR narrative sample #553 for IPC-Murder.,Adyar PS,False,False,5
+NDPS-21,NDPS-DrugPossession,2025-01-02T19:36:00,17.319413,78.47581,"Sector 17, Zone 11",FIR narrative sample #554 for NDPS-DrugPossession.,Adyar PS,False,False,4
+307,IPC-AttemptToMurder,2024-12-02T18:47:00,13.090404,80.232709,"Sector 90, Zone 5",FIR narrative sample #555 for IPC-AttemptToMurder.,Anna Nagar PS,False,False,4
+379,IPC-Theft,2024-11-27T17:12:00,12.954851,77.606013,"Sector 68, Zone 8",FIR narrative sample #556 for IPC-Theft.,Tambaram PS,False,False,2
+420,IPC-Fraud,2026-01-20T08:49:00,12.943346,77.662462,"Sector 53, Zone 14",FIR narrative sample #557 for IPC-Fraud.,Tambaram PS,False,False,3
+323,IPC-Assault,2025-04-12T06:20:00,12.98662,77.518473,"Sector 79, Zone 15",FIR narrative sample #558 for IPC-Assault.,Velachery PS,False,False,2
+MV-184,Accident-RashDriving,2025-11-05T14:02:00,13.03465,80.250511,"Sector 15, Zone 2",FIR narrative sample #559 for Accident-RashDriving.,T. Nagar PS,True,False,3
+420,IPC-Fraud,2024-07-07T04:55:00,12.893797,77.625607,"Sector 61, Zone 1",FIR narrative sample #560 for IPC-Fraud.,Anna Nagar PS,False,False,3
+323,IPC-Assault,2025-09-01T23:34:00,13.035308,80.274423,"Sector 80, Zone 5",FIR narrative sample #561 for IPC-Assault.,Anna Nagar PS,False,False,2
+302,IPC-Murder,2025-03-14T18:57:00,17.389288,78.447573,"Sector 90, Zone 20",FIR narrative sample #562 for IPC-Murder.,Adyar PS,False,False,5
+376,IPC-SexualOffence,2026-02-08T14:41:00,13.013356,80.29636,"Sector 47, Zone 4",FIR narrative sample #563 for IPC-SexualOffence.,Tambaram PS,False,False,5
+302,IPC-Murder,2025-06-08T20:24:00,13.159467,80.272066,"Sector 63, Zone 20",FIR narrative sample #564 for IPC-Murder.,Velachery PS,False,False,5
+ARMS-25,ArmsAct-IllegalWeapon,2026-01-03T05:12:00,17.459687,78.49641,"Sector 32, Zone 17",FIR narrative sample #565 for ArmsAct-IllegalWeapon.,T. Nagar PS,False,False,4
+376,IPC-SexualOffence,2025-04-27T15:25:00,17.330121,78.462185,"Sector 39, Zone 8",FIR narrative sample #566 for IPC-SexualOffence.,Tambaram PS,False,False,5
+ARMS-25,ArmsAct-IllegalWeapon,2025-06-25T01:40:00,13.032188,77.657064,"Sector 72, Zone 9",FIR narrative sample #567 for ArmsAct-IllegalWeapon.,T. Nagar PS,False,False,4
+420,IPC-Fraud,2025-10-30T10:57:00,12.996709,77.528647,"Sector 79, Zone 8",FIR narrative sample #568 for IPC-Fraud.,Tambaram PS,False,False,3
+NDPS-21,NDPS-DrugPossession,2025-07-31T18:09:00,13.046886,77.660158,"Sector 17, Zone 7",FIR narrative sample #569 for NDPS-DrugPossession.,Mylapore PS,False,False,4
+379,IPC-Theft,2024-08-17T17:43:00,13.140714,80.24014,"Sector 18, Zone 14",FIR narrative sample #570 for IPC-Theft.,Mylapore PS,False,False,2
+379,IPC-Theft,2024-06-01T18:58:00,13.053499,80.279874,"Sector 24, Zone 11",FIR narrative sample #571 for IPC-Theft.,T. Nagar PS,False,False,2
+379,IPC-Theft,2026-03-04T10:56:00,13.045391,77.563136,"Sector 95, Zone 9",FIR narrative sample #572 for IPC-Theft.,Tambaram PS,False,False,2
+379,IPC-Theft,2025-09-23T03:08:00,13.006892,80.348453,"Sector 73, Zone 20",FIR narrative sample #573 for IPC-Theft.,Mylapore PS,False,False,2
+420,IPC-Fraud,2024-08-01T07:14:00,17.309174,78.419416,"Sector 65, Zone 20",FIR narrative sample #574 for IPC-Fraud.,Adyar PS,False,False,3
+NDPS-27,NDPS-DrugConsumption,2024-04-04T20:23:00,13.139041,80.269331,"Sector 29, Zone 2",FIR narrative sample #575 for NDPS-DrugConsumption.,Adyar PS,False,False,3
+NDPS-21,NDPS-DrugPossession,2026-03-19T08:26:00,13.121479,80.348819,"Sector 23, Zone 15",FIR narrative sample #576 for NDPS-DrugPossession.,T. Nagar PS,False,False,4
+MV-184,Accident-RashDriving,2024-11-18T22:20:00,13.033614,77.583009,"Sector 95, Zone 13",FIR narrative sample #577 for Accident-RashDriving.,Mylapore PS,True,False,3
+323,IPC-Assault,2025-02-24T19:47:00,17.400009,78.490737,"Sector 67, Zone 4",FIR narrative sample #578 for IPC-Assault.,T. Nagar PS,False,False,2
+NDPS-27,NDPS-DrugConsumption,2024-12-22T01:56:00,13.085692,80.253998,"Sector 50, Zone 17",FIR narrative sample #579 for NDPS-DrugConsumption.,Mylapore PS,False,False,3
+302,IPC-Murder,2025-09-21T09:28:00,13.033104,77.638388,"Sector 55, Zone 10",FIR narrative sample #580 for IPC-Murder.,Adyar PS,False,False,5
+MV-184,Accident-RashDriving,2026-02-07T22:33:00,13.076873,80.294076,"Sector 15, Zone 6",FIR narrative sample #581 for Accident-RashDriving.,Mylapore PS,True,False,3
+MV-184,Accident-RashDriving,2024-04-21T17:08:00,12.957769,77.586742,"Sector 92, Zone 7",FIR narrative sample #582 for Accident-RashDriving.,Mylapore PS,True,False,3
+NDPS-27,NDPS-DrugConsumption,2026-01-01T08:20:00,17.408772,78.520535,"Sector 16, Zone 3",FIR narrative sample #583 for NDPS-DrugConsumption.,Tambaram PS,False,False,3
+307,IPC-AttemptToMurder,2024-04-10T14:40:00,12.905249,77.627765,"Sector 79, Zone 6",FIR narrative sample #584 for IPC-AttemptToMurder.,Mylapore PS,False,False,4
+NDPS-21,NDPS-DrugPossession,2024-09-17T12:02:00,13.14866,80.281179,"Sector 21, Zone 5",FIR narrative sample #585 for NDPS-DrugPossession.,Adyar PS,False,False,4
+379,IPC-Theft,2024-04-04T01:26:00,12.941123,77.637581,"Sector 24, Zone 4",FIR narrative sample #586 for IPC-Theft.,Tambaram PS,False,False,2
+379,IPC-Theft,2025-09-08T00:39:00,12.893553,77.59422,"Sector 78, Zone 16",FIR narrative sample #587 for IPC-Theft.,T. Nagar PS,False,False,2
+420,IPC-Fraud,2025-08-24T18:42:00,12.964198,77.5853,"Sector 32, Zone 18",FIR narrative sample #588 for IPC-Fraud.,T. Nagar PS,False,False,3
+376,IPC-SexualOffence,2024-07-08T20:35:00,13.010527,80.214421,"Sector 19, Zone 2",FIR narrative sample #589 for IPC-SexualOffence.,T. Nagar PS,False,False,5
+MV-184,Accident-RashDriving,2024-07-25T09:21:00,13.010545,80.257413,"Sector 37, Zone 20",FIR narrative sample #590 for Accident-RashDriving.,Tambaram PS,True,False,3
+MV-184,Accident-RashDriving,2024-08-25T17:11:00,13.011494,77.57223,"Sector 42, Zone 12",FIR narrative sample #591 for Accident-RashDriving.,Velachery PS,True,True,3
+NDPS-21,NDPS-DrugPossession,2026-01-24T13:53:00,17.315388,78.482031,"Sector 43, Zone 17",FIR narrative sample #592 for NDPS-DrugPossession.,Velachery PS,False,False,4
+NDPS-21,NDPS-DrugPossession,2024-10-13T06:44:00,13.100629,80.208188,"Sector 68, Zone 3",FIR narrative sample #593 for NDPS-DrugPossession.,Tambaram PS,False,False,4
+NDPS-27,NDPS-DrugConsumption,2024-04-28T19:59:00,17.35095,78.504115,"Sector 74, Zone 20",FIR narrative sample #594 for NDPS-DrugConsumption.,Mylapore PS,False,False,3
+323,IPC-Assault,2025-11-22T19:36:00,12.974753,77.615697,"Sector 79, Zone 8",FIR narrative sample #595 for IPC-Assault.,Adyar PS,False,False,2
+376,IPC-SexualOffence,2025-09-17T00:07:00,13.077082,80.318177,"Sector 79, Zone 14",FIR narrative sample #596 for IPC-SexualOffence.,Adyar PS,False,False,5
+NDPS-21,NDPS-DrugPossession,2026-02-16T10:22:00,17.433967,78.440674,"Sector 37, Zone 9",FIR narrative sample #597 for NDPS-DrugPossession.,Tambaram PS,False,False,4
+307,IPC-AttemptToMurder,2025-05-23T09:32:00,17.356828,78.407681,"Sector 51, Zone 19",FIR narrative sample #598 for IPC-AttemptToMurder.,Velachery PS,False,False,4
+MV-184,Accident-RashDriving,2026-03-05T05:12:00,13.025012,77.662165,"Sector 5, Zone 5",FIR narrative sample #599 for Accident-RashDriving.,Anna Nagar PS,True,False,3
+NDPS-27,NDPS-DrugConsumption,2025-10-26T20:29:00,17.448349,78.480695,"Sector 8, Zone 17",FIR narrative sample #600 for NDPS-DrugConsumption.,Tambaram PS,False,False,3
+376,IPC-SexualOffence,2024-09-02T23:43:00,12.980428,77.517595,"Sector 46, Zone 3",FIR narrative sample #601 for IPC-SexualOffence.,Velachery PS,False,False,5
+379,IPC-Theft,2025-06-20T00:21:00,12.991842,77.649385,"Sector 24, Zone 20",FIR narrative sample #602 for IPC-Theft.,Anna Nagar PS,False,False,2
+307,IPC-AttemptToMurder,2025-05-23T22:54:00,13.005174,77.55804,"Sector 48, Zone 15",FIR narrative sample #603 for IPC-AttemptToMurder.,Adyar PS,False,False,4
+376,IPC-SexualOffence,2025-08-25T16:19:00,13.020657,80.316291,"Sector 57, Zone 17",FIR narrative sample #604 for IPC-SexualOffence.,T. Nagar PS,False,False,5
+302,IPC-Murder,2024-11-25T16:09:00,13.057119,80.268056,"Sector 42, Zone 5",FIR narrative sample #605 for IPC-Murder.,Velachery PS,False,False,5
+307,IPC-AttemptToMurder,2024-10-22T21:08:00,13.118631,80.264199,"Sector 15, Zone 1",FIR narrative sample #606 for IPC-AttemptToMurder.,Mylapore PS,False,False,4
+376,IPC-SexualOffence,2026-02-17T21:54:00,17.4445,78.460026,"Sector 67, Zone 10",FIR narrative sample #607 for IPC-SexualOffence.,T. Nagar PS,False,False,5
+302,IPC-Murder,2024-08-20T09:40:00,13.054041,80.221507,"Sector 99, Zone 15",FIR narrative sample #608 for IPC-Murder.,Velachery PS,False,False,5
+307,IPC-AttemptToMurder,2025-06-28T04:10:00,12.909914,77.667928,"Sector 27, Zone 18",FIR narrative sample #609 for IPC-AttemptToMurder.,T. Nagar PS,False,False,4
+323,IPC-Assault,2024-09-18T10:17:00,13.153624,80.31934,"Sector 10, Zone 10",FIR narrative sample #610 for IPC-Assault.,Adyar PS,False,False,2
+MV-184,Accident-RashDriving,2025-04-22T17:28:00,13.023512,80.266018,"Sector 50, Zone 2",FIR narrative sample #611 for Accident-RashDriving.,T. Nagar PS,True,False,3
+307,IPC-AttemptToMurder,2025-01-22T12:11:00,17.400379,78.501541,"Sector 58, Zone 20",FIR narrative sample #612 for IPC-AttemptToMurder.,Tambaram PS,False,False,4
+323,IPC-Assault,2025-05-19T10:52:00,13.116764,80.298039,"Sector 73, Zone 5",FIR narrative sample #613 for IPC-Assault.,Anna Nagar PS,False,False,2
+307,IPC-AttemptToMurder,2024-04-18T14:06:00,12.941263,77.617707,"Sector 30, Zone 8",FIR narrative sample #614 for IPC-AttemptToMurder.,Anna Nagar PS,False,False,4
+379,IPC-Theft,2024-07-11T08:58:00,12.954332,77.626538,"Sector 59, Zone 16",FIR narrative sample #615 for IPC-Theft.,Velachery PS,False,False,2
+302,IPC-Murder,2026-01-27T15:07:00,12.968184,77.649923,"Sector 78, Zone 19",FIR narrative sample #616 for IPC-Murder.,Velachery PS,False,False,5
+379,IPC-Theft,2024-10-30T03:25:00,17.432481,78.458839,"Sector 69, Zone 15",FIR narrative sample #617 for IPC-Theft.,Velachery PS,False,False,2
+NDPS-21,NDPS-DrugPossession,2024-08-07T13:15:00,17.343991,78.432143,"Sector 44, Zone 7",FIR narrative sample #618 for NDPS-DrugPossession.,T. Nagar PS,False,False,4
+MV-184,Accident-RashDriving,2025-01-17T13:36:00,12.978724,77.552385,"Sector 95, Zone 19",FIR narrative sample #619 for Accident-RashDriving.,T. Nagar PS,True,False,3
+NDPS-27,NDPS-DrugConsumption,2025-12-07T18:38:00,12.94366,77.530225,"Sector 52, Zone 3",FIR narrative sample #620 for NDPS-DrugConsumption.,Velachery PS,False,False,3
+MV-184,Accident-RashDriving,2025-12-13T21:52:00,17.428415,78.467326,"Sector 8, Zone 3",FIR narrative sample #621 for Accident-RashDriving.,Tambaram PS,True,False,3
+420,IPC-Fraud,2025-11-12T18:57:00,17.434574,78.527832,"Sector 69, Zone 10",FIR narrative sample #622 for IPC-Fraud.,Anna Nagar PS,False,False,3
+NDPS-21,NDPS-DrugPossession,2024-07-12T18:28:00,13.035606,80.331088,"Sector 39, Zone 14",FIR narrative sample #623 for NDPS-DrugPossession.,Tambaram PS,False,False,4
+323,IPC-Assault,2026-01-02T18:00:00,17.462827,78.471372,"Sector 8, Zone 12",FIR narrative sample #624 for IPC-Assault.,Velachery PS,False,False,2
+ARMS-25,ArmsAct-IllegalWeapon,2026-02-08T00:45:00,17.436321,78.464179,"Sector 31, Zone 14",FIR narrative sample #625 for ArmsAct-IllegalWeapon.,T. Nagar PS,False,False,4
+MV-184,Accident-RashDriving,2025-02-24T20:20:00,17.366246,78.46775,"Sector 23, Zone 16",FIR narrative sample #626 for Accident-RashDriving.,Tambaram PS,True,False,3
+379,IPC-Theft,2025-09-23T17:24:00,13.025994,77.539283,"Sector 17, Zone 5",FIR narrative sample #627 for IPC-Theft.,Tambaram PS,False,False,2
+302,IPC-Murder,2026-01-20T20:01:00,13.118114,80.268572,"Sector 11, Zone 5",FIR narrative sample #628 for IPC-Murder.,Adyar PS,False,False,5
+NDPS-21,NDPS-DrugPossession,2024-12-23T22:38:00,12.99132,77.587303,"Sector 50, Zone 12",FIR narrative sample #629 for NDPS-DrugPossession.,Anna Nagar PS,False,False,4
+420,IPC-Fraud,2025-09-25T13:38:00,13.09517,80.326189,"Sector 35, Zone 14",FIR narrative sample #630 for IPC-Fraud.,Mylapore PS,False,False,3
+ARMS-25,ArmsAct-IllegalWeapon,2024-08-21T11:02:00,13.093604,80.303481,"Sector 89, Zone 3",FIR narrative sample #631 for ArmsAct-IllegalWeapon.,Anna Nagar PS,False,False,4
+379,IPC-Theft,2024-10-11T08:29:00,17.317518,78.549086,"Sector 81, Zone 3",FIR narrative sample #632 for IPC-Theft.,Anna Nagar PS,False,False,2
+ARMS-25,ArmsAct-IllegalWeapon,2024-08-18T09:39:00,13.147274,80.276305,"Sector 66, Zone 16",FIR narrative sample #633 for ArmsAct-IllegalWeapon.,Anna Nagar PS,False,True,4
+MV-184,Accident-RashDriving,2025-04-29T13:22:00,12.937873,77.520252,"Sector 39, Zone 19",FIR narrative sample #634 for Accident-RashDriving.,Tambaram PS,True,False,3
+376,IPC-SexualOffence,2026-01-31T20:30:00,17.332053,78.414959,"Sector 80, Zone 1",FIR narrative sample #635 for IPC-SexualOffence.,Tambaram PS,False,False,5
+376,IPC-SexualOffence,2024-11-23T02:08:00,17.317298,78.532102,"Sector 36, Zone 9",FIR narrative sample #636 for IPC-SexualOffence.,Mylapore PS,False,True,5
+376,IPC-SexualOffence,2026-03-20T23:07:00,17.332938,78.501383,"Sector 48, Zone 6",FIR narrative sample #637 for IPC-SexualOffence.,Anna Nagar PS,False,True,5
+376,IPC-SexualOffence,2024-04-16T07:31:00,13.1306,80.328622,"Sector 19, Zone 20",FIR narrative sample #638 for IPC-SexualOffence.,T. Nagar PS,False,False,5
+379,IPC-Theft,2024-11-12T13:49:00,12.929672,77.58503,"Sector 74, Zone 12",FIR narrative sample #639 for IPC-Theft.,Adyar PS,False,False,2
+302,IPC-Murder,2024-06-15T08:48:00,13.011104,80.264942,"Sector 96, Zone 18",FIR narrative sample #640 for IPC-Murder.,Anna Nagar PS,False,False,5
+420,IPC-Fraud,2025-03-11T21:45:00,12.967534,77.537824,"Sector 37, Zone 15",FIR narrative sample #641 for IPC-Fraud.,T. Nagar PS,False,False,3
+NDPS-21,NDPS-DrugPossession,2024-05-09T10:33:00,17.457939,78.422278,"Sector 56, Zone 20",FIR narrative sample #642 for NDPS-DrugPossession.,Velachery PS,False,False,4
+376,IPC-SexualOffence,2025-04-25T08:17:00,13.043555,80.284168,"Sector 96, Zone 8",FIR narrative sample #643 for IPC-SexualOffence.,Tambaram PS,False,False,5
+MV-184,Accident-RashDriving,2025-09-16T16:21:00,17.415445,78.435487,"Sector 2, Zone 3",FIR narrative sample #644 for Accident-RashDriving.,Tambaram PS,True,False,3
+302,IPC-Murder,2025-02-06T03:33:00,13.11238,80.246943,"Sector 25, Zone 2",FIR narrative sample #645 for IPC-Murder.,Velachery PS,False,False,5
+302,IPC-Murder,2024-07-08T02:03:00,17.410057,78.540373,"Sector 16, Zone 4",FIR narrative sample #646 for IPC-Murder.,Tambaram PS,False,False,5
+307,IPC-AttemptToMurder,2024-07-23T04:24:00,17.427217,78.510365,"Sector 15, Zone 6",FIR narrative sample #647 for IPC-AttemptToMurder.,Adyar PS,False,False,4
+376,IPC-SexualOffence,2025-06-06T14:42:00,13.104905,80.338331,"Sector 89, Zone 11",FIR narrative sample #648 for IPC-SexualOffence.,Anna Nagar PS,False,True,5
+376,IPC-SexualOffence,2025-10-20T02:17:00,13.063948,80.243925,"Sector 23, Zone 15",FIR narrative sample #649 for IPC-SexualOffence.,Velachery PS,False,True,5
+307,IPC-AttemptToMurder,2024-11-16T06:39:00,12.920151,77.593329,"Sector 28, Zone 20",FIR narrative sample #650 for IPC-AttemptToMurder.,Anna Nagar PS,False,False,4
+307,IPC-AttemptToMurder,2025-01-06T22:16:00,13.008278,80.201966,"Sector 3, Zone 16",FIR narrative sample #651 for IPC-AttemptToMurder.,Anna Nagar PS,False,False,4
+379,IPC-Theft,2024-06-04T20:00:00,13.109037,80.23333,"Sector 74, Zone 1",FIR narrative sample #652 for IPC-Theft.,Anna Nagar PS,False,False,2
+ARMS-25,ArmsAct-IllegalWeapon,2024-04-09T15:30:00,12.956226,77.631043,"Sector 70, Zone 8",FIR narrative sample #653 for ArmsAct-IllegalWeapon.,T. Nagar PS,False,False,4
+302,IPC-Murder,2025-03-06T22:52:00,12.910993,77.600249,"Sector 88, Zone 10",FIR narrative sample #654 for IPC-Murder.,Velachery PS,False,False,5
+NDPS-21,NDPS-DrugPossession,2026-02-06T20:41:00,13.061157,80.327235,"Sector 98, Zone 10",FIR narrative sample #655 for NDPS-DrugPossession.,Anna Nagar PS,False,False,4
+420,IPC-Fraud,2025-10-05T17:02:00,12.997317,77.562419,"Sector 81, Zone 12",FIR narrative sample #656 for IPC-Fraud.,T. Nagar PS,False,False,3
+NDPS-27,NDPS-DrugConsumption,2026-01-07T20:28:00,17.335314,78.412412,"Sector 31, Zone 16",FIR narrative sample #657 for NDPS-DrugConsumption.,Mylapore PS,False,True,3
+NDPS-21,NDPS-DrugPossession,2026-01-29T17:41:00,12.971549,77.668993,"Sector 5, Zone 11",FIR narrative sample #658 for NDPS-DrugPossession.,T. Nagar PS,False,False,4
+302,IPC-Murder,2025-04-23T23:02:00,12.91051,77.643737,"Sector 87, Zone 18",FIR narrative sample #659 for IPC-Murder.,Anna Nagar PS,False,False,5
+379,IPC-Theft,2024-08-18T07:59:00,13.0086,80.213354,"Sector 80, Zone 2",FIR narrative sample #660 for IPC-Theft.,Anna Nagar PS,False,False,2
+420,IPC-Fraud,2024-04-15T20:08:00,13.03026,80.198693,"Sector 59, Zone 20",FIR narrative sample #661 for IPC-Fraud.,T. Nagar PS,False,False,3
+379,IPC-Theft,2024-08-06T02:52:00,13.020969,80.285896,"Sector 26, Zone 14",FIR narrative sample #662 for IPC-Theft.,T. Nagar PS,False,False,2
+323,IPC-Assault,2024-05-09T12:20:00,13.158837,80.282855,"Sector 98, Zone 2",FIR narrative sample #663 for IPC-Assault.,Adyar PS,False,False,2
+MV-184,Accident-RashDriving,2025-10-08T10:04:00,13.046523,80.311908,"Sector 71, Zone 6",FIR narrative sample #664 for Accident-RashDriving.,Velachery PS,True,False,3
+NDPS-27,NDPS-DrugConsumption,2025-07-28T18:02:00,13.018695,80.326279,"Sector 3, Zone 16",FIR narrative sample #665 for NDPS-DrugConsumption.,Adyar PS,False,False,3
+307,IPC-AttemptToMurder,2026-03-28T00:11:00,13.115779,80.285697,"Sector 99, Zone 16",FIR narrative sample #666 for IPC-AttemptToMurder.,Tambaram PS,False,False,4
+379,IPC-Theft,2025-09-04T04:40:00,12.975294,77.580525,"Sector 89, Zone 2",FIR narrative sample #667 for IPC-Theft.,Mylapore PS,False,False,2
+MV-184,Accident-RashDriving,2025-10-01T22:31:00,17.457048,78.507051,"Sector 54, Zone 1",FIR narrative sample #668 for Accident-RashDriving.,Velachery PS,True,False,3
+ARMS-25,ArmsAct-IllegalWeapon,2025-08-05T06:07:00,17.461287,78.505727,"Sector 65, Zone 8",FIR narrative sample #669 for ArmsAct-IllegalWeapon.,Mylapore PS,False,False,4
+NDPS-27,NDPS-DrugConsumption,2024-07-01T21:13:00,12.900091,77.532629,"Sector 64, Zone 6",FIR narrative sample #670 for NDPS-DrugConsumption.,Anna Nagar PS,False,False,3
+379,IPC-Theft,2024-05-17T01:03:00,17.363271,78.440234,"Sector 98, Zone 15",FIR narrative sample #671 for IPC-Theft.,Mylapore PS,False,False,2
+302,IPC-Murder,2025-12-18T23:03:00,17.333142,78.532379,"Sector 10, Zone 8",FIR narrative sample #672 for IPC-Murder.,T. Nagar PS,False,False,5
+NDPS-27,NDPS-DrugConsumption,2024-08-05T18:20:00,12.9234,77.622896,"Sector 42, Zone 8",FIR narrative sample #673 for NDPS-DrugConsumption.,T. Nagar PS,False,False,3
+307,IPC-AttemptToMurder,2025-08-04T23:26:00,13.062785,80.226006,"Sector 7, Zone 14",FIR narrative sample #674 for IPC-AttemptToMurder.,Anna Nagar PS,False,False,4
+379,IPC-Theft,2025-08-25T19:29:00,13.064673,80.212525,"Sector 46, Zone 9",FIR narrative sample #675 for IPC-Theft.,Tambaram PS,False,False,2
+420,IPC-Fraud,2025-04-25T04:02:00,17.395987,78.451597,"Sector 59, Zone 14",FIR narrative sample #676 for IPC-Fraud.,Anna Nagar PS,False,False,3
+379,IPC-Theft,2025-04-17T07:56:00,12.988182,77.640928,"Sector 22, Zone 19",FIR narrative sample #677 for IPC-Theft.,Mylapore PS,False,False,2
+ARMS-25,ArmsAct-IllegalWeapon,2025-08-11T02:26:00,17.383274,78.566006,"Sector 36, Zone 1",FIR narrative sample #678 for ArmsAct-IllegalWeapon.,Anna Nagar PS,False,False,4
+NDPS-21,NDPS-DrugPossession,2025-07-25T07:20:00,12.984315,77.657292,"Sector 74, Zone 1",FIR narrative sample #679 for NDPS-DrugPossession.,Adyar PS,False,False,4
+NDPS-21,NDPS-DrugPossession,2026-02-17T01:30:00,17.427977,78.412079,"Sector 90, Zone 4",FIR narrative sample #680 for NDPS-DrugPossession.,Anna Nagar PS,False,False,4
+NDPS-27,NDPS-DrugConsumption,2024-11-12T07:05:00,17.425493,78.517606,"Sector 17, Zone 12",FIR narrative sample #681 for NDPS-DrugConsumption.,Adyar PS,False,False,3
+376,IPC-SexualOffence,2025-08-02T20:05:00,13.079465,80.239474,"Sector 96, Zone 19",FIR narrative sample #682 for IPC-SexualOffence.,Mylapore PS,False,False,5
+302,IPC-Murder,2024-12-24T14:49:00,13.142572,80.255558,"Sector 81, Zone 15",FIR narrative sample #683 for IPC-Murder.,Velachery PS,False,False,5
+302,IPC-Murder,2024-06-30T02:24:00,17.358265,78.411934,"Sector 90, Zone 20",FIR narrative sample #684 for IPC-Murder.,Velachery PS,False,False,5
+ARMS-25,ArmsAct-IllegalWeapon,2024-08-22T06:50:00,17.317953,78.547636,"Sector 66, Zone 12",FIR narrative sample #685 for ArmsAct-IllegalWeapon.,T. Nagar PS,False,False,4
+302,IPC-Murder,2025-12-11T12:23:00,12.990661,77.573091,"Sector 91, Zone 3",FIR narrative sample #686 for IPC-Murder.,Mylapore PS,False,False,5
+ARMS-25,ArmsAct-IllegalWeapon,2024-04-07T06:08:00,12.929781,77.532769,"Sector 90, Zone 7",FIR narrative sample #687 for ArmsAct-IllegalWeapon.,Mylapore PS,False,False,4
+420,IPC-Fraud,2025-05-10T11:57:00,12.972171,77.582269,"Sector 45, Zone 15",FIR narrative sample #688 for IPC-Fraud.,Velachery PS,False,True,3
+NDPS-27,NDPS-DrugConsumption,2024-11-06T16:53:00,13.077926,80.275805,"Sector 58, Zone 20",FIR narrative sample #689 for NDPS-DrugConsumption.,Velachery PS,False,False,3
+323,IPC-Assault,2024-05-14T22:51:00,13.032837,80.332137,"Sector 23, Zone 10",FIR narrative sample #690 for IPC-Assault.,Anna Nagar PS,False,False,2
+307,IPC-AttemptToMurder,2025-12-13T05:17:00,13.114233,80.270113,"Sector 81, Zone 1",FIR narrative sample #691 for IPC-AttemptToMurder.,Mylapore PS,False,False,4
+376,IPC-SexualOffence,2025-02-01T21:34:00,13.078525,80.257921,"Sector 38, Zone 7",FIR narrative sample #692 for IPC-SexualOffence.,T. Nagar PS,False,False,5
+307,IPC-AttemptToMurder,2026-03-12T07:53:00,17.408148,78.472571,"Sector 42, Zone 16",FIR narrative sample #693 for IPC-AttemptToMurder.,Tambaram PS,False,False,4
+MV-184,Accident-RashDriving,2024-05-22T22:33:00,17.376241,78.455353,"Sector 22, Zone 9",FIR narrative sample #694 for Accident-RashDriving.,Velachery PS,True,False,3
+420,IPC-Fraud,2024-11-24T11:18:00,13.026434,80.236201,"Sector 21, Zone 18",FIR narrative sample #695 for IPC-Fraud.,Mylapore PS,False,False,3
+376,IPC-SexualOffence,2025-09-29T05:53:00,17.415857,78.513317,"Sector 15, Zone 2",FIR narrative sample #696 for IPC-SexualOffence.,Adyar PS,False,True,5
+323,IPC-Assault,2024-08-23T04:28:00,12.950748,77.547425,"Sector 41, Zone 12",FIR narrative sample #697 for IPC-Assault.,Tambaram PS,False,False,2
+379,IPC-Theft,2025-03-18T14:34:00,13.088083,80.210138,"Sector 99, Zone 5",FIR narrative sample #698 for IPC-Theft.,Anna Nagar PS,False,True,2
+NDPS-27,NDPS-DrugConsumption,2025-05-11T04:00:00,17.392383,78.487885,"Sector 61, Zone 10",FIR narrative sample #699 for NDPS-DrugConsumption.,Velachery PS,False,False,3
+MV-184,Accident-RashDriving,2024-05-21T04:51:00,17.421567,78.554267,"Sector 94, Zone 16",FIR narrative sample #700 for Accident-RashDriving.,T. Nagar PS,True,False,3
+302,IPC-Murder,2025-11-12T21:35:00,13.051993,80.254961,"Sector 46, Zone 3",FIR narrative sample #701 for IPC-Murder.,Anna Nagar PS,False,False,5
+323,IPC-Assault,2026-02-06T19:41:00,13.096049,80.226243,"Sector 26, Zone 1",FIR narrative sample #702 for IPC-Assault.,Velachery PS,False,False,2
+307,IPC-AttemptToMurder,2024-09-29T14:43:00,17.45822,78.562834,"Sector 41, Zone 20",FIR narrative sample #703 for IPC-AttemptToMurder.,Anna Nagar PS,False,False,4
+MV-184,Accident-RashDriving,2024-10-27T01:58:00,17.36277,78.430371,"Sector 50, Zone 12",FIR narrative sample #704 for Accident-RashDriving.,Velachery PS,True,False,3
+302,IPC-Murder,2025-06-16T11:22:00,13.048004,77.654488,"Sector 57, Zone 14",FIR narrative sample #705 for IPC-Murder.,Tambaram PS,False,False,5
+NDPS-27,NDPS-DrugConsumption,2025-06-12T05:51:00,17.460258,78.474513,"Sector 76, Zone 20",FIR narrative sample #706 for NDPS-DrugConsumption.,Adyar PS,False,False,3
+307,IPC-AttemptToMurder,2025-11-07T06:19:00,13.049741,77.598648,"Sector 97, Zone 13",FIR narrative sample #707 for IPC-AttemptToMurder.,Mylapore PS,False,False,4
+307,IPC-AttemptToMurder,2026-03-28T13:40:00,12.957922,77.60353,"Sector 26, Zone 6",FIR narrative sample #708 for IPC-AttemptToMurder.,Adyar PS,False,False,4
+NDPS-21,NDPS-DrugPossession,2025-06-11T17:31:00,13.134348,80.239019,"Sector 72, Zone 15",FIR narrative sample #709 for NDPS-DrugPossession.,Anna Nagar PS,False,False,4
+420,IPC-Fraud,2026-03-07T00:09:00,12.939627,77.617089,"Sector 84, Zone 10",FIR narrative sample #710 for IPC-Fraud.,T. Nagar PS,False,False,3
+NDPS-21,NDPS-DrugPossession,2025-10-02T15:58:00,17.408166,78.411251,"Sector 9, Zone 20",FIR narrative sample #711 for NDPS-DrugPossession.,Anna Nagar PS,False,False,4
+323,IPC-Assault,2024-08-16T15:36:00,13.030535,77.615079,"Sector 16, Zone 12",FIR narrative sample #712 for IPC-Assault.,Tambaram PS,False,False,2
+ARMS-25,ArmsAct-IllegalWeapon,2024-08-22T00:54:00,12.917656,77.523962,"Sector 18, Zone 12",FIR narrative sample #713 for ArmsAct-IllegalWeapon.,Tambaram PS,False,False,4
+379,IPC-Theft,2026-02-08T08:23:00,12.9934,77.667425,"Sector 68, Zone 3",FIR narrative sample #714 for IPC-Theft.,Velachery PS,False,True,2
+ARMS-25,ArmsAct-IllegalWeapon,2025-09-17T20:11:00,13.098502,80.217442,"Sector 88, Zone 10",FIR narrative sample #715 for ArmsAct-IllegalWeapon.,Velachery PS,False,False,4
+376,IPC-SexualOffence,2024-05-02T22:44:00,12.906933,77.607407,"Sector 18, Zone 17",FIR narrative sample #716 for IPC-SexualOffence.,T. Nagar PS,False,False,5
+376,IPC-SexualOffence,2025-03-18T15:26:00,13.038945,77.540685,"Sector 29, Zone 7",FIR narrative sample #717 for IPC-SexualOffence.,Mylapore PS,False,True,5
+ARMS-25,ArmsAct-IllegalWeapon,2024-07-14T22:53:00,17.440371,78.520708,"Sector 54, Zone 15",FIR narrative sample #718 for ArmsAct-IllegalWeapon.,T. Nagar PS,False,False,4
+307,IPC-AttemptToMurder,2025-12-05T04:59:00,13.079423,80.240552,"Sector 77, Zone 17",FIR narrative sample #719 for IPC-AttemptToMurder.,Anna Nagar PS,False,False,4
+323,IPC-Assault,2025-10-09T22:19:00,13.121814,80.209676,"Sector 19, Zone 8",FIR narrative sample #720 for IPC-Assault.,Tambaram PS,False,False,2
+376,IPC-SexualOffence,2025-11-26T06:08:00,13.070669,80.312784,"Sector 62, Zone 14",FIR narrative sample #721 for IPC-SexualOffence.,T. Nagar PS,False,True,5
+302,IPC-Murder,2025-09-14T03:02:00,17.387157,78.416182,"Sector 6, Zone 3",FIR narrative sample #722 for IPC-Murder.,Velachery PS,False,False,5
+376,IPC-SexualOffence,2024-05-20T00:48:00,13.127879,80.337916,"Sector 24, Zone 12",FIR narrative sample #723 for IPC-SexualOffence.,Adyar PS,False,True,5
+302,IPC-Murder,2026-01-01T04:54:00,17.455695,78.558507,"Sector 65, Zone 20",FIR narrative sample #724 for IPC-Murder.,Adyar PS,False,False,5
+420,IPC-Fraud,2024-11-02T18:04:00,13.133834,80.312819,"Sector 25, Zone 10",FIR narrative sample #725 for IPC-Fraud.,Tambaram PS,False,False,3
+379,IPC-Theft,2024-09-30T00:46:00,13.150577,80.337976,"Sector 47, Zone 19",FIR narrative sample #726 for IPC-Theft.,Anna Nagar PS,False,False,2
+379,IPC-Theft,2025-01-08T21:06:00,13.136259,80.347708,"Sector 30, Zone 14",FIR narrative sample #727 for IPC-Theft.,Mylapore PS,False,False,2
+307,IPC-AttemptToMurder,2025-05-17T03:29:00,13.085856,80.270031,"Sector 72, Zone 2",FIR narrative sample #728 for IPC-AttemptToMurder.,Velachery PS,False,False,4
+307,IPC-AttemptToMurder,2025-05-03T15:07:00,12.936978,77.610662,"Sector 29, Zone 18",FIR narrative sample #729 for IPC-AttemptToMurder.,Anna Nagar PS,False,False,4
+NDPS-21,NDPS-DrugPossession,2025-06-10T13:12:00,13.145861,80.31909,"Sector 23, Zone 1",FIR narrative sample #730 for NDPS-DrugPossession.,Velachery PS,False,False,4
+NDPS-27,NDPS-DrugConsumption,2024-05-15T03:25:00,12.975226,77.622843,"Sector 52, Zone 19",FIR narrative sample #731 for NDPS-DrugConsumption.,Anna Nagar PS,False,False,3
+307,IPC-AttemptToMurder,2025-10-13T02:23:00,13.056881,80.285894,"Sector 30, Zone 14",FIR narrative sample #732 for IPC-AttemptToMurder.,T. Nagar PS,False,False,4
+NDPS-27,NDPS-DrugConsumption,2025-06-22T22:49:00,17.399984,78.527708,"Sector 46, Zone 16",FIR narrative sample #733 for NDPS-DrugConsumption.,Anna Nagar PS,False,False,3
+MV-184,Accident-RashDriving,2025-02-13T15:32:00,12.91518,77.587342,"Sector 64, Zone 8",FIR narrative sample #734 for Accident-RashDriving.,Anna Nagar PS,True,False,3
+379,IPC-Theft,2026-03-04T03:47:00,13.13555,80.270402,"Sector 49, Zone 20",FIR narrative sample #735 for IPC-Theft.,Adyar PS,False,True,2
+323,IPC-Assault,2025-10-29T09:39:00,17.320413,78.418943,"Sector 60, Zone 7",FIR narrative sample #736 for IPC-Assault.,Anna Nagar PS,False,False,2
+376,IPC-SexualOffence,2024-05-26T15:31:00,17.346866,78.461679,"Sector 3, Zone 2",FIR narrative sample #737 for IPC-SexualOffence.,Mylapore PS,False,False,5
+NDPS-21,NDPS-DrugPossession,2025-12-03T12:28:00,13.02806,77.585409,"Sector 72, Zone 10",FIR narrative sample #738 for NDPS-DrugPossession.,Adyar PS,False,True,4
+379,IPC-Theft,2024-11-16T13:08:00,13.006116,77.592593,"Sector 63, Zone 18",FIR narrative sample #739 for IPC-Theft.,Tambaram PS,False,False,2
+ARMS-25,ArmsAct-IllegalWeapon,2024-08-26T15:30:00,17.441696,78.48777,"Sector 76, Zone 13",FIR narrative sample #740 for ArmsAct-IllegalWeapon.,Anna Nagar PS,False,False,4
+MV-184,Accident-RashDriving,2024-05-11T11:49:00,12.942877,77.519104,"Sector 45, Zone 19",FIR narrative sample #741 for Accident-RashDriving.,Velachery PS,True,True,3
+302,IPC-Murder,2024-07-02T10:24:00,13.071204,80.349411,"Sector 85, Zone 8",FIR narrative sample #742 for IPC-Murder.,T. Nagar PS,False,False,5
+420,IPC-Fraud,2025-08-06T20:19:00,17.318591,78.516779,"Sector 44, Zone 6",FIR narrative sample #743 for IPC-Fraud.,T. Nagar PS,False,False,3
+302,IPC-Murder,2024-09-29T10:02:00,12.996843,77.582196,"Sector 35, Zone 1",FIR narrative sample #744 for IPC-Murder.,Anna Nagar PS,False,False,5
+NDPS-27,NDPS-DrugConsumption,2024-08-09T00:20:00,12.982857,77.566187,"Sector 13, Zone 7",FIR narrative sample #745 for NDPS-DrugConsumption.,Anna Nagar PS,False,False,3
+323,IPC-Assault,2024-11-11T16:51:00,17.359326,78.505072,"Sector 26, Zone 16",FIR narrative sample #746 for IPC-Assault.,Anna Nagar PS,False,False,2
+307,IPC-AttemptToMurder,2024-10-02T06:18:00,12.899205,77.673996,"Sector 80, Zone 3",FIR narrative sample #747 for IPC-AttemptToMurder.,Adyar PS,False,False,4
+MV-184,Accident-RashDriving,2025-12-27T18:21:00,12.902363,77.64279,"Sector 45, Zone 3",FIR narrative sample #748 for Accident-RashDriving.,Adyar PS,True,False,3
+376,IPC-SexualOffence,2024-11-03T09:27:00,17.391392,78.438712,"Sector 66, Zone 15",FIR narrative sample #749 for IPC-SexualOffence.,Mylapore PS,False,False,5
+ARMS-25,ArmsAct-IllegalWeapon,2025-10-01T00:40:00,17.387596,78.436546,"Sector 96, Zone 15",FIR narrative sample #750 for ArmsAct-IllegalWeapon.,Tambaram PS,False,False,4
+376,IPC-SexualOffence,2024-06-19T17:51:00,17.441444,78.551794,"Sector 81, Zone 2",FIR narrative sample #751 for IPC-SexualOffence.,Tambaram PS,False,False,5
+ARMS-25,ArmsAct-IllegalWeapon,2025-09-10T11:29:00,13.04116,80.310129,"Sector 53, Zone 11",FIR narrative sample #752 for ArmsAct-IllegalWeapon.,Anna Nagar PS,False,False,4
+307,IPC-AttemptToMurder,2024-06-23T06:54:00,12.93431,77.560527,"Sector 77, Zone 8",FIR narrative sample #753 for IPC-AttemptToMurder.,Tambaram PS,False,False,4
+NDPS-21,NDPS-DrugPossession,2025-08-02T03:09:00,13.007133,80.318227,"Sector 72, Zone 14",FIR narrative sample #754 for NDPS-DrugPossession.,Anna Nagar PS,False,False,4
+NDPS-21,NDPS-DrugPossession,2024-06-10T01:12:00,13.046334,80.195363,"Sector 85, Zone 18",FIR narrative sample #755 for NDPS-DrugPossession.,Velachery PS,False,False,4
+379,IPC-Theft,2024-06-13T01:46:00,13.016757,77.523452,"Sector 78, Zone 10",FIR narrative sample #756 for IPC-Theft.,Velachery PS,False,False,2
+307,IPC-AttemptToMurder,2025-02-11T11:42:00,17.446715,78.470203,"Sector 31, Zone 4",FIR narrative sample #757 for IPC-AttemptToMurder.,Adyar PS,False,False,4
+MV-184,Accident-RashDriving,2024-11-07T03:33:00,17.437637,78.558648,"Sector 64, Zone 3",FIR narrative sample #758 for Accident-RashDriving.,Velachery PS,True,False,3
+420,IPC-Fraud,2024-07-28T03:49:00,12.944286,77.608092,"Sector 96, Zone 8",FIR narrative sample #759 for IPC-Fraud.,Tambaram PS,False,False,3
+NDPS-21,NDPS-DrugPossession,2025-08-23T04:06:00,13.036957,80.234628,"Sector 8, Zone 16",FIR narrative sample #760 for NDPS-DrugPossession.,Mylapore PS,False,False,4
+ARMS-25,ArmsAct-IllegalWeapon,2025-03-16T22:07:00,12.978919,77.590577,"Sector 19, Zone 12",FIR narrative sample #761 for ArmsAct-IllegalWeapon.,Velachery PS,False,False,4
+NDPS-27,NDPS-DrugConsumption,2025-03-23T09:01:00,17.459689,78.50363,"Sector 7, Zone 8",FIR narrative sample #762 for NDPS-DrugConsumption.,Tambaram PS,False,False,3
+376,IPC-SexualOffence,2024-09-15T12:19:00,17.458357,78.464757,"Sector 69, Zone 8",FIR narrative sample #763 for IPC-SexualOffence.,T. Nagar PS,False,False,5
+NDPS-27,NDPS-DrugConsumption,2025-03-02T00:58:00,13.040001,77.661468,"Sector 39, Zone 7",FIR narrative sample #764 for NDPS-DrugConsumption.,Adyar PS,False,False,3
+379,IPC-Theft,2025-01-09T20:20:00,17.370006,78.412121,"Sector 61, Zone 14",FIR narrative sample #765 for IPC-Theft.,Anna Nagar PS,False,False,2
+323,IPC-Assault,2025-01-26T03:52:00,13.114457,80.271714,"Sector 94, Zone 18",FIR narrative sample #766 for IPC-Assault.,Mylapore PS,False,False,2
+323,IPC-Assault,2024-12-25T22:01:00,13.10532,80.220098,"Sector 18, Zone 1",FIR narrative sample #767 for IPC-Assault.,Tambaram PS,False,False,2
+NDPS-21,NDPS-DrugPossession,2025-09-11T20:19:00,12.983729,77.532333,"Sector 99, Zone 5",FIR narrative sample #768 for NDPS-DrugPossession.,Tambaram PS,False,False,4
+MV-184,Accident-RashDriving,2024-05-01T13:50:00,12.963838,77.654361,"Sector 88, Zone 19",FIR narrative sample #769 for Accident-RashDriving.,Adyar PS,True,False,3
+323,IPC-Assault,2025-06-19T06:05:00,12.950416,77.577559,"Sector 29, Zone 1",FIR narrative sample #770 for IPC-Assault.,Mylapore PS,False,False,2
+302,IPC-Murder,2024-09-09T20:39:00,17.341593,78.420936,"Sector 90, Zone 6",FIR narrative sample #771 for IPC-Murder.,Velachery PS,False,False,5
+302,IPC-Murder,2025-02-17T19:27:00,17.346625,78.42095,"Sector 16, Zone 1",FIR narrative sample #772 for IPC-Murder.,Mylapore PS,False,False,5
+ARMS-25,ArmsAct-IllegalWeapon,2025-01-13T14:52:00,17.384064,78.442617,"Sector 37, Zone 16",FIR narrative sample #773 for ArmsAct-IllegalWeapon.,Velachery PS,False,False,4
+NDPS-21,NDPS-DrugPossession,2025-11-21T13:54:00,13.098713,80.349933,"Sector 25, Zone 14",FIR narrative sample #774 for NDPS-DrugPossession.,Tambaram PS,False,False,4
+379,IPC-Theft,2025-02-09T04:01:00,13.047781,77.552278,"Sector 48, Zone 19",FIR narrative sample #775 for IPC-Theft.,Adyar PS,False,False,2
+NDPS-27,NDPS-DrugConsumption,2026-01-06T00:30:00,13.142131,80.346604,"Sector 92, Zone 13",FIR narrative sample #776 for NDPS-DrugConsumption.,Adyar PS,False,False,3
+NDPS-21,NDPS-DrugPossession,2024-07-31T08:04:00,13.09182,80.199038,"Sector 46, Zone 20",FIR narrative sample #777 for NDPS-DrugPossession.,Anna Nagar PS,False,False,4
+MV-184,Accident-RashDriving,2024-04-07T23:51:00,13.003558,80.271427,"Sector 86, Zone 12",FIR narrative sample #778 for Accident-RashDriving.,Anna Nagar PS,True,False,3
+379,IPC-Theft,2024-09-08T01:37:00,13.044347,80.271299,"Sector 17, Zone 3",FIR narrative sample #779 for IPC-Theft.,Anna Nagar PS,False,False,2
+323,IPC-Assault,2024-04-06T16:27:00,13.044365,80.240823,"Sector 36, Zone 12",FIR narrative sample #780 for IPC-Assault.,Anna Nagar PS,False,False,2
+NDPS-21,NDPS-DrugPossession,2025-06-18T08:39:00,12.974316,77.584324,"Sector 63, Zone 5",FIR narrative sample #781 for NDPS-DrugPossession.,Tambaram PS,False,False,4
+ARMS-25,ArmsAct-IllegalWeapon,2024-05-30T20:51:00,12.900116,77.538379,"Sector 61, Zone 9",FIR narrative sample #782 for ArmsAct-IllegalWeapon.,T. Nagar PS,False,False,4
+379,IPC-Theft,2024-04-11T14:27:00,13.161932,80.339053,"Sector 91, Zone 18",FIR narrative sample #783 for IPC-Theft.,Velachery PS,False,True,2
+NDPS-27,NDPS-DrugConsumption,2024-12-21T15:07:00,17.443701,78.426485,"Sector 24, Zone 6",FIR narrative sample #784 for NDPS-DrugConsumption.,Velachery PS,False,False,3
+ARMS-25,ArmsAct-IllegalWeapon,2025-06-28T18:57:00,17.398708,78.500068,"Sector 99, Zone 19",FIR narrative sample #785 for ArmsAct-IllegalWeapon.,Mylapore PS,False,False,4
+379,IPC-Theft,2025-02-01T02:15:00,12.999905,77.656579,"Sector 88, Zone 4",FIR narrative sample #786 for IPC-Theft.,Tambaram PS,False,True,2
+NDPS-21,NDPS-DrugPossession,2025-03-17T18:59:00,13.136616,80.215304,"Sector 85, Zone 16",FIR narrative sample #787 for NDPS-DrugPossession.,Tambaram PS,False,False,4
+NDPS-27,NDPS-DrugConsumption,2024-06-29T08:38:00,17.305929,78.561863,"Sector 42, Zone 19",FIR narrative sample #788 for NDPS-DrugConsumption.,Anna Nagar PS,False,False,3
+379,IPC-Theft,2025-08-30T01:51:00,17.350273,78.534404,"Sector 78, Zone 13",FIR narrative sample #789 for IPC-Theft.,Mylapore PS,False,False,2
+307,IPC-AttemptToMurder,2025-02-19T08:11:00,13.157108,80.329182,"Sector 21, Zone 13",FIR narrative sample #790 for IPC-AttemptToMurder.,Adyar PS,False,False,4
+NDPS-21,NDPS-DrugPossession,2025-06-16T20:48:00,17.329662,78.454467,"Sector 40, Zone 20",FIR narrative sample #791 for NDPS-DrugPossession.,Tambaram PS,False,False,4
+379,IPC-Theft,2025-04-01T21:06:00,12.973625,77.59294,"Sector 35, Zone 19",FIR narrative sample #792 for IPC-Theft.,Anna Nagar PS,False,False,2
+MV-184,Accident-RashDriving,2025-01-25T02:48:00,13.021359,77.612819,"Sector 12, Zone 2",FIR narrative sample #793 for Accident-RashDriving.,Anna Nagar PS,True,False,3
+ARMS-25,ArmsAct-IllegalWeapon,2025-04-19T14:43:00,13.106318,80.304882,"Sector 81, Zone 17",FIR narrative sample #794 for ArmsAct-IllegalWeapon.,Mylapore PS,False,False,4
+307,IPC-AttemptToMurder,2025-06-10T14:27:00,13.147853,80.267118,"Sector 88, Zone 10",FIR narrative sample #795 for IPC-AttemptToMurder.,Adyar PS,False,False,4
+420,IPC-Fraud,2024-10-15T13:18:00,17.312637,78.418945,"Sector 66, Zone 14",FIR narrative sample #796 for IPC-Fraud.,T. Nagar PS,False,True,3
+NDPS-21,NDPS-DrugPossession,2025-12-28T14:42:00,17.395957,78.447241,"Sector 99, Zone 17",FIR narrative sample #797 for NDPS-DrugPossession.,T. Nagar PS,False,False,4
+302,IPC-Murder,2025-12-08T23:42:00,12.920328,77.543753,"Sector 54, Zone 10",FIR narrative sample #798 for IPC-Murder.,T. Nagar PS,False,False,5
+323,IPC-Assault,2024-08-10T23:29:00,17.376992,78.535953,"Sector 28, Zone 6",FIR narrative sample #799 for IPC-Assault.,Adyar PS,False,False,2
+307,IPC-AttemptToMurder,2024-07-24T08:55:00,17.322013,78.4922,"Sector 2, Zone 6",FIR narrative sample #800 for IPC-AttemptToMurder.,T. Nagar PS,False,True,4
+NDPS-27,NDPS-DrugConsumption,2024-12-18T22:25:00,17.459529,78.503002,"Sector 79, Zone 12",FIR narrative sample #801 for NDPS-DrugConsumption.,Mylapore PS,False,False,3
+NDPS-21,NDPS-DrugPossession,2025-05-29T02:08:00,13.00492,80.208606,"Sector 4, Zone 7",FIR narrative sample #802 for NDPS-DrugPossession.,Adyar PS,False,True,4
+NDPS-27,NDPS-DrugConsumption,2024-06-08T04:41:00,13.072426,80.290869,"Sector 12, Zone 10",FIR narrative sample #803 for NDPS-DrugConsumption.,Adyar PS,False,False,3
+NDPS-27,NDPS-DrugConsumption,2025-11-03T15:27:00,13.021333,80.335086,"Sector 63, Zone 16",FIR narrative sample #804 for NDPS-DrugConsumption.,Anna Nagar PS,False,False,3
+302,IPC-Murder,2024-12-29T18:15:00,13.049873,80.323412,"Sector 2, Zone 4",FIR narrative sample #805 for IPC-Murder.,Velachery PS,False,False,5
+NDPS-21,NDPS-DrugPossession,2025-02-02T15:47:00,17.400334,78.495389,"Sector 52, Zone 16",FIR narrative sample #806 for NDPS-DrugPossession.,Anna Nagar PS,False,False,4
+ARMS-25,ArmsAct-IllegalWeapon,2024-08-06T23:39:00,17.449812,78.545521,"Sector 68, Zone 1",FIR narrative sample #807 for ArmsAct-IllegalWeapon.,T. Nagar PS,False,False,4
+NDPS-21,NDPS-DrugPossession,2024-08-21T10:35:00,13.045556,80.294428,"Sector 64, Zone 20",FIR narrative sample #808 for NDPS-DrugPossession.,T. Nagar PS,False,False,4
+323,IPC-Assault,2024-12-30T22:27:00,13.028513,80.306893,"Sector 30, Zone 17",FIR narrative sample #809 for IPC-Assault.,Anna Nagar PS,False,False,2
+420,IPC-Fraud,2024-08-10T21:21:00,17.441553,78.521132,"Sector 93, Zone 13",FIR narrative sample #810 for IPC-Fraud.,Velachery PS,False,False,3
+NDPS-21,NDPS-DrugPossession,2024-05-14T20:47:00,13.018956,77.642561,"Sector 27, Zone 10",FIR narrative sample #811 for NDPS-DrugPossession.,Mylapore PS,False,False,4
+307,IPC-AttemptToMurder,2024-05-20T15:08:00,13.034617,80.28762,"Sector 64, Zone 10",FIR narrative sample #812 for IPC-AttemptToMurder.,Anna Nagar PS,False,False,4
+420,IPC-Fraud,2025-09-01T17:03:00,13.060106,80.232429,"Sector 65, Zone 2",FIR narrative sample #813 for IPC-Fraud.,Adyar PS,False,False,3
+307,IPC-AttemptToMurder,2025-04-23T13:07:00,17.34127,78.496617,"Sector 46, Zone 2",FIR narrative sample #814 for IPC-AttemptToMurder.,Velachery PS,False,False,4
+ARMS-25,ArmsAct-IllegalWeapon,2025-07-04T04:54:00,17.444791,78.503386,"Sector 57, Zone 15",FIR narrative sample #815 for ArmsAct-IllegalWeapon.,T. Nagar PS,False,False,4
+307,IPC-AttemptToMurder,2025-12-16T19:39:00,13.134478,80.197415,"Sector 16, Zone 7",FIR narrative sample #816 for IPC-AttemptToMurder.,Tambaram PS,False,False,4
+323,IPC-Assault,2025-10-25T23:18:00,17.375643,78.487643,"Sector 20, Zone 12",FIR narrative sample #817 for IPC-Assault.,T. Nagar PS,False,False,2
+323,IPC-Assault,2025-11-13T03:54:00,13.072957,80.25722,"Sector 61, Zone 11",FIR narrative sample #818 for IPC-Assault.,Adyar PS,False,False,2
+376,IPC-SexualOffence,2024-11-02T05:05:00,12.95119,77.635375,"Sector 32, Zone 5",FIR narrative sample #819 for IPC-SexualOffence.,Tambaram PS,False,False,5
+ARMS-25,ArmsAct-IllegalWeapon,2025-01-27T07:08:00,12.957746,77.580089,"Sector 88, Zone 12",FIR narrative sample #820 for ArmsAct-IllegalWeapon.,Mylapore PS,False,False,4
+302,IPC-Murder,2025-01-05T04:49:00,13.11752,80.273476,"Sector 41, Zone 13",FIR narrative sample #821 for IPC-Murder.,Velachery PS,False,False,5
+379,IPC-Theft,2025-01-14T01:25:00,13.108328,80.293335,"Sector 81, Zone 17",FIR narrative sample #822 for IPC-Theft.,T. Nagar PS,False,False,2
+376,IPC-SexualOffence,2025-01-29T12:56:00,17.417126,78.546467,"Sector 45, Zone 1",FIR narrative sample #823 for IPC-SexualOffence.,Velachery PS,False,False,5
+376,IPC-SexualOffence,2024-10-10T19:58:00,13.114747,80.26209,"Sector 80, Zone 20",FIR narrative sample #824 for IPC-SexualOffence.,Mylapore PS,False,True,5
+NDPS-27,NDPS-DrugConsumption,2024-04-19T11:56:00,17.369721,78.438267,"Sector 69, Zone 11",FIR narrative sample #825 for NDPS-DrugConsumption.,T. Nagar PS,False,False,3
+NDPS-21,NDPS-DrugPossession,2025-11-25T16:34:00,12.925798,77.596467,"Sector 97, Zone 6",FIR narrative sample #826 for NDPS-DrugPossession.,Velachery PS,False,False,4
+302,IPC-Murder,2026-03-06T17:37:00,12.930214,77.638465,"Sector 15, Zone 2",FIR narrative sample #827 for IPC-Murder.,Mylapore PS,False,False,5
+323,IPC-Assault,2025-07-12T20:32:00,12.91141,77.63565,"Sector 39, Zone 19",FIR narrative sample #828 for IPC-Assault.,Anna Nagar PS,False,False,2
+302,IPC-Murder,2024-12-25T10:15:00,17.46324,78.497196,"Sector 86, Zone 18",FIR narrative sample #829 for IPC-Murder.,Tambaram PS,False,False,5
+MV-184,Accident-RashDriving,2025-08-07T11:19:00,12.998308,77.645013,"Sector 92, Zone 13",FIR narrative sample #830 for Accident-RashDriving.,Adyar PS,True,False,3
+ARMS-25,ArmsAct-IllegalWeapon,2025-07-24T03:20:00,17.398179,78.538355,"Sector 19, Zone 14",FIR narrative sample #831 for ArmsAct-IllegalWeapon.,T. Nagar PS,False,False,4
+NDPS-21,NDPS-DrugPossession,2026-01-10T02:03:00,13.033761,77.5908,"Sector 87, Zone 17",FIR narrative sample #832 for NDPS-DrugPossession.,Velachery PS,False,False,4
+NDPS-21,NDPS-DrugPossession,2024-08-09T17:33:00,13.031122,77.608089,"Sector 89, Zone 16",FIR narrative sample #833 for NDPS-DrugPossession.,Anna Nagar PS,False,False,4
+NDPS-21,NDPS-DrugPossession,2025-10-19T04:32:00,13.080262,80.263934,"Sector 68, Zone 4",FIR narrative sample #834 for NDPS-DrugPossession.,Mylapore PS,False,False,4
+420,IPC-Fraud,2024-12-23T15:02:00,17.330094,78.496144,"Sector 78, Zone 14",FIR narrative sample #835 for IPC-Fraud.,T. Nagar PS,False,False,3
+307,IPC-AttemptToMurder,2025-12-01T11:36:00,12.898045,77.539129,"Sector 39, Zone 10",FIR narrative sample #836 for IPC-AttemptToMurder.,Velachery PS,False,False,4
+NDPS-27,NDPS-DrugConsumption,2026-03-06T04:09:00,17.372481,78.556591,"Sector 28, Zone 6",FIR narrative sample #837 for NDPS-DrugConsumption.,Velachery PS,False,False,3
+NDPS-27,NDPS-DrugConsumption,2026-04-01T03:35:00,12.90241,77.521749,"Sector 73, Zone 15",FIR narrative sample #838 for NDPS-DrugConsumption.,Velachery PS,False,False,3
+323,IPC-Assault,2025-03-13T15:53:00,17.438389,78.42795,"Sector 59, Zone 15",FIR narrative sample #839 for IPC-Assault.,Tambaram PS,False,False,2
+NDPS-27,NDPS-DrugConsumption,2025-11-02T23:20:00,13.13067,80.29702,"Sector 51, Zone 11",FIR narrative sample #840 for NDPS-DrugConsumption.,Adyar PS,False,False,3
+ARMS-25,ArmsAct-IllegalWeapon,2026-02-16T21:56:00,13.009346,77.617947,"Sector 4, Zone 19",FIR narrative sample #841 for ArmsAct-IllegalWeapon.,Tambaram PS,False,False,4
+376,IPC-SexualOffence,2024-09-06T20:07:00,17.394496,78.437488,"Sector 97, Zone 2",FIR narrative sample #842 for IPC-SexualOffence.,Mylapore PS,False,False,5
+MV-184,Accident-RashDriving,2024-10-16T06:48:00,12.972022,77.517586,"Sector 24, Zone 1",FIR narrative sample #843 for Accident-RashDriving.,Mylapore PS,True,False,3
+376,IPC-SexualOffence,2025-09-05T07:53:00,17.439227,78.499428,"Sector 78, Zone 11",FIR narrative sample #844 for IPC-SexualOffence.,Mylapore PS,False,True,5
+NDPS-21,NDPS-DrugPossession,2024-08-08T01:31:00,13.057093,80.219581,"Sector 41, Zone 13",FIR narrative sample #845 for NDPS-DrugPossession.,Mylapore PS,False,True,4
+376,IPC-SexualOffence,2025-12-31T03:06:00,17.331905,78.429745,"Sector 20, Zone 10",FIR narrative sample #846 for IPC-SexualOffence.,T. Nagar PS,False,True,5
+NDPS-21,NDPS-DrugPossession,2024-05-09T05:03:00,17.45878,78.435733,"Sector 50, Zone 4",FIR narrative sample #847 for NDPS-DrugPossession.,Velachery PS,False,False,4
+323,IPC-Assault,2025-11-09T13:57:00,12.932869,77.665252,"Sector 26, Zone 8",FIR narrative sample #848 for IPC-Assault.,T. Nagar PS,False,False,2
+MV-184,Accident-RashDriving,2024-08-11T07:31:00,17.425382,78.468308,"Sector 41, Zone 15",FIR narrative sample #849 for Accident-RashDriving.,T. Nagar PS,True,False,3
+ARMS-25,ArmsAct-IllegalWeapon,2025-02-11T02:30:00,13.067899,80.228098,"Sector 71, Zone 19",FIR narrative sample #850 for ArmsAct-IllegalWeapon.,Velachery PS,False,False,4
+307,IPC-AttemptToMurder,2025-07-25T17:41:00,13.051438,80.255779,"Sector 65, Zone 7",FIR narrative sample #851 for IPC-AttemptToMurder.,Tambaram PS,False,False,4
+379,IPC-Theft,2025-03-17T17:10:00,13.088706,80.2585,"Sector 6, Zone 1",FIR narrative sample #852 for IPC-Theft.,Anna Nagar PS,False,False,2
+NDPS-27,NDPS-DrugConsumption,2024-07-07T09:41:00,13.002787,80.340061,"Sector 33, Zone 13",FIR narrative sample #853 for NDPS-DrugConsumption.,Mylapore PS,False,False,3
+323,IPC-Assault,2024-06-25T06:37:00,17.35001,78.432527,"Sector 39, Zone 3",FIR narrative sample #854 for IPC-Assault.,T. Nagar PS,False,False,2
+NDPS-21,NDPS-DrugPossession,2024-04-18T03:53:00,13.118712,80.350511,"Sector 79, Zone 17",FIR narrative sample #855 for NDPS-DrugPossession.,Adyar PS,False,False,4
+323,IPC-Assault,2024-05-05T10:40:00,13.048342,77.627841,"Sector 42, Zone 11",FIR narrative sample #856 for IPC-Assault.,Tambaram PS,False,False,2
+420,IPC-Fraud,2024-12-19T19:21:00,13.148943,80.212096,"Sector 61, Zone 1",FIR narrative sample #857 for IPC-Fraud.,Mylapore PS,False,False,3
+302,IPC-Murder,2024-05-15T05:26:00,17.448243,78.519228,"Sector 11, Zone 3",FIR narrative sample #858 for IPC-Murder.,Mylapore PS,False,False,5
+ARMS-25,ArmsAct-IllegalWeapon,2026-03-03T21:28:00,17.324746,78.562226,"Sector 46, Zone 13",FIR narrative sample #859 for ArmsAct-IllegalWeapon.,Mylapore PS,False,False,4
+379,IPC-Theft,2024-04-20T00:07:00,12.950877,77.545479,"Sector 3, Zone 9",FIR narrative sample #860 for IPC-Theft.,Tambaram PS,False,True,2
+323,IPC-Assault,2025-09-19T02:52:00,17.405038,78.536046,"Sector 47, Zone 2",FIR narrative sample #861 for IPC-Assault.,Anna Nagar PS,False,False,2
+376,IPC-SexualOffence,2024-11-15T22:45:00,17.338454,78.438074,"Sector 15, Zone 9",FIR narrative sample #862 for IPC-SexualOffence.,Anna Nagar PS,False,False,5
+MV-184,Accident-RashDriving,2024-11-07T15:10:00,17.336003,78.52491,"Sector 73, Zone 6",FIR narrative sample #863 for Accident-RashDriving.,Mylapore PS,True,False,3
+307,IPC-AttemptToMurder,2024-08-09T04:47:00,13.023089,80.34007,"Sector 94, Zone 9",FIR narrative sample #864 for IPC-AttemptToMurder.,Mylapore PS,False,False,4
+420,IPC-Fraud,2024-05-09T00:44:00,17.390271,78.447167,"Sector 1, Zone 14",FIR narrative sample #865 for IPC-Fraud.,Anna Nagar PS,False,False,3
+302,IPC-Murder,2025-05-08T13:54:00,12.935446,77.623428,"Sector 67, Zone 2",FIR narrative sample #866 for IPC-Murder.,Velachery PS,False,False,5
+420,IPC-Fraud,2026-02-14T08:58:00,12.976786,77.565199,"Sector 11, Zone 19",FIR narrative sample #867 for IPC-Fraud.,Velachery PS,False,False,3
+302,IPC-Murder,2025-08-15T22:27:00,13.149419,80.2222,"Sector 81, Zone 4",FIR narrative sample #868 for IPC-Murder.,T. Nagar PS,False,False,5
+302,IPC-Murder,2024-11-28T13:51:00,13.097505,80.290908,"Sector 32, Zone 4",FIR narrative sample #869 for IPC-Murder.,Velachery PS,False,False,5
+NDPS-27,NDPS-DrugConsumption,2025-08-02T10:53:00,13.134161,80.273848,"Sector 77, Zone 20",FIR narrative sample #870 for NDPS-DrugConsumption.,T. Nagar PS,False,False,3
+NDPS-27,NDPS-DrugConsumption,2025-12-27T20:28:00,17.324972,78.562624,"Sector 41, Zone 3",FIR narrative sample #871 for NDPS-DrugConsumption.,Anna Nagar PS,False,False,3
+379,IPC-Theft,2026-01-30T14:03:00,12.989318,77.583694,"Sector 72, Zone 2",FIR narrative sample #872 for IPC-Theft.,T. Nagar PS,False,False,2
+376,IPC-SexualOffence,2025-03-09T12:06:00,17.425314,78.443998,"Sector 80, Zone 1",FIR narrative sample #873 for IPC-SexualOffence.,Tambaram PS,False,False,5
+NDPS-27,NDPS-DrugConsumption,2025-03-06T14:50:00,13.03239,77.613677,"Sector 4, Zone 15",FIR narrative sample #874 for NDPS-DrugConsumption.,Tambaram PS,False,False,3
+ARMS-25,ArmsAct-IllegalWeapon,2025-05-02T18:12:00,13.01913,80.285928,"Sector 74, Zone 5",FIR narrative sample #875 for ArmsAct-IllegalWeapon.,Adyar PS,False,False,4
+ARMS-25,ArmsAct-IllegalWeapon,2025-07-15T11:26:00,13.00754,77.58574,"Sector 8, Zone 5",FIR narrative sample #876 for ArmsAct-IllegalWeapon.,T. Nagar PS,False,False,4
+376,IPC-SexualOffence,2024-08-13T13:32:00,17.4257,78.45649,"Sector 19, Zone 16",FIR narrative sample #877 for IPC-SexualOffence.,Adyar PS,False,False,5
+376,IPC-SexualOffence,2024-07-25T10:18:00,13.046843,77.597429,"Sector 8, Zone 8",FIR narrative sample #878 for IPC-SexualOffence.,Adyar PS,False,False,5
+ARMS-25,ArmsAct-IllegalWeapon,2024-09-08T01:27:00,12.922865,77.54666,"Sector 44, Zone 7",FIR narrative sample #879 for ArmsAct-IllegalWeapon.,T. Nagar PS,False,False,4
+NDPS-27,NDPS-DrugConsumption,2024-04-22T22:29:00,17.415786,78.543021,"Sector 79, Zone 10",FIR narrative sample #880 for NDPS-DrugConsumption.,Velachery PS,False,False,3
+NDPS-21,NDPS-DrugPossession,2025-05-02T05:06:00,13.031777,77.660287,"Sector 82, Zone 8",FIR narrative sample #881 for NDPS-DrugPossession.,T. Nagar PS,False,False,4
+420,IPC-Fraud,2024-12-12T19:13:00,13.079619,80.313636,"Sector 49, Zone 7",FIR narrative sample #882 for IPC-Fraud.,Tambaram PS,False,False,3
+NDPS-21,NDPS-DrugPossession,2025-09-27T00:23:00,13.014497,80.195503,"Sector 57, Zone 7",FIR narrative sample #883 for NDPS-DrugPossession.,Velachery PS,False,False,4
+MV-184,Accident-RashDriving,2025-03-31T01:01:00,13.034352,80.218563,"Sector 23, Zone 11",FIR narrative sample #884 for Accident-RashDriving.,Tambaram PS,True,False,3
+ARMS-25,ArmsAct-IllegalWeapon,2025-07-26T05:12:00,13.030872,80.232586,"Sector 18, Zone 13",FIR narrative sample #885 for ArmsAct-IllegalWeapon.,Tambaram PS,False,False,4
+307,IPC-AttemptToMurder,2025-04-22T06:19:00,12.930024,77.644118,"Sector 80, Zone 14",FIR narrative sample #886 for IPC-AttemptToMurder.,Mylapore PS,False,False,4
+307,IPC-AttemptToMurder,2025-12-03T04:56:00,13.129884,80.221369,"Sector 41, Zone 20",FIR narrative sample #887 for IPC-AttemptToMurder.,Velachery PS,False,False,4
+NDPS-21,NDPS-DrugPossession,2024-06-21T07:58:00,13.124793,80.284672,"Sector 20, Zone 11",FIR narrative sample #888 for NDPS-DrugPossession.,Velachery PS,False,False,4
+420,IPC-Fraud,2026-02-08T20:50:00,13.031256,77.65084,"Sector 27, Zone 3",FIR narrative sample #889 for IPC-Fraud.,Anna Nagar PS,False,False,3
+NDPS-27,NDPS-DrugConsumption,2024-05-24T19:04:00,13.084078,80.310909,"Sector 48, Zone 16",FIR narrative sample #890 for NDPS-DrugConsumption.,Mylapore PS,False,False,3
+ARMS-25,ArmsAct-IllegalWeapon,2024-12-14T05:20:00,17.364821,78.517822,"Sector 61, Zone 9",FIR narrative sample #891 for ArmsAct-IllegalWeapon.,Anna Nagar PS,False,False,4
+MV-184,Accident-RashDriving,2025-02-17T20:58:00,17.408958,78.439852,"Sector 31, Zone 13",FIR narrative sample #892 for Accident-RashDriving.,Anna Nagar PS,True,False,3
+420,IPC-Fraud,2025-05-25T13:56:00,12.983019,77.66428,"Sector 11, Zone 5",FIR narrative sample #893 for IPC-Fraud.,Mylapore PS,False,False,3
+307,IPC-AttemptToMurder,2025-06-05T14:33:00,12.928428,77.521183,"Sector 55, Zone 15",FIR narrative sample #894 for IPC-AttemptToMurder.,Velachery PS,False,False,4
+NDPS-27,NDPS-DrugConsumption,2025-01-16T13:23:00,12.942323,77.575779,"Sector 34, Zone 3",FIR narrative sample #895 for NDPS-DrugConsumption.,Adyar PS,False,False,3
+323,IPC-Assault,2026-01-09T09:53:00,17.387047,78.509685,"Sector 13, Zone 4",FIR narrative sample #896 for IPC-Assault.,Adyar PS,False,False,2
+307,IPC-AttemptToMurder,2025-03-31T01:34:00,13.056101,80.298717,"Sector 99, Zone 9",FIR narrative sample #897 for IPC-AttemptToMurder.,Tambaram PS,False,False,4
+420,IPC-Fraud,2024-04-11T19:08:00,17.423371,78.552681,"Sector 37, Zone 12",FIR narrative sample #898 for IPC-Fraud.,Velachery PS,False,True,3
+NDPS-21,NDPS-DrugPossession,2025-02-12T18:48:00,17.306903,78.511355,"Sector 51, Zone 8",FIR narrative sample #899 for NDPS-DrugPossession.,Adyar PS,False,False,4
+420,IPC-Fraud,2025-09-01T15:14:00,17.398921,78.495118,"Sector 44, Zone 3",FIR narrative sample #900 for IPC-Fraud.,Anna Nagar PS,False,False,3
+323,IPC-Assault,2025-09-23T13:49:00,17.37183,78.476889,"Sector 48, Zone 5",FIR narrative sample #901 for IPC-Assault.,T. Nagar PS,False,False,2
+MV-184,Accident-RashDriving,2025-11-23T09:47:00,13.082668,80.296116,"Sector 54, Zone 14",FIR narrative sample #902 for Accident-RashDriving.,Adyar PS,True,False,3
+NDPS-21,NDPS-DrugPossession,2024-04-26T17:19:00,12.985513,77.605412,"Sector 20, Zone 11",FIR narrative sample #903 for NDPS-DrugPossession.,Adyar PS,False,True,4
+MV-184,Accident-RashDriving,2024-06-28T19:58:00,17.396821,78.469242,"Sector 9, Zone 18",FIR narrative sample #904 for Accident-RashDriving.,Anna Nagar PS,True,False,3
+NDPS-21,NDPS-DrugPossession,2025-09-23T15:06:00,12.982722,77.586846,"Sector 22, Zone 4",FIR narrative sample #905 for NDPS-DrugPossession.,T. Nagar PS,False,False,4
+ARMS-25,ArmsAct-IllegalWeapon,2025-10-04T01:52:00,17.401538,78.410994,"Sector 37, Zone 7",FIR narrative sample #906 for ArmsAct-IllegalWeapon.,Anna Nagar PS,False,False,4
+420,IPC-Fraud,2025-06-09T21:33:00,13.075446,80.249684,"Sector 53, Zone 13",FIR narrative sample #907 for IPC-Fraud.,Velachery PS,False,True,3
+379,IPC-Theft,2025-12-11T04:34:00,12.96812,77.525602,"Sector 17, Zone 7",FIR narrative sample #908 for IPC-Theft.,Adyar PS,False,False,2
+376,IPC-SexualOffence,2025-01-16T22:42:00,12.917005,77.606615,"Sector 65, Zone 15",FIR narrative sample #909 for IPC-SexualOffence.,Adyar PS,False,False,5
+376,IPC-SexualOffence,2025-09-09T00:09:00,12.901835,77.578478,"Sector 43, Zone 19",FIR narrative sample #910 for IPC-SexualOffence.,Mylapore PS,False,False,5
+NDPS-27,NDPS-DrugConsumption,2024-12-18T14:36:00,13.120667,80.236766,"Sector 45, Zone 10",FIR narrative sample #911 for NDPS-DrugConsumption.,Anna Nagar PS,False,False,3
+NDPS-21,NDPS-DrugPossession,2024-07-15T05:26:00,13.031432,80.289538,"Sector 85, Zone 6",FIR narrative sample #912 for NDPS-DrugPossession.,Anna Nagar PS,False,False,4
+MV-184,Accident-RashDriving,2025-12-27T12:44:00,13.041051,80.329986,"Sector 69, Zone 10",FIR narrative sample #913 for Accident-RashDriving.,Tambaram PS,True,False,3
+307,IPC-AttemptToMurder,2024-04-19T23:46:00,13.148098,80.256505,"Sector 48, Zone 3",FIR narrative sample #914 for IPC-AttemptToMurder.,T. Nagar PS,False,False,4
+307,IPC-AttemptToMurder,2024-11-03T10:26:00,12.917974,77.54778,"Sector 10, Zone 15",FIR narrative sample #915 for IPC-AttemptToMurder.,T. Nagar PS,False,True,4
+NDPS-21,NDPS-DrugPossession,2025-04-17T23:25:00,13.066168,80.192418,"Sector 42, Zone 15",FIR narrative sample #916 for NDPS-DrugPossession.,Adyar PS,False,False,4
+NDPS-27,NDPS-DrugConsumption,2024-12-17T02:05:00,17.410124,78.520873,"Sector 36, Zone 6",FIR narrative sample #917 for NDPS-DrugConsumption.,Anna Nagar PS,False,False,3
+379,IPC-Theft,2026-03-16T19:06:00,13.049763,80.276245,"Sector 86, Zone 1",FIR narrative sample #918 for IPC-Theft.,T. Nagar PS,False,False,2
+376,IPC-SexualOffence,2025-10-28T14:22:00,13.037368,80.196211,"Sector 57, Zone 2",FIR narrative sample #919 for IPC-SexualOffence.,Adyar PS,False,False,5
+ARMS-25,ArmsAct-IllegalWeapon,2024-06-16T21:45:00,17.448522,78.469199,"Sector 77, Zone 1",FIR narrative sample #920 for ArmsAct-IllegalWeapon.,T. Nagar PS,False,False,4
+302,IPC-Murder,2025-03-13T06:59:00,13.062643,80.228866,"Sector 4, Zone 1",FIR narrative sample #921 for IPC-Murder.,Anna Nagar PS,False,False,5
+323,IPC-Assault,2025-09-19T21:42:00,13.037991,80.331866,"Sector 22, Zone 6",FIR narrative sample #922 for IPC-Assault.,Tambaram PS,False,False,2
+302,IPC-Murder,2025-02-02T16:06:00,12.943229,77.614886,"Sector 51, Zone 14",FIR narrative sample #923 for IPC-Murder.,Mylapore PS,False,False,5
+307,IPC-AttemptToMurder,2025-08-09T06:06:00,12.943339,77.516999,"Sector 50, Zone 7",FIR narrative sample #924 for IPC-AttemptToMurder.,T. Nagar PS,False,False,4
+NDPS-27,NDPS-DrugConsumption,2025-08-21T02:42:00,12.995591,77.573637,"Sector 53, Zone 10",FIR narrative sample #925 for NDPS-DrugConsumption.,Adyar PS,False,False,3
+MV-184,Accident-RashDriving,2024-11-08T03:45:00,17.431602,78.554256,"Sector 13, Zone 20",FIR narrative sample #926 for Accident-RashDriving.,Velachery PS,True,False,3
+323,IPC-Assault,2024-06-26T22:24:00,17.452929,78.530125,"Sector 82, Zone 11",FIR narrative sample #927 for IPC-Assault.,Adyar PS,False,False,2
+NDPS-27,NDPS-DrugConsumption,2026-01-24T10:01:00,17.450937,78.478526,"Sector 30, Zone 17",FIR narrative sample #928 for NDPS-DrugConsumption.,Tambaram PS,False,False,3
+MV-184,Accident-RashDriving,2024-04-12T00:14:00,13.101316,80.334185,"Sector 55, Zone 8",FIR narrative sample #929 for Accident-RashDriving.,Tambaram PS,True,False,3
+MV-184,Accident-RashDriving,2026-01-12T01:08:00,12.971396,77.546922,"Sector 5, Zone 8",FIR narrative sample #930 for Accident-RashDriving.,Tambaram PS,True,False,3
+MV-184,Accident-RashDriving,2025-01-04T23:56:00,12.913083,77.565406,"Sector 67, Zone 14",FIR narrative sample #931 for Accident-RashDriving.,T. Nagar PS,True,False,3
+376,IPC-SexualOffence,2026-03-10T07:54:00,17.358003,78.44546,"Sector 32, Zone 8",FIR narrative sample #932 for IPC-SexualOffence.,Tambaram PS,False,False,5
+MV-184,Accident-RashDriving,2025-03-09T16:20:00,13.073478,80.191667,"Sector 25, Zone 2",FIR narrative sample #933 for Accident-RashDriving.,T. Nagar PS,True,False,3
+379,IPC-Theft,2025-09-06T04:05:00,13.097521,80.323695,"Sector 65, Zone 3",FIR narrative sample #934 for IPC-Theft.,Adyar PS,False,False,2
+NDPS-21,NDPS-DrugPossession,2024-12-11T09:10:00,17.336606,78.474543,"Sector 37, Zone 19",FIR narrative sample #935 for NDPS-DrugPossession.,Velachery PS,False,False,4
+NDPS-27,NDPS-DrugConsumption,2024-06-22T06:17:00,12.904403,77.670209,"Sector 61, Zone 15",FIR narrative sample #936 for NDPS-DrugConsumption.,Adyar PS,False,False,3
+NDPS-21,NDPS-DrugPossession,2024-11-02T19:47:00,13.013252,77.645737,"Sector 98, Zone 13",FIR narrative sample #937 for NDPS-DrugPossession.,T. Nagar PS,False,False,4
+NDPS-21,NDPS-DrugPossession,2026-01-08T09:38:00,17.329448,78.522964,"Sector 40, Zone 15",FIR narrative sample #938 for NDPS-DrugPossession.,Anna Nagar PS,False,False,4
+376,IPC-SexualOffence,2025-03-15T17:38:00,12.90311,77.536465,"Sector 25, Zone 1",FIR narrative sample #939 for IPC-SexualOffence.,Adyar PS,False,False,5
+302,IPC-Murder,2024-11-07T23:46:00,12.970233,77.662711,"Sector 48, Zone 13",FIR narrative sample #940 for IPC-Murder.,Tambaram PS,False,False,5
+NDPS-27,NDPS-DrugConsumption,2025-05-23T20:37:00,13.068106,80.196912,"Sector 73, Zone 6",FIR narrative sample #941 for NDPS-DrugConsumption.,Anna Nagar PS,False,False,3
+420,IPC-Fraud,2025-01-12T08:49:00,17.360773,78.520161,"Sector 90, Zone 2",FIR narrative sample #942 for IPC-Fraud.,Velachery PS,False,False,3
+NDPS-21,NDPS-DrugPossession,2025-01-24T23:15:00,13.079136,80.338135,"Sector 87, Zone 1",FIR narrative sample #943 for NDPS-DrugPossession.,Tambaram PS,False,False,4
+379,IPC-Theft,2025-07-10T19:29:00,17.328579,78.446286,"Sector 21, Zone 1",FIR narrative sample #944 for IPC-Theft.,Tambaram PS,False,False,2
+307,IPC-AttemptToMurder,2025-12-30T20:45:00,12.955227,77.608386,"Sector 25, Zone 14",FIR narrative sample #945 for IPC-AttemptToMurder.,Mylapore PS,False,False,4
+379,IPC-Theft,2025-01-21T08:44:00,12.971703,77.599912,"Sector 40, Zone 14",FIR narrative sample #946 for IPC-Theft.,Mylapore PS,False,False,2
+307,IPC-AttemptToMurder,2025-12-13T20:36:00,13.021876,77.557643,"Sector 51, Zone 10",FIR narrative sample #947 for IPC-AttemptToMurder.,Tambaram PS,False,False,4
+302,IPC-Murder,2025-10-13T15:00:00,13.013875,80.302111,"Sector 37, Zone 14",FIR narrative sample #948 for IPC-Murder.,Tambaram PS,False,False,5
+379,IPC-Theft,2025-10-05T11:11:00,17.326493,78.484535,"Sector 58, Zone 19",FIR narrative sample #949 for IPC-Theft.,T. Nagar PS,False,False,2
+420,IPC-Fraud,2025-09-25T06:03:00,17.334237,78.528166,"Sector 57, Zone 20",FIR narrative sample #950 for IPC-Fraud.,Anna Nagar PS,False,False,3
+307,IPC-AttemptToMurder,2024-06-21T05:05:00,12.905313,77.534549,"Sector 75, Zone 8",FIR narrative sample #951 for IPC-AttemptToMurder.,T. Nagar PS,False,False,4
+NDPS-27,NDPS-DrugConsumption,2024-11-23T21:48:00,13.004221,80.233273,"Sector 75, Zone 2",FIR narrative sample #952 for NDPS-DrugConsumption.,Tambaram PS,False,False,3
+307,IPC-AttemptToMurder,2025-08-30T16:50:00,13.062807,80.273912,"Sector 63, Zone 16",FIR narrative sample #953 for IPC-AttemptToMurder.,Velachery PS,False,False,4
+323,IPC-Assault,2024-07-24T13:21:00,13.000698,77.569492,"Sector 47, Zone 13",FIR narrative sample #954 for IPC-Assault.,Adyar PS,False,False,2
+NDPS-21,NDPS-DrugPossession,2024-07-17T01:22:00,13.020603,77.515094,"Sector 93, Zone 5",FIR narrative sample #955 for NDPS-DrugPossession.,Anna Nagar PS,False,False,4
+302,IPC-Murder,2024-07-26T03:55:00,17.349715,78.518582,"Sector 58, Zone 20",FIR narrative sample #956 for IPC-Murder.,Velachery PS,False,False,5
+NDPS-27,NDPS-DrugConsumption,2024-10-23T13:42:00,13.003201,80.292792,"Sector 3, Zone 12",FIR narrative sample #957 for NDPS-DrugConsumption.,Velachery PS,False,False,3
+302,IPC-Murder,2025-05-05T21:28:00,13.099782,80.254726,"Sector 45, Zone 14",FIR narrative sample #958 for IPC-Murder.,T. Nagar PS,False,False,5
+NDPS-27,NDPS-DrugConsumption,2024-05-29T22:57:00,13.120184,80.237718,"Sector 67, Zone 19",FIR narrative sample #959 for NDPS-DrugConsumption.,Adyar PS,False,False,3
+ARMS-25,ArmsAct-IllegalWeapon,2026-03-02T04:31:00,13.050916,80.29839,"Sector 22, Zone 15",FIR narrative sample #960 for ArmsAct-IllegalWeapon.,Anna Nagar PS,False,False,4
+307,IPC-AttemptToMurder,2024-11-26T21:34:00,13.041637,80.217969,"Sector 12, Zone 4",FIR narrative sample #961 for IPC-AttemptToMurder.,Tambaram PS,False,False,4
+NDPS-21,NDPS-DrugPossession,2026-03-05T05:59:00,13.036024,77.637209,"Sector 86, Zone 16",FIR narrative sample #962 for NDPS-DrugPossession.,Velachery PS,False,False,4
+307,IPC-AttemptToMurder,2024-05-22T04:59:00,17.406368,78.485413,"Sector 29, Zone 19",FIR narrative sample #963 for IPC-AttemptToMurder.,Velachery PS,False,False,4
+MV-184,Accident-RashDriving,2026-01-27T20:21:00,13.037227,77.633475,"Sector 83, Zone 18",FIR narrative sample #964 for Accident-RashDriving.,Tambaram PS,True,False,3
+NDPS-21,NDPS-DrugPossession,2025-08-08T07:16:00,13.049256,80.208521,"Sector 25, Zone 4",FIR narrative sample #965 for NDPS-DrugPossession.,Mylapore PS,False,False,4
+MV-184,Accident-RashDriving,2025-03-23T04:54:00,13.044251,77.606907,"Sector 76, Zone 18",FIR narrative sample #966 for Accident-RashDriving.,T. Nagar PS,True,True,3
+420,IPC-Fraud,2025-03-02T13:20:00,13.019203,77.664028,"Sector 78, Zone 19",FIR narrative sample #967 for IPC-Fraud.,Tambaram PS,False,False,3
+420,IPC-Fraud,2025-12-15T12:00:00,17.441378,78.457248,"Sector 29, Zone 16",FIR narrative sample #968 for IPC-Fraud.,Velachery PS,False,False,3
+NDPS-27,NDPS-DrugConsumption,2025-11-04T19:18:00,13.12223,80.32656,"Sector 77, Zone 11",FIR narrative sample #969 for NDPS-DrugConsumption.,T. Nagar PS,False,False,3
+376,IPC-SexualOffence,2024-11-05T22:07:00,13.051096,77.627644,"Sector 64, Zone 10",FIR narrative sample #970 for IPC-SexualOffence.,Adyar PS,False,False,5
+NDPS-21,NDPS-DrugPossession,2026-02-02T10:09:00,17.338698,78.523925,"Sector 95, Zone 2",FIR narrative sample #971 for NDPS-DrugPossession.,Tambaram PS,False,False,4
+379,IPC-Theft,2024-11-20T23:25:00,13.049102,77.62008,"Sector 71, Zone 13",FIR narrative sample #972 for IPC-Theft.,T. Nagar PS,False,False,2
+323,IPC-Assault,2025-01-26T21:30:00,13.012834,77.57717,"Sector 37, Zone 7",FIR narrative sample #973 for IPC-Assault.,Velachery PS,False,False,2
+ARMS-25,ArmsAct-IllegalWeapon,2025-02-24T03:08:00,13.011963,77.607461,"Sector 39, Zone 15",FIR narrative sample #974 for ArmsAct-IllegalWeapon.,Tambaram PS,False,False,4
+379,IPC-Theft,2024-08-20T04:28:00,17.382191,78.550255,"Sector 26, Zone 1",FIR narrative sample #975 for IPC-Theft.,Tambaram PS,False,False,2
+323,IPC-Assault,2024-08-22T03:43:00,13.062949,80.347932,"Sector 8, Zone 4",FIR narrative sample #976 for IPC-Assault.,Adyar PS,False,False,2
+323,IPC-Assault,2024-12-04T05:03:00,13.159544,80.294716,"Sector 81, Zone 13",FIR narrative sample #977 for IPC-Assault.,Adyar PS,False,False,2
+420,IPC-Fraud,2026-02-28T03:15:00,12.96978,77.624677,"Sector 96, Zone 13",FIR narrative sample #978 for IPC-Fraud.,Tambaram PS,False,False,3
+307,IPC-AttemptToMurder,2024-12-15T20:24:00,12.992773,77.585819,"Sector 11, Zone 4",FIR narrative sample #979 for IPC-AttemptToMurder.,T. Nagar PS,False,True,4
+NDPS-27,NDPS-DrugConsumption,2024-06-16T21:58:00,17.34099,78.500596,"Sector 36, Zone 4",FIR narrative sample #980 for NDPS-DrugConsumption.,Anna Nagar PS,False,False,3
+MV-184,Accident-RashDriving,2025-09-30T12:30:00,17.417438,78.454438,"Sector 9, Zone 18",FIR narrative sample #981 for Accident-RashDriving.,Velachery PS,True,False,3
+379,IPC-Theft,2025-02-12T22:01:00,12.98057,77.600427,"Sector 9, Zone 17",FIR narrative sample #982 for IPC-Theft.,Anna Nagar PS,False,False,2
+MV-184,Accident-RashDriving,2024-09-29T22:52:00,17.324854,78.527178,"Sector 24, Zone 20",FIR narrative sample #983 for Accident-RashDriving.,T. Nagar PS,True,False,3
+379,IPC-Theft,2026-03-29T17:28:00,12.911287,77.535211,"Sector 12, Zone 18",FIR narrative sample #984 for IPC-Theft.,Adyar PS,False,False,2
+376,IPC-SexualOffence,2026-02-27T02:07:00,17.352772,78.561304,"Sector 1, Zone 8",FIR narrative sample #985 for IPC-SexualOffence.,Tambaram PS,False,True,5
+376,IPC-SexualOffence,2026-02-15T16:57:00,12.997065,77.585787,"Sector 41, Zone 17",FIR narrative sample #986 for IPC-SexualOffence.,Tambaram PS,False,False,5
+323,IPC-Assault,2024-07-22T17:32:00,13.112769,80.296719,"Sector 25, Zone 5",FIR narrative sample #987 for IPC-Assault.,T. Nagar PS,False,True,2
+376,IPC-SexualOffence,2025-08-26T04:38:00,17.339566,78.46415,"Sector 55, Zone 3",FIR narrative sample #988 for IPC-SexualOffence.,Mylapore PS,False,True,5
+ARMS-25,ArmsAct-IllegalWeapon,2025-07-16T08:24:00,17.449586,78.47071,"Sector 87, Zone 14",FIR narrative sample #989 for ArmsAct-IllegalWeapon.,Velachery PS,False,False,4
+379,IPC-Theft,2024-10-02T06:04:00,17.422228,78.565957,"Sector 92, Zone 12",FIR narrative sample #990 for IPC-Theft.,Adyar PS,False,False,2
+MV-184,Accident-RashDriving,2024-05-30T20:52:00,17.401791,78.47385,"Sector 49, Zone 1",FIR narrative sample #991 for Accident-RashDriving.,Anna Nagar PS,True,False,3
+MV-184,Accident-RashDriving,2025-07-24T02:17:00,13.087735,80.300137,"Sector 82, Zone 3",FIR narrative sample #992 for Accident-RashDriving.,Velachery PS,True,False,3
+323,IPC-Assault,2025-04-27T08:09:00,13.046483,80.206371,"Sector 49, Zone 4",FIR narrative sample #993 for IPC-Assault.,Adyar PS,False,False,2
+307,IPC-AttemptToMurder,2025-10-06T16:46:00,12.985812,77.643688,"Sector 90, Zone 19",FIR narrative sample #994 for IPC-AttemptToMurder.,Velachery PS,False,False,4
+376,IPC-SexualOffence,2024-09-16T08:38:00,13.146151,80.21802,"Sector 24, Zone 12",FIR narrative sample #995 for IPC-SexualOffence.,Anna Nagar PS,False,False,5
+ARMS-25,ArmsAct-IllegalWeapon,2024-09-16T19:56:00,12.967898,77.535012,"Sector 92, Zone 5",FIR narrative sample #996 for ArmsAct-IllegalWeapon.,Mylapore PS,False,True,4
+379,IPC-Theft,2025-11-08T12:36:00,17.347779,78.553651,"Sector 91, Zone 8",FIR narrative sample #997 for IPC-Theft.,Velachery PS,False,False,2
+MV-184,Accident-RashDriving,2025-01-30T22:29:00,13.072934,80.24734,"Sector 36, Zone 14",FIR narrative sample #998 for Accident-RashDriving.,Velachery PS,True,False,3
+ARMS-25,ArmsAct-IllegalWeapon,2025-08-12T09:40:00,13.154293,80.255742,"Sector 82, Zone 3",FIR narrative sample #999 for ArmsAct-IllegalWeapon.,T. Nagar PS,False,False,4
+307,IPC-AttemptToMurder,2025-08-01T02:10:00,17.314186,78.525646,"Sector 2, Zone 14",FIR narrative sample #1000 for IPC-AttemptToMurder.,Anna Nagar PS,False,False,4
+ARMS-25,ArmsAct-IllegalWeapon,2025-11-15T15:31:00,17.414619,78.514984,"Sector 52, Zone 1",FIR narrative sample #1001 for ArmsAct-IllegalWeapon.,T. Nagar PS,False,False,4
+MV-184,Accident-RashDriving,2025-09-21T23:00:00,17.372997,78.492192,"Sector 85, Zone 17",FIR narrative sample #1002 for Accident-RashDriving.,Tambaram PS,True,False,3
+MV-184,Accident-RashDriving,2026-02-19T19:28:00,13.110624,80.331809,"Sector 23, Zone 3",FIR narrative sample #1003 for Accident-RashDriving.,Adyar PS,True,False,3
+323,IPC-Assault,2025-11-18T16:22:00,13.070336,80.251355,"Sector 44, Zone 8",FIR narrative sample #1004 for IPC-Assault.,T. Nagar PS,False,False,2
+ARMS-25,ArmsAct-IllegalWeapon,2025-12-04T09:19:00,12.938567,77.548691,"Sector 51, Zone 7",FIR narrative sample #1005 for ArmsAct-IllegalWeapon.,Mylapore PS,False,False,4
+376,IPC-SexualOffence,2024-06-14T16:52:00,13.152366,80.333499,"Sector 46, Zone 1",FIR narrative sample #1006 for IPC-SexualOffence.,T. Nagar PS,False,False,5
+MV-184,Accident-RashDriving,2024-12-18T10:19:00,12.908746,77.570555,"Sector 46, Zone 1",FIR narrative sample #1007 for Accident-RashDriving.,Anna Nagar PS,True,False,3
+307,IPC-AttemptToMurder,2025-01-17T15:12:00,13.087355,80.334462,"Sector 1, Zone 5",FIR narrative sample #1008 for IPC-AttemptToMurder.,Anna Nagar PS,False,False,4
+376,IPC-SexualOffence,2025-08-15T15:25:00,12.939486,77.583135,"Sector 14, Zone 15",FIR narrative sample #1009 for IPC-SexualOffence.,Velachery PS,False,True,5
+NDPS-27,NDPS-DrugConsumption,2025-10-20T04:22:00,17.374434,78.464178,"Sector 15, Zone 7",FIR narrative sample #1010 for NDPS-DrugConsumption.,Adyar PS,False,False,3
+376,IPC-SexualOffence,2026-02-21T04:25:00,13.010628,77.65876,"Sector 62, Zone 9",FIR narrative sample #1011 for IPC-SexualOffence.,Adyar PS,False,True,5
+307,IPC-AttemptToMurder,2025-01-27T15:35:00,13.019571,77.628891,"Sector 65, Zone 13",FIR narrative sample #1012 for IPC-AttemptToMurder.,Anna Nagar PS,False,False,4
+379,IPC-Theft,2025-12-12T03:50:00,13.02288,80.245759,"Sector 31, Zone 2",FIR narrative sample #1013 for IPC-Theft.,Tambaram PS,False,True,2
+323,IPC-Assault,2025-01-19T19:47:00,13.072193,80.237015,"Sector 32, Zone 20",FIR narrative sample #1014 for IPC-Assault.,Anna Nagar PS,False,False,2
+379,IPC-Theft,2024-10-27T05:15:00,13.014276,77.652867,"Sector 86, Zone 14",FIR narrative sample #1015 for IPC-Theft.,Adyar PS,False,False,2
+420,IPC-Fraud,2024-12-04T22:50:00,13.114883,80.271073,"Sector 81, Zone 5",FIR narrative sample #1016 for IPC-Fraud.,Mylapore PS,False,False,3
+420,IPC-Fraud,2025-12-01T04:25:00,13.046518,80.221448,"Sector 79, Zone 7",FIR narrative sample #1017 for IPC-Fraud.,T. Nagar PS,False,False,3
+307,IPC-AttemptToMurder,2026-02-10T12:26:00,17.354031,78.50803,"Sector 55, Zone 16",FIR narrative sample #1018 for IPC-AttemptToMurder.,Velachery PS,False,False,4
+302,IPC-Murder,2024-10-28T13:41:00,13.051386,80.233779,"Sector 92, Zone 14",FIR narrative sample #1019 for IPC-Murder.,Velachery PS,False,False,5
+420,IPC-Fraud,2025-05-11T01:11:00,13.002786,80.296369,"Sector 61, Zone 9",FIR narrative sample #1020 for IPC-Fraud.,Velachery PS,False,False,3
+MV-184,Accident-RashDriving,2025-12-21T13:11:00,13.043333,77.572773,"Sector 86, Zone 1",FIR narrative sample #1021 for Accident-RashDriving.,T. Nagar PS,True,False,3
+ARMS-25,ArmsAct-IllegalWeapon,2025-11-21T10:23:00,17.434606,78.525569,"Sector 48, Zone 8",FIR narrative sample #1022 for ArmsAct-IllegalWeapon.,Mylapore PS,False,False,4
+376,IPC-SexualOffence,2025-08-31T18:24:00,13.144651,80.211578,"Sector 6, Zone 19",FIR narrative sample #1023 for IPC-SexualOffence.,T. Nagar PS,False,False,5
+420,IPC-Fraud,2025-09-18T22:28:00,13.014681,80.278153,"Sector 61, Zone 7",FIR narrative sample #1024 for IPC-Fraud.,Tambaram PS,False,False,3
+ARMS-25,ArmsAct-IllegalWeapon,2025-10-28T01:08:00,13.069614,80.304557,"Sector 45, Zone 12",FIR narrative sample #1025 for ArmsAct-IllegalWeapon.,Mylapore PS,False,False,4
+NDPS-27,NDPS-DrugConsumption,2024-06-28T22:07:00,12.902433,77.581641,"Sector 3, Zone 6",FIR narrative sample #1026 for NDPS-DrugConsumption.,Mylapore PS,False,False,3
+MV-184,Accident-RashDriving,2025-06-27T22:08:00,12.898871,77.605188,"Sector 25, Zone 13",FIR narrative sample #1027 for Accident-RashDriving.,Tambaram PS,True,False,3
+NDPS-27,NDPS-DrugConsumption,2024-05-02T17:55:00,17.460446,78.433183,"Sector 72, Zone 13",FIR narrative sample #1028 for NDPS-DrugConsumption.,Anna Nagar PS,False,False,3
+NDPS-21,NDPS-DrugPossession,2024-07-21T08:13:00,13.003276,80.282204,"Sector 66, Zone 15",FIR narrative sample #1029 for NDPS-DrugPossession.,T. Nagar PS,False,False,4
+ARMS-25,ArmsAct-IllegalWeapon,2024-04-09T23:33:00,12.940146,77.549854,"Sector 16, Zone 6",FIR narrative sample #1030 for ArmsAct-IllegalWeapon.,Mylapore PS,False,False,4
+420,IPC-Fraud,2026-02-16T17:15:00,12.897855,77.538302,"Sector 35, Zone 2",FIR narrative sample #1031 for IPC-Fraud.,Adyar PS,False,False,3
+420,IPC-Fraud,2025-08-31T17:07:00,13.106483,80.291929,"Sector 11, Zone 18",FIR narrative sample #1032 for IPC-Fraud.,Velachery PS,False,False,3
+376,IPC-SexualOffence,2025-11-18T13:57:00,17.352183,78.564342,"Sector 46, Zone 8",FIR narrative sample #1033 for IPC-SexualOffence.,T. Nagar PS,False,False,5
+376,IPC-SexualOffence,2025-10-05T08:01:00,17.410171,78.545577,"Sector 14, Zone 13",FIR narrative sample #1034 for IPC-SexualOffence.,Mylapore PS,False,False,5
+376,IPC-SexualOffence,2024-07-01T20:38:00,17.337985,78.47745,"Sector 75, Zone 13",FIR narrative sample #1035 for IPC-SexualOffence.,Adyar PS,False,False,5
+379,IPC-Theft,2025-01-02T07:46:00,17.374425,78.430433,"Sector 24, Zone 15",FIR narrative sample #1036 for IPC-Theft.,Anna Nagar PS,False,False,2
+379,IPC-Theft,2025-10-05T06:36:00,13.042537,77.543465,"Sector 21, Zone 6",FIR narrative sample #1037 for IPC-Theft.,Velachery PS,False,False,2
+NDPS-21,NDPS-DrugPossession,2024-04-30T19:12:00,13.025664,80.258923,"Sector 52, Zone 4",FIR narrative sample #1038 for NDPS-DrugPossession.,Tambaram PS,False,False,4
+ARMS-25,ArmsAct-IllegalWeapon,2025-11-14T23:48:00,13.099227,80.25116,"Sector 98, Zone 2",FIR narrative sample #1039 for ArmsAct-IllegalWeapon.,T. Nagar PS,False,True,4
+379,IPC-Theft,2025-07-23T02:17:00,13.152876,80.286642,"Sector 14, Zone 18",FIR narrative sample #1040 for IPC-Theft.,T. Nagar PS,False,False,2
+323,IPC-Assault,2024-04-09T02:12:00,13.079568,80.280756,"Sector 40, Zone 11",FIR narrative sample #1041 for IPC-Assault.,Adyar PS,False,False,2
+NDPS-27,NDPS-DrugConsumption,2025-10-27T07:03:00,17.415727,78.507098,"Sector 14, Zone 18",FIR narrative sample #1042 for NDPS-DrugConsumption.,T. Nagar PS,False,False,3
+376,IPC-SexualOffence,2025-12-19T16:56:00,12.914294,77.660547,"Sector 50, Zone 5",FIR narrative sample #1043 for IPC-SexualOffence.,Anna Nagar PS,False,True,5
+323,IPC-Assault,2024-06-01T09:14:00,17.366559,78.548176,"Sector 63, Zone 6",FIR narrative sample #1044 for IPC-Assault.,T. Nagar PS,False,False,2
+307,IPC-AttemptToMurder,2025-08-17T03:18:00,12.903806,77.567996,"Sector 6, Zone 20",FIR narrative sample #1045 for IPC-AttemptToMurder.,T. Nagar PS,False,False,4
+379,IPC-Theft,2025-10-03T13:33:00,12.987538,77.623309,"Sector 88, Zone 10",FIR narrative sample #1046 for IPC-Theft.,Tambaram PS,False,False,2
+MV-184,Accident-RashDriving,2025-06-14T11:56:00,13.046075,80.27058,"Sector 92, Zone 3",FIR narrative sample #1047 for Accident-RashDriving.,Velachery PS,True,False,3
+302,IPC-Murder,2025-11-02T20:09:00,12.915245,77.586071,"Sector 9, Zone 4",FIR narrative sample #1048 for IPC-Murder.,Anna Nagar PS,False,False,5
+MV-184,Accident-RashDriving,2025-01-21T23:17:00,13.017172,80.349863,"Sector 46, Zone 11",FIR narrative sample #1049 for Accident-RashDriving.,Anna Nagar PS,True,False,3
+NDPS-27,NDPS-DrugConsumption,2025-01-24T15:44:00,12.987879,77.616457,"Sector 32, Zone 13",FIR narrative sample #1050 for NDPS-DrugConsumption.,Tambaram PS,False,False,3
+NDPS-21,NDPS-DrugPossession,2024-09-18T15:34:00,17.383816,78.492494,"Sector 75, Zone 14",FIR narrative sample #1051 for NDPS-DrugPossession.,T. Nagar PS,False,False,4
+ARMS-25,ArmsAct-IllegalWeapon,2024-08-20T22:51:00,17.340093,78.42066,"Sector 3, Zone 12",FIR narrative sample #1052 for ArmsAct-IllegalWeapon.,Adyar PS,False,False,4
+ARMS-25,ArmsAct-IllegalWeapon,2024-12-04T04:58:00,13.012232,80.246596,"Sector 38, Zone 15",FIR narrative sample #1053 for ArmsAct-IllegalWeapon.,Adyar PS,False,False,4
+379,IPC-Theft,2024-09-16T13:15:00,13.135151,80.199639,"Sector 91, Zone 5",FIR narrative sample #1054 for IPC-Theft.,Tambaram PS,False,False,2
+NDPS-21,NDPS-DrugPossession,2026-03-08T22:27:00,12.900253,77.531562,"Sector 77, Zone 6",FIR narrative sample #1055 for NDPS-DrugPossession.,Anna Nagar PS,False,False,4
+302,IPC-Murder,2025-11-04T11:09:00,13.041907,80.192696,"Sector 20, Zone 6",FIR narrative sample #1056 for IPC-Murder.,Anna Nagar PS,False,False,5
+NDPS-27,NDPS-DrugConsumption,2025-11-11T23:33:00,17.456803,78.48193,"Sector 83, Zone 1",FIR narrative sample #1057 for NDPS-DrugConsumption.,Anna Nagar PS,False,False,3
+376,IPC-SexualOffence,2025-12-11T04:03:00,17.310139,78.526881,"Sector 51, Zone 14",FIR narrative sample #1058 for IPC-SexualOffence.,T. Nagar PS,False,False,5
+NDPS-27,NDPS-DrugConsumption,2024-09-13T22:53:00,13.038664,77.5949,"Sector 21, Zone 9",FIR narrative sample #1059 for NDPS-DrugConsumption.,Anna Nagar PS,False,False,3
+307,IPC-AttemptToMurder,2024-10-16T12:08:00,17.338898,78.505747,"Sector 96, Zone 18",FIR narrative sample #1060 for IPC-AttemptToMurder.,Adyar PS,False,False,4
+MV-184,Accident-RashDriving,2026-01-14T22:29:00,12.94171,77.617303,"Sector 7, Zone 12",FIR narrative sample #1061 for Accident-RashDriving.,Adyar PS,True,False,3
+NDPS-21,NDPS-DrugPossession,2025-09-16T08:06:00,13.015149,80.28721,"Sector 31, Zone 10",FIR narrative sample #1062 for NDPS-DrugPossession.,T. Nagar PS,False,False,4
+379,IPC-Theft,2024-09-26T03:04:00,13.098238,80.311743,"Sector 26, Zone 2",FIR narrative sample #1063 for IPC-Theft.,Mylapore PS,False,False,2
+420,IPC-Fraud,2025-07-02T02:36:00,17.31218,78.564539,"Sector 41, Zone 3",FIR narrative sample #1064 for IPC-Fraud.,T. Nagar PS,False,False,3
+376,IPC-SexualOffence,2026-03-26T11:48:00,13.044998,77.594635,"Sector 93, Zone 12",FIR narrative sample #1065 for IPC-SexualOffence.,Anna Nagar PS,False,False,5
+379,IPC-Theft,2024-04-14T21:06:00,12.956766,77.633232,"Sector 4, Zone 19",FIR narrative sample #1066 for IPC-Theft.,Adyar PS,False,False,2
+NDPS-21,NDPS-DrugPossession,2024-12-01T18:55:00,13.049119,80.214946,"Sector 12, Zone 8",FIR narrative sample #1067 for NDPS-DrugPossession.,Tambaram PS,False,False,4
+420,IPC-Fraud,2024-05-06T20:09:00,17.330768,78.560887,"Sector 78, Zone 17",FIR narrative sample #1068 for IPC-Fraud.,Tambaram PS,False,False,3
+323,IPC-Assault,2024-12-31T04:21:00,12.949251,77.651552,"Sector 88, Zone 13",FIR narrative sample #1069 for IPC-Assault.,Tambaram PS,False,False,2
+420,IPC-Fraud,2025-09-02T19:38:00,13.155983,80.281404,"Sector 2, Zone 5",FIR narrative sample #1070 for IPC-Fraud.,T. Nagar PS,False,False,3
+376,IPC-SexualOffence,2024-09-20T02:31:00,13.075469,80.217855,"Sector 36, Zone 19",FIR narrative sample #1071 for IPC-SexualOffence.,T. Nagar PS,False,False,5
+323,IPC-Assault,2025-04-07T02:04:00,13.116405,80.264419,"Sector 98, Zone 15",FIR narrative sample #1072 for IPC-Assault.,Velachery PS,False,False,2
+379,IPC-Theft,2025-11-28T18:31:00,13.060856,80.23656,"Sector 88, Zone 5",FIR narrative sample #1073 for IPC-Theft.,Mylapore PS,False,False,2
+NDPS-27,NDPS-DrugConsumption,2025-03-24T16:54:00,17.457327,78.466489,"Sector 58, Zone 9",FIR narrative sample #1074 for NDPS-DrugConsumption.,Mylapore PS,False,False,3
+302,IPC-Murder,2024-07-07T20:03:00,17.431495,78.518659,"Sector 14, Zone 10",FIR narrative sample #1075 for IPC-Murder.,Adyar PS,False,False,5
+NDPS-21,NDPS-DrugPossession,2025-10-23T18:25:00,13.038388,80.330565,"Sector 60, Zone 15",FIR narrative sample #1076 for NDPS-DrugPossession.,Velachery PS,False,False,4
+ARMS-25,ArmsAct-IllegalWeapon,2024-12-13T03:05:00,13.119784,80.337494,"Sector 26, Zone 13",FIR narrative sample #1077 for ArmsAct-IllegalWeapon.,Anna Nagar PS,False,False,4
+323,IPC-Assault,2026-01-27T10:21:00,17.382807,78.519067,"Sector 59, Zone 2",FIR narrative sample #1078 for IPC-Assault.,Velachery PS,False,False,2
+ARMS-25,ArmsAct-IllegalWeapon,2025-10-26T15:09:00,17.339155,78.497613,"Sector 8, Zone 12",FIR narrative sample #1079 for ArmsAct-IllegalWeapon.,Anna Nagar PS,False,False,4
+NDPS-21,NDPS-DrugPossession,2024-12-05T06:03:00,13.141583,80.343123,"Sector 33, Zone 6",FIR narrative sample #1080 for NDPS-DrugPossession.,Velachery PS,False,False,4
+307,IPC-AttemptToMurder,2025-11-09T02:17:00,12.904673,77.654404,"Sector 68, Zone 7",FIR narrative sample #1081 for IPC-AttemptToMurder.,Anna Nagar PS,False,False,4
+376,IPC-SexualOffence,2025-09-27T01:05:00,12.946323,77.635108,"Sector 54, Zone 16",FIR narrative sample #1082 for IPC-SexualOffence.,Velachery PS,False,True,5
+NDPS-27,NDPS-DrugConsumption,2024-10-02T22:50:00,13.157194,80.260585,"Sector 50, Zone 1",FIR narrative sample #1083 for NDPS-DrugConsumption.,Mylapore PS,False,False,3
+ARMS-25,ArmsAct-IllegalWeapon,2024-07-31T06:04:00,17.411874,78.505342,"Sector 96, Zone 11",FIR narrative sample #1084 for ArmsAct-IllegalWeapon.,Tambaram PS,False,False,4
+302,IPC-Murder,2025-10-31T14:59:00,13.082611,80.241325,"Sector 53, Zone 9",FIR narrative sample #1085 for IPC-Murder.,Tambaram PS,False,False,5
+ARMS-25,ArmsAct-IllegalWeapon,2026-03-31T14:53:00,13.104187,80.292927,"Sector 28, Zone 7",FIR narrative sample #1086 for ArmsAct-IllegalWeapon.,T. Nagar PS,False,False,4
+NDPS-21,NDPS-DrugPossession,2024-04-20T17:49:00,13.098851,80.225282,"Sector 87, Zone 19",FIR narrative sample #1087 for NDPS-DrugPossession.,Adyar PS,False,False,4
+302,IPC-Murder,2025-03-20T11:01:00,13.035065,77.594934,"Sector 64, Zone 15",FIR narrative sample #1088 for IPC-Murder.,Tambaram PS,False,False,5
+NDPS-21,NDPS-DrugPossession,2025-02-07T11:22:00,17.373136,78.562551,"Sector 59, Zone 14",FIR narrative sample #1089 for NDPS-DrugPossession.,Adyar PS,False,False,4
+323,IPC-Assault,2025-10-04T17:38:00,13.089542,80.25175,"Sector 88, Zone 14",FIR narrative sample #1090 for IPC-Assault.,Tambaram PS,False,False,2
+376,IPC-SexualOffence,2024-04-15T19:59:00,13.161958,80.31965,"Sector 3, Zone 20",FIR narrative sample #1091 for IPC-SexualOffence.,Tambaram PS,False,True,5
+NDPS-21,NDPS-DrugPossession,2025-12-18T15:47:00,17.453357,78.422652,"Sector 5, Zone 10",FIR narrative sample #1092 for NDPS-DrugPossession.,Mylapore PS,False,False,4
+NDPS-21,NDPS-DrugPossession,2025-08-30T07:49:00,12.979854,77.53292,"Sector 45, Zone 15",FIR narrative sample #1093 for NDPS-DrugPossession.,T. Nagar PS,False,False,4
+NDPS-21,NDPS-DrugPossession,2024-06-12T22:50:00,17.368329,78.557039,"Sector 37, Zone 9",FIR narrative sample #1094 for NDPS-DrugPossession.,Mylapore PS,False,False,4
+376,IPC-SexualOffence,2025-05-24T13:43:00,13.003365,80.336149,"Sector 20, Zone 12",FIR narrative sample #1095 for IPC-SexualOffence.,T. Nagar PS,False,True,5
+ARMS-25,ArmsAct-IllegalWeapon,2024-07-28T10:21:00,13.156166,80.349553,"Sector 25, Zone 20",FIR narrative sample #1096 for ArmsAct-IllegalWeapon.,Anna Nagar PS,False,False,4
+NDPS-21,NDPS-DrugPossession,2026-02-10T18:27:00,13.153003,80.253166,"Sector 41, Zone 17",FIR narrative sample #1097 for NDPS-DrugPossession.,Anna Nagar PS,False,False,4
+379,IPC-Theft,2025-01-11T07:06:00,17.433188,78.487381,"Sector 98, Zone 9",FIR narrative sample #1098 for IPC-Theft.,Anna Nagar PS,False,False,2
+ARMS-25,ArmsAct-IllegalWeapon,2025-10-23T10:13:00,13.017622,80.260687,"Sector 20, Zone 1",FIR narrative sample #1099 for ArmsAct-IllegalWeapon.,Mylapore PS,False,False,4
+MV-184,Accident-RashDriving,2024-04-09T17:58:00,13.094187,80.194746,"Sector 82, Zone 12",FIR narrative sample #1100 for Accident-RashDriving.,Anna Nagar PS,True,False,3
+379,IPC-Theft,2025-08-01T20:57:00,13.050208,80.276367,"Sector 99, Zone 9",FIR narrative sample #1101 for IPC-Theft.,Anna Nagar PS,False,False,2
+302,IPC-Murder,2025-06-26T02:59:00,13.10309,80.292842,"Sector 15, Zone 15",FIR narrative sample #1102 for IPC-Murder.,T. Nagar PS,False,False,5
+MV-184,Accident-RashDriving,2025-11-29T03:09:00,12.933519,77.5435,"Sector 27, Zone 13",FIR narrative sample #1103 for Accident-RashDriving.,Velachery PS,True,False,3
+307,IPC-AttemptToMurder,2024-11-17T00:26:00,13.080543,80.290809,"Sector 49, Zone 11",FIR narrative sample #1104 for IPC-AttemptToMurder.,Anna Nagar PS,False,False,4
+NDPS-27,NDPS-DrugConsumption,2025-10-21T05:19:00,13.147282,80.296247,"Sector 16, Zone 11",FIR narrative sample #1105 for NDPS-DrugConsumption.,T. Nagar PS,False,False,3
+323,IPC-Assault,2024-11-24T19:38:00,17.305802,78.49018,"Sector 25, Zone 20",FIR narrative sample #1106 for IPC-Assault.,T. Nagar PS,False,False,2
+302,IPC-Murder,2024-10-02T00:33:00,17.426754,78.441309,"Sector 4, Zone 11",FIR narrative sample #1107 for IPC-Murder.,Adyar PS,False,False,5
+379,IPC-Theft,2025-08-21T02:46:00,17.455376,78.449514,"Sector 45, Zone 18",FIR narrative sample #1108 for IPC-Theft.,T. Nagar PS,False,False,2
+376,IPC-SexualOffence,2024-12-11T23:51:00,12.96137,77.666015,"Sector 23, Zone 7",FIR narrative sample #1109 for IPC-SexualOffence.,Velachery PS,False,False,5
+376,IPC-SexualOffence,2025-02-25T03:37:00,17.354854,78.533756,"Sector 56, Zone 15",FIR narrative sample #1110 for IPC-SexualOffence.,Anna Nagar PS,False,False,5
+NDPS-21,NDPS-DrugPossession,2024-08-01T23:17:00,12.991266,77.611767,"Sector 46, Zone 12",FIR narrative sample #1111 for NDPS-DrugPossession.,Mylapore PS,False,False,4
+307,IPC-AttemptToMurder,2024-12-29T05:56:00,13.155996,80.23119,"Sector 83, Zone 17",FIR narrative sample #1112 for IPC-AttemptToMurder.,Mylapore PS,False,False,4
+323,IPC-Assault,2025-02-20T00:07:00,13.132146,80.259402,"Sector 10, Zone 7",FIR narrative sample #1113 for IPC-Assault.,Adyar PS,False,False,2
+323,IPC-Assault,2025-03-19T04:49:00,12.911169,77.565574,"Sector 28, Zone 15",FIR narrative sample #1114 for IPC-Assault.,Velachery PS,False,True,2
+MV-184,Accident-RashDriving,2025-05-09T07:35:00,13.064395,80.286988,"Sector 72, Zone 9",FIR narrative sample #1115 for Accident-RashDriving.,T. Nagar PS,True,False,3
+MV-184,Accident-RashDriving,2024-05-16T02:36:00,17.37248,78.527692,"Sector 26, Zone 7",FIR narrative sample #1116 for Accident-RashDriving.,Velachery PS,True,False,3
+302,IPC-Murder,2024-11-14T15:02:00,12.958998,77.534455,"Sector 76, Zone 13",FIR narrative sample #1117 for IPC-Murder.,Velachery PS,False,False,5
+420,IPC-Fraud,2024-08-21T00:18:00,13.105687,80.327676,"Sector 37, Zone 5",FIR narrative sample #1118 for IPC-Fraud.,Anna Nagar PS,False,False,3
+NDPS-21,NDPS-DrugPossession,2026-02-25T17:58:00,17.311259,78.509864,"Sector 54, Zone 10",FIR narrative sample #1119 for NDPS-DrugPossession.,T. Nagar PS,False,False,4
+376,IPC-SexualOffence,2025-05-14T11:25:00,13.091732,80.240808,"Sector 39, Zone 15",FIR narrative sample #1120 for IPC-SexualOffence.,Anna Nagar PS,False,False,5
+NDPS-27,NDPS-DrugConsumption,2024-06-16T03:53:00,13.041633,77.531039,"Sector 18, Zone 4",FIR narrative sample #1121 for NDPS-DrugConsumption.,T. Nagar PS,False,False,3
+323,IPC-Assault,2024-04-29T23:27:00,13.029931,80.221286,"Sector 69, Zone 1",FIR narrative sample #1122 for IPC-Assault.,Velachery PS,False,False,2
+302,IPC-Murder,2025-07-12T01:07:00,13.154243,80.202707,"Sector 49, Zone 9",FIR narrative sample #1123 for IPC-Murder.,Mylapore PS,False,False,5
+379,IPC-Theft,2025-11-13T18:29:00,13.022906,80.328603,"Sector 82, Zone 15",FIR narrative sample #1124 for IPC-Theft.,Anna Nagar PS,False,False,2
+307,IPC-AttemptToMurder,2024-10-16T16:15:00,17.381468,78.485117,"Sector 62, Zone 8",FIR narrative sample #1125 for IPC-AttemptToMurder.,Tambaram PS,False,False,4
+307,IPC-AttemptToMurder,2025-07-07T09:45:00,13.059182,80.324387,"Sector 95, Zone 7",FIR narrative sample #1126 for IPC-AttemptToMurder.,Tambaram PS,False,False,4
+307,IPC-AttemptToMurder,2026-01-17T15:03:00,13.0048,80.225282,"Sector 63, Zone 4",FIR narrative sample #1127 for IPC-AttemptToMurder.,Adyar PS,False,False,4
+323,IPC-Assault,2025-09-02T18:48:00,17.387228,78.456837,"Sector 59, Zone 5",FIR narrative sample #1128 for IPC-Assault.,Tambaram PS,False,False,2
+ARMS-25,ArmsAct-IllegalWeapon,2025-12-16T04:14:00,12.953292,77.586989,"Sector 52, Zone 7",FIR narrative sample #1129 for ArmsAct-IllegalWeapon.,Adyar PS,False,False,4
+307,IPC-AttemptToMurder,2025-06-23T13:10:00,17.354143,78.545873,"Sector 60, Zone 4",FIR narrative sample #1130 for IPC-AttemptToMurder.,Adyar PS,False,False,4
+307,IPC-AttemptToMurder,2025-07-31T00:57:00,12.921525,77.519174,"Sector 46, Zone 9",FIR narrative sample #1131 for IPC-AttemptToMurder.,Anna Nagar PS,False,False,4
+307,IPC-AttemptToMurder,2024-09-17T02:22:00,12.925531,77.578108,"Sector 7, Zone 15",FIR narrative sample #1132 for IPC-AttemptToMurder.,Velachery PS,False,False,4
+376,IPC-SexualOffence,2025-03-21T03:03:00,17.366204,78.555183,"Sector 52, Zone 6",FIR narrative sample #1133 for IPC-SexualOffence.,Adyar PS,False,True,5
+MV-184,Accident-RashDriving,2025-06-25T16:38:00,12.974579,77.53207,"Sector 15, Zone 8",FIR narrative sample #1134 for Accident-RashDriving.,Adyar PS,True,True,3
+307,IPC-AttemptToMurder,2026-02-08T01:36:00,12.929803,77.599741,"Sector 90, Zone 13",FIR narrative sample #1135 for IPC-AttemptToMurder.,Mylapore PS,False,False,4
+NDPS-21,NDPS-DrugPossession,2025-02-25T03:14:00,17.436851,78.517369,"Sector 27, Zone 12",FIR narrative sample #1136 for NDPS-DrugPossession.,Adyar PS,False,False,4
+376,IPC-SexualOffence,2024-04-11T19:18:00,17.305497,78.436313,"Sector 62, Zone 10",FIR narrative sample #1137 for IPC-SexualOffence.,Mylapore PS,False,False,5
+420,IPC-Fraud,2025-10-11T10:43:00,13.029363,80.243845,"Sector 86, Zone 16",FIR narrative sample #1138 for IPC-Fraud.,T. Nagar PS,False,False,3
+NDPS-21,NDPS-DrugPossession,2025-04-26T00:11:00,13.032601,77.541916,"Sector 77, Zone 12",FIR narrative sample #1139 for NDPS-DrugPossession.,T. Nagar PS,False,False,4
+NDPS-27,NDPS-DrugConsumption,2024-08-14T00:31:00,13.078311,80.197928,"Sector 38, Zone 8",FIR narrative sample #1140 for NDPS-DrugConsumption.,Tambaram PS,False,True,3
+ARMS-25,ArmsAct-IllegalWeapon,2024-11-04T05:48:00,13.126741,80.206699,"Sector 58, Zone 16",FIR narrative sample #1141 for ArmsAct-IllegalWeapon.,Velachery PS,False,False,4
+323,IPC-Assault,2024-09-22T08:42:00,12.932166,77.588,"Sector 91, Zone 11",FIR narrative sample #1142 for IPC-Assault.,Velachery PS,False,False,2
+ARMS-25,ArmsAct-IllegalWeapon,2024-05-24T19:30:00,13.04589,80.273789,"Sector 53, Zone 8",FIR narrative sample #1143 for ArmsAct-IllegalWeapon.,Adyar PS,False,False,4
+379,IPC-Theft,2025-04-03T15:01:00,13.095113,80.302029,"Sector 96, Zone 3",FIR narrative sample #1144 for IPC-Theft.,Adyar PS,False,False,2
+420,IPC-Fraud,2025-03-13T20:06:00,13.031943,77.623208,"Sector 68, Zone 6",FIR narrative sample #1145 for IPC-Fraud.,Anna Nagar PS,False,False,3
+376,IPC-SexualOffence,2024-05-08T11:56:00,12.954164,77.581367,"Sector 25, Zone 2",FIR narrative sample #1146 for IPC-SexualOffence.,Velachery PS,False,False,5
+MV-184,Accident-RashDriving,2024-10-18T22:21:00,17.324674,78.533953,"Sector 37, Zone 4",FIR narrative sample #1147 for Accident-RashDriving.,Velachery PS,True,False,3
+302,IPC-Murder,2024-11-09T21:09:00,13.000548,77.59831,"Sector 86, Zone 6",FIR narrative sample #1148 for IPC-Murder.,Mylapore PS,False,False,5
+376,IPC-SexualOffence,2024-11-21T09:04:00,12.894095,77.521152,"Sector 16, Zone 2",FIR narrative sample #1149 for IPC-SexualOffence.,Mylapore PS,False,False,5
+NDPS-27,NDPS-DrugConsumption,2025-05-25T00:27:00,12.997241,77.514703,"Sector 37, Zone 17",FIR narrative sample #1150 for NDPS-DrugConsumption.,Velachery PS,False,False,3
+ARMS-25,ArmsAct-IllegalWeapon,2025-10-27T02:45:00,12.914423,77.631889,"Sector 38, Zone 8",FIR narrative sample #1151 for ArmsAct-IllegalWeapon.,T. Nagar PS,False,False,4
+302,IPC-Murder,2024-12-05T11:15:00,17.406927,78.47431,"Sector 34, Zone 10",FIR narrative sample #1152 for IPC-Murder.,T. Nagar PS,False,False,5
+MV-184,Accident-RashDriving,2025-05-20T05:36:00,13.000228,77.566197,"Sector 99, Zone 7",FIR narrative sample #1153 for Accident-RashDriving.,Tambaram PS,True,False,3
+376,IPC-SexualOffence,2025-11-16T13:35:00,13.05087,80.204396,"Sector 60, Zone 18",FIR narrative sample #1154 for IPC-SexualOffence.,Tambaram PS,False,False,5
+379,IPC-Theft,2025-03-15T13:06:00,13.086951,80.301761,"Sector 92, Zone 12",FIR narrative sample #1155 for IPC-Theft.,Tambaram PS,False,False,2
+NDPS-27,NDPS-DrugConsumption,2025-04-06T13:29:00,13.045432,77.588405,"Sector 99, Zone 14",FIR narrative sample #1156 for NDPS-DrugConsumption.,T. Nagar PS,False,False,3
+307,IPC-AttemptToMurder,2025-11-11T19:58:00,13.017461,77.607452,"Sector 70, Zone 19",FIR narrative sample #1157 for IPC-AttemptToMurder.,Mylapore PS,False,False,4
+376,IPC-SexualOffence,2026-02-08T12:08:00,12.998813,77.588649,"Sector 59, Zone 2",FIR narrative sample #1158 for IPC-SexualOffence.,Mylapore PS,False,False,5
+307,IPC-AttemptToMurder,2026-02-06T08:53:00,17.322128,78.501794,"Sector 62, Zone 11",FIR narrative sample #1159 for IPC-AttemptToMurder.,Mylapore PS,False,False,4
+302,IPC-Murder,2025-11-30T23:37:00,17.386731,78.521412,"Sector 19, Zone 18",FIR narrative sample #1160 for IPC-Murder.,Mylapore PS,False,False,5
+NDPS-27,NDPS-DrugConsumption,2025-11-15T07:57:00,17.407347,78.431464,"Sector 1, Zone 16",FIR narrative sample #1161 for NDPS-DrugConsumption.,Tambaram PS,False,False,3
+MV-184,Accident-RashDriving,2024-04-29T06:07:00,13.002706,80.287307,"Sector 32, Zone 7",FIR narrative sample #1162 for Accident-RashDriving.,T. Nagar PS,True,False,3
+307,IPC-AttemptToMurder,2024-12-04T00:53:00,17.376011,78.415605,"Sector 62, Zone 6",FIR narrative sample #1163 for IPC-AttemptToMurder.,Anna Nagar PS,False,False,4
+420,IPC-Fraud,2024-09-21T08:52:00,17.414011,78.54419,"Sector 19, Zone 1",FIR narrative sample #1164 for IPC-Fraud.,Anna Nagar PS,False,False,3
+379,IPC-Theft,2025-11-09T23:42:00,13.030024,80.309366,"Sector 62, Zone 10",FIR narrative sample #1165 for IPC-Theft.,Anna Nagar PS,False,False,2
+376,IPC-SexualOffence,2024-05-20T03:37:00,12.950374,77.558629,"Sector 60, Zone 14",FIR narrative sample #1166 for IPC-SexualOffence.,T. Nagar PS,False,False,5
+NDPS-21,NDPS-DrugPossession,2025-11-03T00:18:00,12.91082,77.576909,"Sector 83, Zone 20",FIR narrative sample #1167 for NDPS-DrugPossession.,T. Nagar PS,False,False,4
+NDPS-27,NDPS-DrugConsumption,2026-02-19T11:08:00,13.032788,77.587936,"Sector 46, Zone 17",FIR narrative sample #1168 for NDPS-DrugConsumption.,Adyar PS,False,True,3
+ARMS-25,ArmsAct-IllegalWeapon,2025-08-31T11:57:00,17.389009,78.488787,"Sector 46, Zone 19",FIR narrative sample #1169 for ArmsAct-IllegalWeapon.,Adyar PS,False,False,4
+323,IPC-Assault,2024-12-19T22:54:00,13.047234,80.312717,"Sector 9, Zone 16",FIR narrative sample #1170 for IPC-Assault.,Anna Nagar PS,False,False,2
+NDPS-21,NDPS-DrugPossession,2024-12-06T19:42:00,13.094866,80.339086,"Sector 34, Zone 5",FIR narrative sample #1171 for NDPS-DrugPossession.,Mylapore PS,False,False,4
+323,IPC-Assault,2024-08-09T18:22:00,17.403796,78.471304,"Sector 21, Zone 8",FIR narrative sample #1172 for IPC-Assault.,Tambaram PS,False,True,2
+307,IPC-AttemptToMurder,2024-05-22T03:31:00,17.381226,78.528285,"Sector 31, Zone 4",FIR narrative sample #1173 for IPC-AttemptToMurder.,Tambaram PS,False,False,4
+379,IPC-Theft,2025-03-06T13:59:00,13.012608,80.230777,"Sector 10, Zone 15",FIR narrative sample #1174 for IPC-Theft.,Tambaram PS,False,True,2
+323,IPC-Assault,2024-07-21T20:53:00,13.150468,80.242085,"Sector 18, Zone 19",FIR narrative sample #1175 for IPC-Assault.,Anna Nagar PS,False,False,2
+ARMS-25,ArmsAct-IllegalWeapon,2025-09-11T06:16:00,12.961602,77.560374,"Sector 56, Zone 17",FIR narrative sample #1176 for ArmsAct-IllegalWeapon.,Adyar PS,False,False,4
+420,IPC-Fraud,2026-01-05T18:01:00,17.458573,78.422093,"Sector 1, Zone 12",FIR narrative sample #1177 for IPC-Fraud.,Adyar PS,False,True,3
+NDPS-21,NDPS-DrugPossession,2024-08-30T17:55:00,13.057214,80.299878,"Sector 83, Zone 17",FIR narrative sample #1178 for NDPS-DrugPossession.,Tambaram PS,False,False,4
+NDPS-27,NDPS-DrugConsumption,2025-09-21T06:36:00,12.971736,77.571638,"Sector 9, Zone 15",FIR narrative sample #1179 for NDPS-DrugConsumption.,Adyar PS,False,False,3
+NDPS-21,NDPS-DrugPossession,2024-07-02T12:55:00,13.093764,80.211051,"Sector 16, Zone 16",FIR narrative sample #1180 for NDPS-DrugPossession.,T. Nagar PS,False,False,4
+420,IPC-Fraud,2026-02-10T19:34:00,12.895207,77.646012,"Sector 50, Zone 12",FIR narrative sample #1181 for IPC-Fraud.,Velachery PS,False,False,3
+307,IPC-AttemptToMurder,2025-10-24T09:04:00,17.397057,78.543211,"Sector 40, Zone 13",FIR narrative sample #1182 for IPC-AttemptToMurder.,Mylapore PS,False,False,4
+MV-184,Accident-RashDriving,2026-02-04T17:44:00,13.095944,80.340608,"Sector 4, Zone 2",FIR narrative sample #1183 for Accident-RashDriving.,Tambaram PS,True,False,3
+323,IPC-Assault,2025-01-27T08:12:00,13.033684,77.524103,"Sector 43, Zone 2",FIR narrative sample #1184 for IPC-Assault.,Tambaram PS,False,False,2
+420,IPC-Fraud,2024-11-14T02:51:00,17.449692,78.519195,"Sector 45, Zone 3",FIR narrative sample #1185 for IPC-Fraud.,T. Nagar PS,False,False,3
+NDPS-21,NDPS-DrugPossession,2024-07-30T23:39:00,13.144703,80.267303,"Sector 6, Zone 4",FIR narrative sample #1186 for NDPS-DrugPossession.,Tambaram PS,False,False,4
+302,IPC-Murder,2024-11-11T16:14:00,17.361041,78.483115,"Sector 3, Zone 2",FIR narrative sample #1187 for IPC-Murder.,Adyar PS,False,False,5
+302,IPC-Murder,2025-09-15T17:38:00,13.000711,77.632668,"Sector 50, Zone 13",FIR narrative sample #1188 for IPC-Murder.,T. Nagar PS,False,False,5
+379,IPC-Theft,2025-01-18T22:27:00,17.327043,78.476772,"Sector 46, Zone 7",FIR narrative sample #1189 for IPC-Theft.,Velachery PS,False,False,2
+323,IPC-Assault,2025-01-11T01:15:00,13.017419,80.192308,"Sector 73, Zone 2",FIR narrative sample #1190 for IPC-Assault.,Mylapore PS,False,False,2
+302,IPC-Murder,2025-07-22T01:04:00,13.022975,80.219595,"Sector 78, Zone 8",FIR narrative sample #1191 for IPC-Murder.,Velachery PS,False,True,5
+376,IPC-SexualOffence,2025-11-22T19:25:00,12.996813,77.619654,"Sector 27, Zone 16",FIR narrative sample #1192 for IPC-SexualOffence.,Mylapore PS,False,True,5
+323,IPC-Assault,2025-08-21T14:45:00,13.042228,77.639433,"Sector 32, Zone 17",FIR narrative sample #1193 for IPC-Assault.,Tambaram PS,False,False,2
+376,IPC-SexualOffence,2025-05-12T22:34:00,17.321701,78.462162,"Sector 63, Zone 9",FIR narrative sample #1194 for IPC-SexualOffence.,Mylapore PS,False,False,5
+307,IPC-AttemptToMurder,2025-09-07T04:53:00,17.341886,78.525405,"Sector 93, Zone 5",FIR narrative sample #1195 for IPC-AttemptToMurder.,Velachery PS,False,False,4
+302,IPC-Murder,2025-08-06T22:28:00,17.427271,78.559187,"Sector 35, Zone 9",FIR narrative sample #1196 for IPC-Murder.,T. Nagar PS,False,True,5
+MV-184,Accident-RashDriving,2025-03-06T09:52:00,13.012255,80.327432,"Sector 49, Zone 13",FIR narrative sample #1197 for Accident-RashDriving.,T. Nagar PS,True,False,3
+NDPS-27,NDPS-DrugConsumption,2026-02-17T07:13:00,12.921108,77.583574,"Sector 5, Zone 18",FIR narrative sample #1198 for NDPS-DrugConsumption.,Velachery PS,False,True,3
+323,IPC-Assault,2026-03-08T19:48:00,13.039232,77.659792,"Sector 28, Zone 1",FIR narrative sample #1199 for IPC-Assault.,Mylapore PS,False,False,2
+323,IPC-Assault,2024-07-06T13:55:00,13.016818,77.663171,"Sector 71, Zone 13",FIR narrative sample #1200 for IPC-Assault.,T. Nagar PS,False,False,2

@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>REDSHIELD '26 — Crime Predictive Intelligence v2.0</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet.heat@0.2.0/dist/leaflet-heat.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg0:#030712;--bg1:#060f1e;--bg2:#0a1628;--bg3:#0f1f36;
+  --red:#ff2244;--orange:#ff7c1f;--blue:#00c8ff;--green:#00ff88;
+  --purple:#c084fc;--yellow:#fbbf24;--pink:#f472b6;
+  --text1:#f0f8ff;--text2:#94a3b8;--text3:#475569;
+  --border:#1e3a5f;--glow-red:rgba(255,34,68,0.4);--glow-blue:rgba(0,200,255,0.4);
+}
+html,body{height:100%;overflow:hidden;background:var(--bg0)}
+body{font-family:'Inter',sans-serif;color:var(--text1);display:flex;flex-direction:column}
+
+/* ═══════════════ SCANLINES OVERLAY ═══════════════ */
+body::before{
+  content:'';position:fixed;inset:0;
+  background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.03) 2px,rgba(0,0,0,0.03) 4px);
+  pointer-events:none;z-index:9998
+}
+
+/* ═══════════════ HEADER ═══════════════ */
+.hdr{
+  flex-shrink:0;height:56px;
+  background:linear-gradient(90deg,#030712 0%,#060f1e 40%,#0a0a1e 60%,#030712 100%);
+  border-bottom:1px solid var(--red);
+  display:flex;align-items:center;padding:0 16px;gap:14px;
+  box-shadow:0 0 40px rgba(255,34,68,0.15);position:relative;z-index:100
+}
+.hdr::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--red) 30%,var(--orange) 50%,var(--red) 70%,transparent);animation:hdr-glow 3s ease-in-out infinite}
+@keyframes hdr-glow{0%,100%{opacity:0.6}50%{opacity:1}}
+
+.logo-hex{
+  width:38px;height:38px;flex-shrink:0;position:relative;
+  background:linear-gradient(135deg,var(--red),var(--orange));
+  clip-path:polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%);
+  display:flex;align-items:center;justify-content:center;font-size:16px;
+  animation:hex-pulse 2.5s ease-in-out infinite
+}
+@keyframes hex-pulse{0%,100%{box-shadow:0 0 0 0 var(--glow-red)}50%{box-shadow:0 0 0 8px transparent}}
+
+.logo-name{font-family:'Orbitron',monospace;font-size:20px;font-weight:900;letter-spacing:4px;
+  background:linear-gradient(90deg,var(--red),var(--orange),var(--yellow));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.logo-sub{font-family:'Share Tech Mono',monospace;font-size:8px;color:var(--text3);letter-spacing:2px}
+
+.ticker-wrap{flex:1;overflow:hidden;background:rgba(255,34,68,0.06);border:1px solid rgba(255,34,68,0.2);border-radius:20px;height:26px;display:flex;align-items:center;padding:0 14px}
+.ticker-text{white-space:nowrap;font-family:'Share Tech Mono',monospace;font-size:10px;color:var(--red);display:inline-block;animation:ticker 30s linear infinite}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+.hpill{display:flex;align-items:center;gap:6px;background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:3px 12px;font-size:11px;white-space:nowrap;flex-shrink:0}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--green);animation:blink 1.5s ease-in-out infinite;flex-shrink:0}
+.dot.r{background:var(--red)}.dot.o{background:var(--orange)}
+.live-pill{background:rgba(255,34,68,0.12);border:1px solid var(--red);color:var(--red);padding:3px 10px;border-radius:12px;font-size:10px;font-family:'Share Tech Mono',monospace;letter-spacing:2px;animation:blink 2s ease-in-out infinite;flex-shrink:0}
+.hdr-time{font-family:'Orbitron',monospace;font-size:12px;color:var(--blue);letter-spacing:2px;flex-shrink:0}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+
+/* ═══════════════ LAYOUT ═══════════════ */
+.body-wrap{flex:1;min-height:0;display:grid;grid-template-columns:280px 1fr 320px;overflow:hidden}
+
+/* ═══════════════ SIDEBARS ═══════════════ */
+.sl,.sr{height:100%;overflow-y:auto;overflow-x:hidden;padding:12px;display:flex;flex-direction:column;gap:10px;background:var(--bg1);scrollbar-width:thin}
+.sl{border-right:1px solid var(--border);scrollbar-color:var(--blue) var(--bg0)}
+.sr{border-left:1px solid var(--border);scrollbar-color:var(--red) var(--bg0)}
+.sl::-webkit-scrollbar,.sr::-webkit-scrollbar{width:5px}
+.sl::-webkit-scrollbar-thumb{background:var(--blue);border-radius:3px}
+.sr::-webkit-scrollbar-thumb{background:var(--red);border-radius:3px}
+
+/* ═══════════════ CARDS ═══════════════ */
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:12px;flex-shrink:0;position:relative;overflow:hidden;transition:border-color 0.3s}
+.card::before{content:'';position:absolute;top:0;left:0;width:2px;height:100%;background:linear-gradient(180deg,var(--blue),transparent)}
+.card.r::before{background:linear-gradient(180deg,var(--red),transparent)}
+.card.g::before{background:linear-gradient(180deg,var(--green),transparent)}
+.card.p::before{background:linear-gradient(180deg,var(--purple),transparent)}
+.card.o::before{background:linear-gradient(180deg,var(--orange),transparent)}
+.card.y::before{background:linear-gradient(180deg,var(--yellow),transparent)}
+.card:hover{border-color:rgba(0,200,255,0.3)}
+
+.ct{font-family:'Orbitron',monospace;font-size:9px;letter-spacing:3px;color:var(--text3);text-transform:uppercase;display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.ct::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--border),transparent)}
+.ct span{font-size:13px}
+
+/* ═══════════════ FORM CONTROLS ═══════════════ */
+.fl{font-size:9px;color:var(--text3);letter-spacing:1px;text-transform:uppercase;margin-bottom:3px}
+select,input[type=date],input[type=time],input[type=text]{
+  background:var(--bg3);border:1px solid var(--border);color:var(--text1);
+  padding:7px 10px;border-radius:6px;font-family:'Inter',sans-serif;font-size:12px;
+  width:100%;outline:none;transition:all 0.2s
+}
+select:focus,input:focus{border-color:var(--blue);box-shadow:0 0 0 2px rgba(0,200,255,0.1)}
+.fg{display:flex;flex-direction:column;gap:3px}
+.fg2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+
+/* ═══════════════ BUTTONS ═══════════════ */
+.btn-red{background:linear-gradient(135deg,var(--red),var(--orange));border:none;color:white;padding:9px;border-radius:7px;font-family:'Orbitron',monospace;font-size:10px;font-weight:700;letter-spacing:2px;cursor:pointer;width:100%;transition:all 0.2s}
+.btn-red:hover{transform:translateY(-1px);box-shadow:0 4px 20px var(--glow-red)}
+.btn-blue{background:transparent;border:1px solid var(--blue);color:var(--blue);padding:7px;border-radius:7px;font-family:'Orbitron',monospace;font-size:9px;letter-spacing:1px;cursor:pointer;width:100%;transition:all 0.2s}
+.btn-blue:hover{background:rgba(0,200,255,0.1);box-shadow:0 0 12px var(--glow-blue)}
+.btn-green{background:linear-gradient(135deg,#00ff88,#00cc66);border:none;color:#000;padding:9px;border-radius:7px;font-family:'Orbitron',monospace;font-size:10px;font-weight:700;letter-spacing:1px;cursor:pointer;width:100%;transition:all 0.2s}
+.btn-green:hover{transform:translateY(-1px);box-shadow:0 4px 16px rgba(0,255,136,0.4)}
+
+/* ═══════════════ STATS ═══════════════ */
+.stats-g{display:grid;grid-template-columns:repeat(2,1fr);gap:7px}
+.stat{background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:10px;text-align:center;position:relative;overflow:hidden}
+.stat::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;border-radius:0 0 8px 8px}
+.stat.b::after{background:var(--blue)}.stat.r::after{background:var(--red)}
+.stat.g::after{background:var(--green)}.stat.o::after{background:var(--orange)}
+.sv{font-family:'Orbitron',monospace;font-size:22px;font-weight:700;line-height:1}
+.sl2{font-size:8px;color:var(--text3);letter-spacing:1px;margin-top:3px}
+.sv.b{color:var(--blue)}.sv.r{color:var(--red)}.sv.g{color:var(--green)}.sv.o{color:var(--orange)}
+
+/* ═══════════════ MAP ═══════════════ */
+.map-wrap{position:relative;overflow:hidden}
+#map{width:100%;height:100%}
+.map-btns{position:absolute;top:10px;left:50%;transform:translateX(-50%);display:flex;gap:5px;z-index:500;flex-wrap:wrap;justify-content:center}
+.mb{background:rgba(6,15,30,0.9);border:1px solid var(--border);color:var(--text2);padding:6px 13px;border-radius:18px;font-family:'Orbitron',monospace;font-size:9px;font-weight:700;letter-spacing:1px;cursor:pointer;transition:all 0.2s;backdrop-filter:blur(8px)}
+.mb:hover,.mb.active{background:var(--blue);color:#000;border-color:var(--blue);box-shadow:0 0 14px var(--glow-blue)}
+.mb.danger.active{background:var(--red);color:white;border-color:var(--red);box-shadow:0 0 14px var(--glow-red)}
+
+/* ═══════════════ TABS ═══════════════ */
+.tabs{display:flex;gap:3px;background:var(--bg3);border-radius:7px;padding:3px;margin-bottom:10px}
+.tab{flex:1;padding:6px;border:none;background:transparent;color:var(--text3);border-radius:5px;cursor:pointer;font-family:'Orbitron',monospace;font-size:8px;font-weight:700;letter-spacing:1px;text-transform:uppercase;transition:all 0.2s}
+.tab.active{background:var(--bg2);color:var(--text1)}
+
+/* ═══════════════ CHART ═══════════════ */
+.bchart{display:flex;align-items:flex-end;gap:4px;height:90px;padding:0 2px}
+.bar{flex:1;border-radius:3px 3px 0 0;transition:height 0.8s cubic-bezier(0.34,1.56,0.64,1);cursor:pointer;position:relative}
+.bar:hover{filter:brightness(1.3)}
+.blabels{display:flex;gap:4px;padding:3px 2px 0}
+.blbl{flex:1;text-align:center;font-size:8px;color:var(--text3);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* ═══════════════ PREDICTION BARS ═══════════════ */
+.prow{display:flex;align-items:center;gap:7px;margin-bottom:8px}
+.plbl{font-size:10px;color:var(--text2);width:100px;flex-shrink:0}
+.pbar{flex:1;height:5px;background:var(--bg3);border-radius:3px;overflow:hidden}
+.pfill{height:100%;border-radius:3px;transition:width 1.2s cubic-bezier(0.34,1.56,0.64,1)}
+.ppct{font-family:'Share Tech Mono',monospace;font-size:10px;width:30px;text-align:right;flex-shrink:0}
+
+/* ═══════════════ PATROL ═══════════════ */
+.punit{display:flex;align-items:center;gap:8px;padding:8px;background:var(--bg3);border:1px solid var(--border);border-radius:7px;margin-bottom:6px;transition:all 0.2s;cursor:pointer}
+.punit:hover{border-color:var(--blue);background:rgba(0,200,255,0.05)}
+.pname{font-size:11px;font-weight:600}
+.ploc{font-size:9px;color:var(--text3);font-family:'Share Tech Mono',monospace}
+.pdot{width:7px;height:7px;border-radius:50%;background:var(--green);animation:blink 1.5s ease-in-out infinite;margin-left:auto;flex-shrink:0}
+.pdot.off{background:var(--text3);animation:none}
+
+/* ═══════════════ FIR LIST ═══════════════ */
+.frow{background:var(--bg3);border:1px solid var(--border);border-radius:7px;padding:9px;cursor:pointer;transition:all 0.2s;margin-bottom:5px;position:relative}
+.frow:hover{border-color:var(--blue);transform:translateX(2px)}
+.fid{font-family:'Share Tech Mono',monospace;font-size:9px;color:var(--text3)}
+.ftype{font-size:11px;font-weight:600;margin-top:1px}
+.fmeta{font-size:9px;color:var(--text2);margin-top:2px;display:flex;justify-content:space-between}
+.fsev{position:absolute;right:9px;top:50%;transform:translateY(-50%);width:8px;height:8px;border-radius:50%}
+
+/* ═══════════════ IPC ═══════════════ */
+.ipc-s{background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:6px 10px;font-size:11px;color:var(--text1);width:100%;outline:none;font-family:'Share Tech Mono',monospace;letter-spacing:1px;margin-bottom:7px}
+.ipc-s:focus{border-color:var(--blue)}
+.ipc-l{max-height:200px;overflow-y:auto;scrollbar-width:thin;scrollbar-color:var(--border) transparent}
+.irow{display:flex;gap:8px;padding:5px 0;border-bottom:1px solid rgba(30,58,95,0.5);align-items:flex-start}
+.irow:last-child{border:none}
+.ino{font-family:'Share Tech Mono',monospace;font-size:10px;color:var(--orange);width:36px;flex-shrink:0}
+.idsc{font-size:10px;color:var(--text2)}
+
+/* ═══════════════ NEW: RADAR ═══════════════ */
+.radar-wrap{position:relative;width:180px;height:180px;margin:0 auto}
+.radar-svg{width:100%;height:100%}
+.radar-sweep{transform-origin:90px 90px;animation:sweep 3s linear infinite}
+@keyframes sweep{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+.radar-blip{animation:blip-fade 3s ease-in-out infinite}
+@keyframes blip-fade{0%,100%{opacity:0}20%,60%{opacity:1}80%{opacity:0.3}}
+
+/* ═══════════════ NEW: CRIME RANK ═══════════════ */
+.rank-row{display:flex;align-items:center;gap:8px;padding:7px 8px;background:var(--bg3);border:1px solid var(--border);border-radius:7px;margin-bottom:5px;transition:all 0.2s}
+.rank-row:hover{border-color:rgba(255,34,68,0.4)}
+.rank-num{font-family:'Orbitron',monospace;font-size:14px;font-weight:900;width:24px;flex-shrink:0}
+.rank-area{flex:1}
+.rank-name{font-size:11px;font-weight:600}
+.rank-count{font-size:9px;color:var(--text3);font-family:'Share Tech Mono',monospace}
+.rank-bar-w{width:60px;height:4px;background:rgba(255,255,255,0.1);border-radius:2px;overflow:hidden}
+.rank-bar-f{height:100%;border-radius:2px;transition:width 1s ease}
+.trend{font-size:11px;margin-left:4px}
+
+/* ═══════════════ NEW: AI ANALYST ═══════════════ */
+.ai-chat{max-height:220px;overflow-y:auto;margin-bottom:8px;scrollbar-width:thin;scrollbar-color:var(--purple) transparent}
+.ai-msg{padding:8px 10px;border-radius:8px;font-size:11px;line-height:1.5;margin-bottom:6px}
+.ai-msg.user{background:rgba(0,200,255,0.1);border:1px solid rgba(0,200,255,0.2);color:var(--text1);text-align:right}
+.ai-msg.bot{background:rgba(192,132,252,0.1);border:1px solid rgba(192,132,252,0.2);color:var(--text1)}
+.ai-msg.bot::before{content:'🤖 ';font-size:12px}
+.ai-input-wrap{display:flex;gap:6px}
+.ai-input{flex:1;background:var(--bg3);border:1px solid var(--border);color:var(--text1);padding:7px 10px;border-radius:6px;font-size:11px;font-family:'Inter',sans-serif;outline:none}
+.ai-input:focus{border-color:var(--purple)}
+.ai-send{background:var(--purple);border:none;color:white;padding:7px 12px;border-radius:6px;cursor:pointer;font-size:13px;transition:all 0.2s;flex-shrink:0}
+.ai-send:hover{background:#a855f7;box-shadow:0 0 12px rgba(192,132,252,0.4)}
+.ai-thinking{display:none;text-align:center;padding:8px;font-size:10px;color:var(--purple);font-family:'Share Tech Mono',monospace;letter-spacing:2px}
+.dot-flashing{display:inline-flex;gap:4px}
+.dot-flashing span{width:5px;height:5px;border-radius:50%;background:var(--purple);animation:df 1s ease-in-out infinite}
+.dot-flashing span:nth-child(2){animation-delay:0.2s}
+.dot-flashing span:nth-child(3){animation-delay:0.4s}
+@keyframes df{0%,80%,100%{opacity:0.2}40%{opacity:1}}
+
+/* ═══════════════ NEW: SOS PANEL ═══════════════ */
+.sos-btn{
+  width:100%;padding:16px;border:2px solid var(--red);border-radius:10px;
+  background:rgba(255,34,68,0.08);color:var(--red);
+  font-family:'Orbitron',monospace;font-size:14px;font-weight:900;letter-spacing:3px;
+  cursor:pointer;transition:all 0.2s;position:relative;overflow:hidden
+}
+.sos-btn::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,34,68,0),rgba(255,34,68,0.2));opacity:0;transition:opacity 0.3s}
+.sos-btn:hover{background:rgba(255,34,68,0.15);box-shadow:0 0 30px var(--glow-red);transform:scale(1.02)}
+.sos-btn:hover::before{opacity:1}
+.sos-btn.active{animation:sos-pulse 1s ease-in-out infinite}
+@keyframes sos-pulse{0%,100%{box-shadow:0 0 10px var(--glow-red)}50%{box-shadow:0 0 40px rgba(255,34,68,0.8)}}
+.sos-status{text-align:center;font-size:10px;color:var(--text3);font-family:'Share Tech Mono',monospace;margin-top:6px;letter-spacing:1px}
+.dispatch-info{display:none;background:rgba(0,255,136,0.08);border:1px solid rgba(0,255,136,0.3);border-radius:8px;padding:10px;margin-top:8px}
+.dispatch-info .di-row{display:flex;justify-content:space-between;font-size:10px;padding:2px 0;color:var(--text2)}
+.dispatch-info .di-row span:last-child{color:var(--green);font-weight:600}
+
+/* ═══════════════ NEW: WEATHER-CRIME ═══════════════ */
+.weather-card{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:8px}
+.wc-item{background:var(--bg3);border:1px solid var(--border);border-radius:7px;padding:8px;text-align:center}
+.wc-icon{font-size:20px;display:block;margin-bottom:3px}
+.wc-val{font-family:'Orbitron',monospace;font-size:13px;font-weight:700;color:var(--blue)}
+.wc-lbl{font-size:8px;color:var(--text3);letter-spacing:1px}
+.corr-bar{height:6px;background:var(--bg3);border-radius:3px;overflow:hidden;margin:4px 0}
+.corr-fill{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--blue),var(--red))}
+
+/* ═══════════════ NOTIFICATION ═══════════════ */
+.notif{position:fixed;top:66px;right:16px;background:var(--bg2);border-radius:10px;padding:12px 16px;z-index:9999;min-width:260px;animation:notif-in 0.3s cubic-bezier(0.34,1.56,0.64,1);box-shadow:0 8px 32px rgba(0,0,0,0.6)}
+.notif.ok{border:1px solid var(--green)}.notif.err{border:1px solid var(--red)}.notif.info{border:1px solid var(--blue)}
+.ntitle{font-family:'Orbitron',monospace;font-weight:700;font-size:11px;letter-spacing:1px}
+.nmsg{font-size:10px;color:var(--text3);margin-top:3px}
+@keyframes notif-in{from{transform:translateX(100px) scale(0.8);opacity:0}to{transform:translateX(0) scale(1);opacity:1}}
+
+/* ═══════════════ LOADING ═══════════════ */
+#ls{position:fixed;inset:0;background:var(--bg0);display:flex;align-items:center;justify-content:center;flex-direction:column;z-index:99999;gap:20px}
+.lt{font-family:'Orbitron',monospace;font-size:42px;font-weight:900;letter-spacing:8px;background:linear-gradient(90deg,var(--red),var(--orange),var(--yellow));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.lb-o{width:300px;height:3px;background:var(--bg3);border-radius:2px;overflow:hidden}
+.lb-i{height:100%;background:linear-gradient(90deg,var(--red),var(--orange));border-radius:2px;width:0;transition:width 0.15s;box-shadow:0 0 10px var(--glow-red)}
+.ls-txt{font-family:'Share Tech Mono',monospace;font-size:11px;color:var(--text3);letter-spacing:3px}
+.ls-grid{display:grid;grid-template-columns:repeat(8,1fr);gap:4px;opacity:0.3}
+.ls-cell{width:8px;height:8px;border-radius:1px;background:var(--red);animation:cell-blink 1s ease-in-out infinite}
+.ls-cell:nth-child(odd){animation-delay:0.5s}
+
+/* ═══════════════ LEAFLET ═══════════════ */
+.leaflet-popup-content-wrapper{background:var(--bg2)!important;border:1px solid var(--border)!important;border-radius:10px!important;color:var(--text1)!important;box-shadow:0 8px 32px rgba(0,0,0,0.6)!important}
+.leaflet-popup-tip{background:var(--bg2)!important}
+.ph{font-family:'Orbitron',monospace;font-size:12px;font-weight:700;letter-spacing:1px;border-bottom:1px solid var(--border);padding-bottom:6px;margin-bottom:8px}
+.pr{display:flex;justify-content:space-between;font-size:11px;color:var(--text2);margin-bottom:3px}
+.pr span:last-child{color:var(--text1);font-weight:600}
+.leaflet-control-zoom{border:1px solid var(--border)!important}
+.leaflet-control-zoom a{background:var(--bg2)!important;color:var(--text1)!important;border-color:var(--border)!important}
+
+/* ═══════════════ MISC ═══════════════ */
+@keyframes cell-blink{0%,100%{opacity:0.2}50%{opacity:1}}
+@keyframes pulse-m{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.8;transform:scale(1.1)}}
+.scroll-hint{flex-shrink:0;height:20px;display:flex;align-items:center;justify-content:center}
+.scroll-hint span{font-size:8px;color:var(--text3);font-family:'Share Tech Mono',monospace;letter-spacing:2px;animation:blink 2s ease-in-out infinite}
+.badge{display:inline-block;padding:2px 7px;border-radius:10px;font-size:9px;font-weight:600;letter-spacing:1px}
+.badge.r{background:rgba(255,34,68,0.2);color:var(--red);border:1px solid rgba(255,34,68,0.3)}
+.badge.g{background:rgba(0,255,136,0.15);color:var(--green);border:1px solid rgba(0,255,136,0.3)}
+.badge.b{background:rgba(0,200,255,0.15);color:var(--blue);border:1px solid rgba(0,200,255,0.3)}
+.badge.o{background:rgba(255,124,31,0.2);color:var(--orange);border:1px solid rgba(255,124,31,0.3)}
+</style>
+</head>
+<body>
+
+<!-- ═══════ LOADING ═══════ -->
+<div id="ls">
+  <div class="ls-grid">
+    <div class="ls-cell"></div><div class="ls-cell"></div><div class="ls-cell"></div><div class="ls-cell"></div>
+    <div class="ls-cell"></div><div class="ls-cell"></div><div class="ls-cell"></div><div class="ls-cell"></div>
+  </div>
+  <div style="font-size:48px">🛡️</div>
+  <div class="lt">REDSHIELD</div>
+  <div style="font-family:'Share Tech Mono',monospace;font-size:10px;color:var(--text3);letter-spacing:4px">CRIME PREDICTIVE INTELLIGENCE v2.0</div>
+  <div class="lb-o"><div class="lb-i" id="lb"></div></div>
+  <div class="ls-txt" id="lt2">INITIALIZING CCTNS LINK...</div>
+  <div class="ls-grid">
+    <div class="ls-cell"></div><div class="ls-cell"></div><div class="ls-cell"></div><div class="ls-cell"></div>
+    <div class="ls-cell"></div><div class="ls-cell"></div><div class="ls-cell"></div><div class="ls-cell"></div>
+  </div>
+</div>
+
+<!-- ═══════ HEADER ═══════ -->
+<header class="hdr">
+  <div class="logo-hex">🛡️</div>
+  <div style="flex-shrink:0"><div class="logo-name">REDSHIELD</div><div class="logo-sub">CRIME PREDICTIVE INTELLIGENCE | CCTNS INTEGRATED | v2.0</div></div>
+  <div class="ticker-wrap"><span class="ticker-text" id="ticker">Loading...</span></div>
+  <div class="hpill"><div class="dot"></div>FIRs: <strong id="hdr-f">0</strong></div>
+  <div class="hpill"><div class="dot o"></div>Zones: <strong id="hdr-z">0</strong></div>
+  <div class="hpill"><div class="dot r"></div>Alerts: <strong id="hdr-a">3</strong></div>
+  <div class="live-pill">● LIVE</div>
+  <div class="hdr-time" id="htime">00:00:00</div>
+</header>
+
+<!-- ═══════ MAIN BODY ═══════ -->
+<div class="body-wrap">
+
+<!-- ════════════ LEFT SIDEBAR ════════════ -->
+<aside class="sl">
+
+  <!-- FILTERS -->
+  <div class="card">
+    <div class="ct"><span>🔍</span> Filters</div>
+    <div class="fg" style="margin-bottom:7px"><div class="fl">Crime Type</div><select id="f-crime"><option value="all">All Crime Types</option></select></div>
+    <div class="fg" style="margin-bottom:7px"><div class="fl">Act / Law</div>
+      <select id="f-act">
+        <option value="all">All Acts</option><option value="IPC">Indian Penal Code</option>
+        <option value="NDPS">NDPS Act</option><option value="Arms">Arms Act</option>
+        <option value="Excise">Excise Act</option><option value="SC/ST">SC/ST Act</option>
+        <option value="Gambling">Gambling Act</option>
+      </select>
+    </div>
+    <div class="fg" style="margin-bottom:7px"><div class="fl">Min. Severity</div>
+      <select id="f-sev"><option value="0">All Levels</option><option value="2">Medium (2+)</option><option value="3">High (3+)</option><option value="4">Critical (4+)</option><option value="5">Extreme (5)</option></select>
+    </div>
+    <div class="fg2" style="margin-bottom:9px">
+      <div class="fg"><div class="fl">Date From</div><input type="date" id="f-from" value="2024-01-01"></div>
+      <div class="fg"><div class="fl">Date To</div><input type="date" id="f-to" value="2024-12-31"></div>
+    </div>
+    <div class="fg2">
+      <button class="btn-red" style="font-size:9px;padding:8px" onclick="applyFilters()">✔ APPLY</button>
+      <button class="btn-blue" style="font-size:9px;padding:8px" onclick="clearFilters()">✖ CLEAR</button>
+    </div>
+  </div>
+
+  <!-- STATISTICS -->
+  <div class="card g">
+    <div class="ct"><span>📊</span> Live Statistics</div>
+    <div class="stats-g">
+      <div class="stat b"><div class="sv b" id="st-total">0</div><div class="sl2">TOTAL FIRS</div></div>
+      <div class="stat r"><div class="sv r" id="st-crit">0</div><div class="sl2">CRITICAL</div></div>
+      <div class="stat g"><div class="sv g" id="st-arr">0</div><div class="sl2">ARRESTED</div></div>
+      <div class="stat o"><div class="sv o" id="st-women">0</div><div class="sl2">WOMEN/CHILD</div></div>
+    </div>
+  </div>
+
+  <!-- 🆕 CRIME RANK LEADERBOARD -->
+  <div class="card o">
+    <div class="ct"><span>🏆</span> Crime Hotspot Rank</div>
+    <div id="rank-list"></div>
+  </div>
+
+  <!-- CRIME TREND -->
+  <div class="card">
+    <div class="ct"><span>📈</span> Crime Trend</div>
+    <div class="bchart" id="chart-bars"></div>
+    <div class="blabels" id="chart-lbls"></div>
+  </div>
+
+  <!-- MAP LEGEND -->
+  <div class="card">
+    <div class="ct"><span>🗺️</span> Legend</div>
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px">
+      <span style="display:flex;align-items:center;gap:4px;font-size:9px;color:var(--text2)"><span style="width:8px;height:8px;border-radius:50%;background:#0000ff;display:inline-block"></span>Very Low</span>
+      <span style="display:flex;align-items:center;gap:4px;font-size:9px;color:var(--text2)"><span style="width:8px;height:8px;border-radius:50%;background:#00cc00;display:inline-block"></span>Low</span>
+      <span style="display:flex;align-items:center;gap:4px;font-size:9px;color:var(--text2)"><span style="width:8px;height:8px;border-radius:50%;background:#ffff00;display:inline-block"></span>Moderate</span>
+      <span style="display:flex;align-items:center;gap:4px;font-size:9px;color:var(--text2)"><span style="width:8px;height:8px;border-radius:50%;background:#ff6600;display:inline-block"></span>High</span>
+      <span style="display:flex;align-items:center;gap:4px;font-size:9px;color:var(--text2)"><span style="width:8px;height:8px;border-radius:50%;background:#ff0000;display:inline-block"></span>Critical</span>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px">
+      <span style="display:flex;align-items:center;gap:5px;font-size:9px;color:var(--text2)"><span style="width:12px;height:12px;border-radius:2px;background:#ff0000;opacity:0.7;display:inline-block"></span>Critical Zone</span>
+      <span style="display:flex;align-items:center;gap:5px;font-size:9px;color:var(--text2)"><span style="width:12px;height:12px;border-radius:2px;background:#ff6600;opacity:0.7;display:inline-block"></span>High Risk</span>
+      <span style="display:flex;align-items:center;gap:5px;font-size:9px;color:var(--text2)"><span style="width:12px;height:12px;border-radius:2px;background:#ffaa00;opacity:0.7;display:inline-block"></span>Moderate</span>
+      <span style="display:flex;align-items:center;gap:5px;font-size:9px;color:var(--text2)"><span style="width:12px;height:12px;border-radius:2px;background:#00ff88;opacity:0.7;display:inline-block"></span>Low Risk</span>
+    </div>
+  </div>
+
+  <div class="scroll-hint"><span>↓ SCROLL FOR MORE</span></div>
+</aside>
+
+<!-- ════════════ MAP ════════════ -->
+<div class="map-wrap">
+  <div id="map"></div>
+  <div class="map-btns">
+    <button class="mb active" id="btn-heatmap" onclick="switchView('heatmap')">🔥 HEATMAP</button>
+    <button class="mb" id="btn-markers" onclick="switchView('markers')">📍 MARKERS</button>
+    <button class="mb" id="btn-zones" onclick="switchView('zones')">🗺️ ZONES</button>
+    <button class="mb danger" id="btn-patrol" onclick="switchView('patrol')">🚔 PATROL</button>
+    <button class="mb" onclick="exportCSV()">📥 EXPORT</button>
+  </div>
+</div>
+
+<!-- ════════════ RIGHT SIDEBAR ════════════ -->
+<aside class="sr">
+
+  <!-- 🆕 SOS EMERGENCY DISPATCH -->
+  <div class="card r">
+    <div class="ct"><span>🚨</span> Emergency Dispatch</div>
+    <button class="sos-btn" id="sos-btn" onclick="triggerSOS()">
+      🚨 SOS — DISPATCH NOW
+    </button>
+    <div class="sos-status" id="sos-status">CLICK TO DISPATCH NEAREST PATROL UNIT</div>
+    <div class="dispatch-info" id="dispatch-info">
+      <div class="di-row"><span>Unit Dispatched</span><span id="d-unit">PCR-01</span></div>
+      <div class="di-row"><span>ETA</span><span id="d-eta">4 min</span></div>
+      <div class="di-row"><span>Location</span><span id="d-loc">Srirangam</span></div>
+      <div class="di-row"><span>Status</span><span style="color:var(--green)">EN ROUTE ●</span></div>
+    </div>
+  </div>
+
+  <!-- REGISTER FIR -->
+  <div class="card r">
+    <div class="ct"><span>📝</span> Register FIR</div>
+    <div class="tabs">
+      <button class="tab active" id="tb-new" onclick="showTab('new')">NEW FIR</button>
+      <button class="tab" id="tb-rec" onclick="showTab('rec')">RECENT</button>
+    </div>
+    <div id="pnew">
+      <div class="fg2" style="margin-bottom:7px">
+        <div class="fg"><div class="fl">Act *</div>
+          <select id="fir-act"><option value="IPC">IPC</option><option value="NDPS">NDPS</option><option value="Arms">Arms</option><option value="Excise">Excise</option><option value="SC/ST">SC/ST</option><option value="Gambling">Gambling</option></select>
+        </div>
+        <div class="fg"><div class="fl">Section *</div><input type="text" id="fir-ipc" placeholder="e.g. 302"></div>
+      </div>
+      <div class="fg" style="margin-bottom:7px"><div class="fl">Crime Type *</div>
+        <select id="fir-crime">
+          <option value="">-- Select --</option><option>Murder</option><option>Attempt to Murder</option>
+          <option>Rape</option><option>Kidnapping</option><option>Robbery</option><option>Dacoity</option>
+          <option>Theft</option><option>House Breaking</option><option>Fraud/Cheating</option>
+          <option>Domestic Violence</option><option>Dowry Death</option><option>Harassment (Women)</option>
+          <option>Drug Trafficking</option><option>Drug Possession</option><option>Illegal Arms</option>
+          <option>Illicit Liquor</option><option>Gambling</option><option>Atrocity (SC/ST)</option>
+          <option>Grievous Hurt</option><option>Road Accident</option>
+        </select>
+      </div>
+      <div class="fg" style="margin-bottom:7px"><div class="fl">Area *</div>
+        <select id="fir-area">
+          <option value="">-- Select Area --</option><option>Srirangam</option><option>Chinthamani</option>
+          <option>Thillai Nagar</option><option>Palakarai</option><option>Ariyamangalam</option>
+          <option>Kattur</option><option>Woraiyur</option><option>K.K. Nagar</option><option>NH-67 Junction</option>
+        </select>
+      </div>
+      <div class="fg" style="margin-bottom:7px"><div class="fl">Police Station</div>
+        <select id="fir-ps"><option>Central PS</option><option>Srirangam PS</option><option>Ariyamangalam PS</option><option>Woraiyur PS</option><option>Traffic PS</option></select>
+      </div>
+      <div class="fg2" style="margin-bottom:7px">
+        <div class="fg"><div class="fl">Date</div><input type="date" id="fir-date"></div>
+        <div class="fg"><div class="fl">Time</div><input type="time" id="fir-time"></div>
+      </div>
+      <div class="fg2" style="margin-bottom:7px">
+        <div class="fg"><div class="fl">Latitude</div><input type="text" id="fir-lat" placeholder="10.7905"></div>
+        <div class="fg"><div class="fl">Longitude</div><input type="text" id="fir-lng" placeholder="78.7047"></div>
+      </div>
+      <div class="fg2" style="margin-bottom:7px">
+        <div class="fg"><div class="fl">Victim</div>
+          <select id="fir-victim"><option value="">N/A</option><option>Male</option><option>Female</option><option>Minor</option><option>Elderly</option><option>Multiple</option></select>
+        </div>
+        <div class="fg"><div class="fl">Severity (1–5)</div>
+          <select id="fir-sev"><option value="1">1 — Minor</option><option value="2">2 — Low</option><option value="3" selected>3 — Medium</option><option value="4">4 — High</option><option value="5">5 — Critical</option></select>
+        </div>
+      </div>
+      <div class="fg" style="margin-bottom:9px"><div class="fl">Accused</div><input type="text" id="fir-accused" placeholder="Known / Unknown / Gang"></div>
+      <button class="btn-red" onclick="submitFIR()">⚡ REGISTER IN CCTNS</button>
+    </div>
+    <div id="prec" style="display:none">
+      <div id="fir-list" style="max-height:300px;overflow-y:auto;scrollbar-width:thin;scrollbar-color:var(--border) transparent"></div>
+    </div>
+  </div>
+
+  <!-- 🆕 AI CRIME ANALYST -->
+  <div class="card p">
+    <div class="ct"><span>🤖</span> AI Crime Analyst</div>
+    <div class="ai-chat" id="ai-chat">
+      <div class="ai-msg bot">Hello Officer! I'm your AI Crime Analyst. Ask me anything about crime patterns, hotspots, or predictions for Tiruchirapalli district.</div>
+    </div>
+    <div class="ai-thinking" id="ai-thinking">
+      ANALYZING <div class="dot-flashing"><span></span><span></span><span></span></div>
+    </div>
+    <div class="ai-input-wrap">
+      <input class="ai-input" id="ai-input" placeholder="e.g. Which area has most theft?" onkeydown="if(event.key==='Enter')sendAI()">
+      <button class="ai-send" onclick="sendAI()">➤</button>
+    </div>
+    <div style="margin-top:6px;display:flex;gap:4px;flex-wrap:wrap" id="quick-q">
+      <button onclick="askQuick('Which area is most dangerous?')" style="background:rgba(192,132,252,0.15);border:1px solid rgba(192,132,252,0.3);color:var(--purple);border-radius:10px;padding:3px 8px;font-size:9px;cursor:pointer">Most dangerous area?</button>
+      <button onclick="askQuick('When do most crimes happen?')" style="background:rgba(192,132,252,0.15);border:1px solid rgba(192,132,252,0.3);color:var(--purple);border-radius:10px;padding:3px 8px;font-size:9px;cursor:pointer">Peak crime time?</button>
+      <button onclick="askQuick('Predict next week crimes')" style="background:rgba(192,132,252,0.15);border:1px solid rgba(192,132,252,0.3);color:var(--purple);border-radius:10px;padding:3px 8px;font-size:9px;cursor:pointer">Next week prediction</button>
+    </div>
+  </div>
+
+  <!-- 🆕 THREAT RADAR -->
+  <div class="card">
+    <div class="ct"><span>📡</span> Live Threat Radar</div>
+    <div class="radar-wrap">
+      <svg class="radar-svg" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+        <!-- Grid circles -->
+        <circle cx="90" cy="90" r="80" fill="none" stroke="rgba(0,200,255,0.1)" stroke-width="1"/>
+        <circle cx="90" cy="90" r="60" fill="none" stroke="rgba(0,200,255,0.1)" stroke-width="1"/>
+        <circle cx="90" cy="90" r="40" fill="none" stroke="rgba(0,200,255,0.15)" stroke-width="1"/>
+        <circle cx="90" cy="90" r="20" fill="none" stroke="rgba(0,200,255,0.2)" stroke-width="1"/>
+        <!-- Cross lines -->
+        <line x1="10" y1="90" x2="170" y2="90" stroke="rgba(0,200,255,0.08)" stroke-width="1"/>
+        <line x1="90" y1="10" x2="90" y2="170" stroke="rgba(0,200,255,0.08)" stroke-width="1"/>
+        <line x1="33" y1="33" x2="147" y2="147" stroke="rgba(0,200,255,0.05)" stroke-width="1"/>
+        <line x1="147" y1="33" x2="33" y2="147" stroke="rgba(0,200,255,0.05)" stroke-width="1"/>
+        <!-- Sweep -->
+        <g class="radar-sweep">
+          <path d="M90,90 L90,10 A80,80 0 0,1 162,114 Z" fill="url(#sweep-grad)" opacity="0.6"/>
+        </g>
+        <!-- Blips (crime locations) -->
+        <circle cx="68" cy="72" r="4" fill="#ff2244" class="radar-blip" style="animation-delay:0.5s"/>
+        <circle cx="110" cy="65" r="3" fill="#ff7c1f" class="radar-blip" style="animation-delay:1.2s"/>
+        <circle cx="75" cy="115" r="5" fill="#ff2244" class="radar-blip" style="animation-delay:0.8s"/>
+        <circle cx="125" cy="100" r="3" fill="#fbbf24" class="radar-blip" style="animation-delay:2s"/>
+        <circle cx="55" cy="90" r="4" fill="#ff7c1f" class="radar-blip" style="animation-delay:1.5s"/>
+        <circle cx="115" cy="130" r="3" fill="#ff2244" class="radar-blip" style="animation-delay:0.3s"/>
+        <circle cx="90" cy="50" r="2" fill="#fbbf24" class="radar-blip" style="animation-delay:2.5s"/>
+        <!-- Center -->
+        <circle cx="90" cy="90" r="4" fill="var(--blue)" opacity="0.8"/>
+        <circle cx="90" cy="90" r="8" fill="none" stroke="var(--blue)" stroke-width="1" opacity="0.4"/>
+        <!-- Labels -->
+        <text x="90" y="8" text-anchor="middle" fill="rgba(0,200,255,0.5)" font-size="8" font-family="Share Tech Mono">N</text>
+        <text x="174" y="93" text-anchor="middle" fill="rgba(0,200,255,0.5)" font-size="8" font-family="Share Tech Mono">E</text>
+        <text x="90" y="178" text-anchor="middle" fill="rgba(0,200,255,0.5)" font-size="8" font-family="Share Tech Mono">S</text>
+        <text x="6" y="93" text-anchor="middle" fill="rgba(0,200,255,0.5)" font-size="8" font-family="Share Tech Mono">W</text>
+        <defs>
+          <radialGradient id="sweep-grad" cx="0" cy="0" r="1" gradientUnits="objectBoundingBox" gradientTransform="translate(0.5 0.5) rotate(90)">
+            <stop offset="0%" stop-color="rgba(0,200,255,0.6)"/>
+            <stop offset="100%" stop-color="rgba(0,200,255,0)"/>
+          </radialGradient>
+        </defs>
+      </svg>
+    </div>
+    <div style="display:flex;justify-content:center;gap:12px;margin-top:8px">
+      <span style="display:flex;align-items:center;gap:4px;font-size:9px;color:var(--text2)"><span style="width:7px;height:7px;border-radius:50%;background:var(--red);display:inline-block"></span>Critical</span>
+      <span style="display:flex;align-items:center;gap:4px;font-size:9px;color:var(--text2)"><span style="width:7px;height:7px;border-radius:50%;background:var(--orange);display:inline-block"></span>High</span>
+      <span style="display:flex;align-items:center;gap:4px;font-size:9px;color:var(--text2)"><span style="width:7px;height:7px;border-radius:50%;background:var(--yellow);display:inline-block"></span>Medium</span>
+    </div>
+  </div>
+
+  <!-- 🆕 WEATHER-CRIME CORRELATION -->
+  <div class="card y">
+    <div class="ct"><span>🌡️</span> Weather–Crime Correlation</div>
+    <div class="weather-card">
+      <div class="wc-item"><span class="wc-icon">☀️</span><div class="wc-val" id="wc-temp">31°C</div><div class="wc-lbl">TEMPERATURE</div></div>
+      <div class="wc-item"><span class="wc-icon">💧</span><div class="wc-val" id="wc-hum">68%</div><div class="wc-lbl">HUMIDITY</div></div>
+    </div>
+    <div style="font-size:10px;color:var(--text3);margin-bottom:6px;font-family:'Share Tech Mono',monospace">CRIME RISK CORRELATION</div>
+    <div id="weather-corr"></div>
+    <div style="margin-top:8px;padding:7px;background:rgba(251,191,36,0.08);border:1px solid rgba(251,191,36,0.3);border-radius:6px;font-size:10px;color:var(--yellow)" id="weather-advice"></div>
+  </div>
+
+  <!-- PREDICTIVE ANALYSIS -->
+  <div class="card p">
+    <div class="ct"><span>🧠</span> Predictive Analysis</div>
+    <div style="font-size:9px;color:var(--text3);margin-bottom:9px;font-family:'Share Tech Mono',monospace;letter-spacing:1px">CURRENT TIME RISK ASSESSMENT</div>
+    <div id="pred-list"></div>
+    <div style="margin-top:8px;padding:7px;border-top:1px solid var(--border);font-size:9px;color:var(--text3)">⚙️ Based on: Time · Season · Historical patterns · Weather</div>
+  </div>
+
+  <!-- ACTIVE PATROL -->
+  <div class="card">
+    <div class="ct"><span>🚔</span> Active Patrol Units</div>
+    <div id="patrol-list"></div>
+    <button class="btn-blue" onclick="switchView('patrol')" style="margin-top:6px">VIEW ROUTES ON MAP</button>
+  </div>
+
+  <!-- IPC QUICK REF -->
+  <div class="card">
+    <div class="ct"><span>⚖️</span> IPC Quick Reference</div>
+    <input class="ipc-s" id="ipc-s" type="text" placeholder="Search section or name..." oninput="filterIPC(this.value)">
+    <div class="ipc-l" id="ipc-l" style="max-height:220px;overflow-y:auto"></div>
+  </div>
+
+  <div class="scroll-hint"><span>↓ SCROLL FOR MORE</span></div>
+</aside>
+
+</div><!-- body-wrap -->
+
+<script>
+// ══════════════════════════════════════════
+// DATA
+// ══════════════════════════════════════════
+const DB = [
+  {id:"FIR-2024-001",ipc:"302",act:"IPC",crimeType:"Murder",lat:10.7905,lng:78.7047,area:"Srirangam",ps:"Srirangam PS",date:"2024-01-15",time:"22:30",severity:5,victim:"Male",accused:"Known",status:"Under Investigation"},
+  {id:"FIR-2024-002",ipc:"302",act:"IPC",crimeType:"Murder",lat:10.8231,lng:78.6831,area:"Ariyamangalam",ps:"Ariyamangalam PS",date:"2024-03-22",time:"01:15",severity:5,victim:"Male",accused:"Unknown",status:"Chargesheeted"},
+  {id:"FIR-2024-003",ipc:"302",act:"IPC",crimeType:"Murder",lat:10.7652,lng:78.7343,area:"Woraiyur",ps:"Woraiyur PS",date:"2024-06-10",time:"21:00",severity:5,victim:"Female",accused:"Family Member",status:"Arrested"},
+  {id:"FIR-2024-004",ipc:"376",act:"IPC",crimeType:"Rape",lat:10.8051,lng:78.6858,area:"Thillai Nagar",ps:"Central PS",date:"2024-02-11",time:"20:00",severity:5,victim:"Female",accused:"Known",status:"Arrested"},
+  {id:"FIR-2024-005",ipc:"376",act:"IPC",crimeType:"Rape",lat:10.7762,lng:78.7214,area:"K.K. Nagar",ps:"Woraiyur PS",date:"2024-05-19",time:"23:45",severity:5,victim:"Minor",accused:"Unknown",status:"Under Investigation"},
+  {id:"FIR-2024-006",ipc:"392",act:"IPC",crimeType:"Robbery",lat:10.7982,lng:78.7203,area:"Chinthamani",ps:"Srirangam PS",date:"2024-01-28",time:"19:30",severity:4,victim:"Male",accused:"Unknown",status:"Under Investigation"},
+  {id:"FIR-2024-007",ipc:"395",act:"IPC",crimeType:"Dacoity",lat:10.8121,lng:78.6743,area:"Palakarai",ps:"Central PS",date:"2024-04-05",time:"02:00",severity:5,victim:"Shop Owner",accused:"Gang",status:"Arrested"},
+  {id:"FIR-2024-008",ipc:"392",act:"IPC",crimeType:"Robbery",lat:10.7845,lng:78.7089,area:"Ariyamangalam",ps:"Ariyamangalam PS",date:"2024-07-14",time:"20:15",severity:4,victim:"Female",accused:"Unknown",status:"Chargesheeted"},
+  {id:"FIR-2024-009",ipc:"392",act:"IPC",crimeType:"Robbery",lat:10.8198,lng:78.7156,area:"Kattur",ps:"Ariyamangalam PS",date:"2024-08-22",time:"21:30",severity:4,victim:"Male",accused:"Unknown",status:"Under Investigation"},
+  {id:"FIR-2024-010",ipc:"379",act:"IPC",crimeType:"Theft",lat:10.7934,lng:78.7012,area:"Srirangam",ps:"Srirangam PS",date:"2024-01-05",time:"15:00",severity:2,victim:"Male",accused:"Unknown",status:"Under Investigation"},
+  {id:"FIR-2024-011",ipc:"379",act:"IPC",crimeType:"Theft",lat:10.8067,lng:78.6921,area:"Thillai Nagar",ps:"Central PS",date:"2024-02-18",time:"11:30",severity:2,victim:"Female",accused:"Unknown",status:"Under Investigation"},
+  {id:"FIR-2024-012",ipc:"380",act:"IPC",crimeType:"House Breaking",lat:10.7723,lng:78.7289,area:"Woraiyur",ps:"Woraiyur PS",date:"2024-03-09",time:"03:00",severity:3,victim:"Family",accused:"Unknown",status:"Arrested"},
+  {id:"FIR-2024-013",ipc:"379",act:"IPC",crimeType:"Theft",lat:10.8234,lng:78.6867,area:"Ariyamangalam",ps:"Ariyamangalam PS",date:"2024-04-12",time:"16:45",severity:2,victim:"Male",accused:"Unknown",status:"Under Investigation"},
+  {id:"FIR-2024-014",ipc:"379",act:"IPC",crimeType:"Theft",lat:10.7891,lng:78.7178,area:"Chinthamani",ps:"Srirangam PS",date:"2024-05-30",time:"14:00",severity:2,victim:"Female",accused:"Known",status:"Chargesheeted"},
+  {id:"FIR-2024-015",ipc:"379",act:"IPC",crimeType:"Theft",lat:10.8012,lng:78.6834,area:"Palakarai",ps:"Central PS",date:"2024-06-25",time:"09:00",severity:2,victim:"Male",accused:"Unknown",status:"Under Investigation"},
+  {id:"FIR-2024-016",ipc:"354",act:"IPC",crimeType:"Harassment (Women)",lat:10.7967,lng:78.6989,area:"Srirangam",ps:"Srirangam PS",date:"2024-03-17",time:"18:30",severity:3,victim:"Female",accused:"Known",status:"Arrested"},
+  {id:"FIR-2024-017",ipc:"509",act:"IPC",crimeType:"Harassment (Women)",lat:10.8089,lng:78.6912,area:"Thillai Nagar",ps:"Central PS",date:"2024-05-22",time:"19:00",severity:3,victim:"Female",accused:"Unknown",status:"Under Investigation"},
+  {id:"FIR-2024-018",ipc:"354",act:"IPC",crimeType:"Harassment (Women)",lat:10.7812,lng:78.7198,area:"K.K. Nagar",ps:"Woraiyur PS",date:"2024-07-08",time:"20:30",severity:3,victim:"Female",accused:"Known",status:"Chargesheeted"},
+  {id:"FIR-2024-019",ipc:"498A",act:"IPC",crimeType:"Domestic Violence",lat:10.7843,lng:78.7067,area:"Ariyamangalam",ps:"Ariyamangalam PS",date:"2024-02-14",time:"22:00",severity:3,victim:"Female",accused:"Husband",status:"Arrested"},
+  {id:"FIR-2024-020",ipc:"498A",act:"IPC",crimeType:"Domestic Violence",lat:10.8156,lng:78.6778,area:"Palakarai",ps:"Central PS",date:"2024-04-28",time:"21:15",severity:3,victim:"Female",accused:"In-laws",status:"Under Investigation"},
+  {id:"FIR-2024-021",ipc:"498A",act:"IPC",crimeType:"Domestic Violence",lat:10.7923,lng:78.7234,area:"Srirangam",ps:"Srirangam PS",date:"2024-06-18",time:"20:45",severity:3,victim:"Female",accused:"Husband",status:"Arrested"},
+  {id:"FIR-2024-022",ipc:"20",act:"NDPS",crimeType:"Drug Trafficking",lat:10.8178,lng:78.7089,area:"Kattur",ps:"Ariyamangalam PS",date:"2024-01-20",time:"11:00",severity:4,victim:"",accused:"Gang",status:"Arrested"},
+  {id:"FIR-2024-023",ipc:"21",act:"NDPS",crimeType:"Drug Possession",lat:10.7956,lng:78.6923,area:"Thillai Nagar",ps:"Central PS",date:"2024-03-15",time:"16:30",severity:3,victim:"",accused:"Individual",status:"Chargesheeted"},
+  {id:"FIR-2024-024",ipc:"20",act:"NDPS",crimeType:"Drug Trafficking",lat:10.7678,lng:78.7312,area:"Woraiyur",ps:"Woraiyur PS",date:"2024-05-08",time:"23:30",severity:4,victim:"",accused:"Network",status:"Under Investigation"},
+  {id:"FIR-2024-025",ipc:"22",act:"NDPS",crimeType:"Drug Trafficking",lat:10.8245,lng:78.6901,area:"Ariyamangalam",ps:"Ariyamangalam PS",date:"2024-07-30",time:"14:00",severity:5,victim:"",accused:"Gang",status:"Arrested"},
+  {id:"FIR-2024-026",ipc:"25",act:"Arms",crimeType:"Illegal Arms",lat:10.7889,lng:78.7145,area:"Chinthamani",ps:"Srirangam PS",date:"2024-02-27",time:"10:00",severity:4,victim:"",accused:"Individual",status:"Arrested"},
+  {id:"FIR-2024-027",ipc:"25",act:"Arms",crimeType:"Illegal Arms",lat:10.8112,lng:78.6798,area:"Palakarai",ps:"Central PS",date:"2024-06-12",time:"08:30",severity:4,victim:"",accused:"Gang",status:"Chargesheeted"},
+  {id:"FIR-2024-028",ipc:"420",act:"IPC",crimeType:"Fraud/Cheating",lat:10.8034,lng:78.6945,area:"Thillai Nagar",ps:"Central PS",date:"2024-01-31",time:"12:00",severity:3,victim:"Male",accused:"Known",status:"Under Investigation"},
+  {id:"FIR-2024-029",ipc:"420",act:"IPC",crimeType:"Fraud/Cheating",lat:10.7901,lng:78.7034,area:"Srirangam",ps:"Srirangam PS",date:"2024-04-17",time:"14:30",severity:3,victim:"Female",accused:"Online",status:"Chargesheeted"},
+  {id:"FIR-2024-030",ipc:"420",act:"IPC",crimeType:"Fraud/Cheating",lat:10.8189,lng:78.7023,area:"Kattur",ps:"Ariyamangalam PS",date:"2024-08-05",time:"11:15",severity:3,victim:"Elderly",accused:"Known",status:"Arrested"},
+  {id:"FIR-2024-031",ipc:"363",act:"IPC",crimeType:"Kidnapping",lat:10.7745,lng:78.7256,area:"K.K. Nagar",ps:"Woraiyur PS",date:"2024-03-04",time:"17:00",severity:5,victim:"Minor",accused:"Unknown",status:"Arrested"},
+  {id:"FIR-2024-032",ipc:"365",act:"IPC",crimeType:"Kidnapping",lat:10.8067,lng:78.6867,area:"Thillai Nagar",ps:"Central PS",date:"2024-07-19",time:"16:45",severity:5,victim:"Female",accused:"Known",status:"Under Investigation"},
+  {id:"FIR-2024-033",ipc:"3",act:"SC/ST",crimeType:"Atrocity (SC/ST)",lat:10.7823,lng:78.7178,area:"Ariyamangalam",ps:"Ariyamangalam PS",date:"2024-04-23",time:"13:00",severity:4,victim:"SC Male",accused:"Known",status:"Arrested"},
+  {id:"FIR-2024-034",ipc:"3",act:"SC/ST",crimeType:"Atrocity (SC/ST)",lat:10.8145,lng:78.6812,area:"Palakarai",ps:"Central PS",date:"2024-06-29",time:"18:00",severity:4,victim:"SC Family",accused:"Known",status:"Chargesheeted"},
+  {id:"FIR-2024-035",ipc:"60",act:"Excise",crimeType:"Illicit Liquor",lat:10.7967,lng:78.7089,area:"Chinthamani",ps:"Srirangam PS",date:"2024-02-08",time:"09:00",severity:2,victim:"",accused:"Individual",status:"Arrested"},
+  {id:"FIR-2024-036",ipc:"60",act:"Excise",crimeType:"Illicit Liquor",lat:10.8234,lng:78.7134,area:"Kattur",ps:"Ariyamangalam PS",date:"2024-05-14",time:"07:30",severity:2,victim:"",accused:"Gang",status:"Arrested"},
+  {id:"FIR-2024-037",ipc:"304B",act:"IPC",crimeType:"Dowry Death",lat:10.7856,lng:78.7023,area:"Srirangam",ps:"Srirangam PS",date:"2024-03-29",time:"06:00",severity:5,victim:"Female",accused:"In-laws",status:"Arrested"},
+  {id:"FIR-2024-038",ipc:"307",act:"IPC",crimeType:"Attempt to Murder",lat:10.8089,lng:78.6956,area:"Thillai Nagar",ps:"Central PS",date:"2024-05-05",time:"21:00",severity:5,victim:"Male",accused:"Known",status:"Arrested"},
+  {id:"FIR-2024-039",ipc:"324",act:"IPC",crimeType:"Grievous Hurt",lat:10.7912,lng:78.7212,area:"K.K. Nagar",ps:"Woraiyur PS",date:"2024-07-25",time:"20:30",severity:3,victim:"Male",accused:"Known",status:"Chargesheeted"},
+  {id:"FIR-2024-040",ipc:"307",act:"IPC",crimeType:"Attempt to Murder",lat:10.8167,lng:78.7045,area:"Kattur",ps:"Ariyamangalam PS",date:"2024-09-12",time:"22:15",severity:5,victim:"Male",accused:"Gang",status:"Under Investigation"},
+  {id:"FIR-2024-041",ipc:"13",act:"Gambling",crimeType:"Gambling",lat:10.7934,lng:78.6978,area:"Palakarai",ps:"Central PS",date:"2024-06-03",time:"22:00",severity:1,victim:"",accused:"Group",status:"Arrested"},
+  {id:"FIR-2024-042",ipc:"13",act:"Gambling",crimeType:"Gambling",lat:10.8023,lng:78.7167,area:"Chinthamani",ps:"Srirangam PS",date:"2024-08-17",time:"21:30",severity:1,victim:"",accused:"Group",status:"Arrested"},
+  {id:"ACC-2024-001",ipc:"279",act:"IPC",crimeType:"Road Accident",lat:10.8134,lng:78.7089,area:"NH-67 Junction",ps:"Traffic PS",date:"2024-01-12",time:"07:30",severity:4,victim:"Multiple",accused:"Driver",status:"Under Investigation"},
+  {id:"ACC-2024-002",ipc:"279",act:"IPC",crimeType:"Road Accident",lat:10.8145,lng:78.7101,area:"NH-67 Junction",ps:"Traffic PS",date:"2024-03-18",time:"08:15",severity:3,victim:"2 Persons",accused:"Driver",status:"Chargesheeted"},
+  {id:"ACC-2024-003",ipc:"279",act:"IPC",crimeType:"Road Accident",lat:10.8156,lng:78.7078,area:"NH-67 Junction",ps:"Traffic PS",date:"2024-05-24",time:"06:45",severity:5,victim:"Fatal",accused:"Driver",status:"Arrested"},
+  {id:"ACC-2024-004",ipc:"279",act:"IPC",crimeType:"Road Accident",lat:10.7823,lng:78.7234,area:"Woraiyur Highway",ps:"Traffic PS",date:"2024-07-11",time:"23:00",severity:4,victim:"2 Persons",accused:"Truck Driver",status:"Chargesheeted"},
+];
+
+const CCFG = {
+  "Murder":{c:"#FF0000",i:"💀"},  "Rape":{c:"#8B0000",i:"🚨"},
+  "Attempt to Murder":{c:"#FF4500",i:"⚔️"},  "Dowry Death":{c:"#DC143C",i:"☠️"},
+  "Kidnapping":{c:"#FF6347",i:"🔗"},  "Dacoity":{c:"#FF8C00",i:"🔫"},
+  "Robbery":{c:"#FFA500",i:"👊"},  "Drug Trafficking":{c:"#9400D3",i:"💊"},
+  "Illegal Arms":{c:"#4B0082",i:"🔫"},  "Atrocity (SC/ST)":{c:"#B8860B",i:"⚖️"},
+  "Grievous Hurt":{c:"#FF6600",i:"🤕"},  "Domestic Violence":{c:"#FF69B4",i:"🏠"},
+  "Harassment (Women)":{c:"#FF1493",i:"👩"},  "Drug Possession":{c:"#BA55D3",i:"💉"},
+  "Fraud/Cheating":{c:"#20B2AA",i:"💰"},  "House Breaking":{c:"#CD853F",i:"🏚️"},
+  "Theft":{c:"#DAA520",i:"🛍️"},  "Illicit Liquor":{c:"#8FBC8F",i:"🍶"},
+  "Gambling":{c:"#708090",i:"🎲"},  "Road Accident":{c:"#00CED1",i:"🚗"},
+};
+
+const PS_LIST = [
+  {name:"Central PS",lat:10.8045,lng:78.6889},
+  {name:"Srirangam PS",lat:10.7934,lng:78.7023},
+  {name:"Ariyamangalam PS",lat:10.8189,lng:78.7056},
+  {name:"Woraiyur PS",lat:10.7756,lng:78.7223},
+  {name:"Traffic PS",lat:10.8012,lng:78.6978},
+];
+
+const PATROL_ROUTES = {
+  night:[{lat:10.8045,lng:78.6889},{lat:10.8067,lng:78.6921},{lat:10.7989,lng:78.7045},{lat:10.7934,lng:78.7023},{lat:10.7823,lng:78.7198},{lat:10.8045,lng:78.6889}],
+  day:  [{lat:10.8189,lng:78.7056},{lat:10.8145,lng:78.7089},{lat:10.8067,lng:78.6921},{lat:10.8045,lng:78.6889},{lat:10.7934,lng:78.7023},{lat:10.8189,lng:78.7056}],
+  women:[{lat:10.8067,lng:78.6921},{lat:10.7967,lng:78.6989},{lat:10.7812,lng:78.7198},{lat:10.7756,lng:78.7223},{lat:10.7934,lng:78.7023},{lat:10.8067,lng:78.6921}]
+};
+
+// ══════════════════════════════════════════
+// STATE
+// ══════════════════════════════════════════
+let map, heatLyr, mapM=[], view='heatmap', sosActive=false;
+let activeFIRs=[...DB];
+let filters={crime:'all',act:'all',sev:'0',from:'2024-01-01',to:'2024-12-31'};
+
+// ══════════════════════════════════════════
+// BOOT
+// ══════════════════════════════════════════
+document.addEventListener('DOMContentLoaded',()=>{
+  boot(()=>{
+    initMap(); populateCrimeFilter(); renderAll();
+    startClock(); startTicker(); startWeather();
+    setTimeout(liveSim, 25000);
+    setInterval(()=>{ document.getElementById('hdr-a').textContent = Math.floor(Math.random()*3)+2; }, 8000);
+  });
+});
+
+function boot(cb){
+  const bar=document.getElementById('lb'), txt=document.getElementById('lt2');
+  const steps=[[10,'CONNECTING TO CCTNS DATABASE...'],[20,'AUTHENTICATING OFFICER CREDENTIALS...'],[35,'LOADING 44 FIR RECORDS...'],[50,'PROCESSING CRIME PATTERNS...'],[65,'INITIALIZING MAP ENGINE...'],[75,'COMPUTING HOTSPOT ANALYSIS...'],[85,'CALIBRATING AI ANALYST...'],[95,'ACTIVATING PATROL MONITORING...'],[100,'⬛ SYSTEM ONLINE ✓']];
+  let i=0;
+  function go(){ if(i>=steps.length){setTimeout(()=>{ const ls=document.getElementById('ls'); ls.style.transition='opacity 0.6s'; ls.style.opacity='0'; setTimeout(()=>{ls.style.display='none'; cb();},600); },500); return; } bar.style.width=steps[i][0]+'%'; txt.textContent=steps[i][1]; i++; setTimeout(go,200+Math.random()*150); }
+  go();
+}
+
+// ══════════════════════════════════════════
+// MAP
+// ══════════════════════════════════════════
+function initMap(){
+  map=L.map('map',{center:[10.7905,78.7047],zoom:13,zoomControl:true});
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{attribution:'⚠️ REDSHIELD v2.0 | Tiruchirapalli | CCTNS',maxZoom:19}).addTo(map);
+  PS_LIST.forEach(ps=>{
+    const ic=L.divIcon({html:`<div style="background:#0a1628;border:1px solid #00c8ff;border-radius:5px;padding:3px 7px;font-size:9px;color:#00c8ff;font-family:Orbitron,sans-serif;font-weight:700;white-space:nowrap;box-shadow:0 0 10px rgba(0,200,255,0.3)">🚔 ${ps.name}</div>`,className:'',iconAnchor:[40,14]});
+    L.marker([ps.lat,ps.lng],{icon:ic}).bindPopup(`<div style="font-family:Orbitron,sans-serif;min-width:150px"><div class="ph" style="color:#00c8ff">🚔 ${ps.name}</div><div class="pr"><span>Status</span><span style="color:#00ff88">ACTIVE</span></div></div>`).addTo(map);
+  });
+}
+
+function getFiltered(){
+  return activeFIRs.filter(f=>{
+    if(filters.crime!=='all'&&f.crimeType!==filters.crime)return false;
+    if(filters.act!=='all'&&f.act!==filters.act)return false;
+    if(filters.sev!=='0'&&f.severity<parseInt(filters.sev))return false;
+    if(filters.from&&f.date<filters.from)return false;
+    if(filters.to&&f.date>filters.to)return false;
+    return true;
+  });
+}
+
+function clearMap(){ if(heatLyr){map.removeLayer(heatLyr);heatLyr=null;} mapM.forEach(m=>map.removeLayer(m)); mapM=[]; }
+
+function renderMap(){
+  clearMap(); const firs=getFiltered();
+  document.getElementById('hdr-f').textContent=firs.length;
+  document.getElementById('hdr-z').textContent=[...new Set(firs.map(f=>f.area))].length;
+  if(view==='heatmap')doHeat(firs);
+  else if(view==='markers')doMarkers(firs);
+  else if(view==='zones')doZones(firs);
+  else if(view==='patrol')doPatrol();
+}
+
+function doHeat(firs){
+  const pts=firs.map(f=>[f.lat,f.lng,f.severity*0.2]);
+  if(L.heatLayer)try{heatLyr=L.heatLayer(pts,{radius:35,blur:25,maxZoom:17,gradient:{0.2:'#0000ff',0.4:'#00ff00',0.6:'#ffff00',0.8:'#ff6600',1.0:'#ff0000'}}).addTo(map);}catch(e){}
+  firs.forEach(f=>addDot(f));
+}
+function doMarkers(firs){
+  firs.forEach(f=>{
+    const cfg=CCFG[f.crimeType]||{c:'#888',i:'⚠️'};
+    const ic=L.divIcon({html:`<div style="background:${cfg.c};padding:4px 8px;border-radius:5px;color:white;font-size:10px;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,0.6);border:1px solid rgba(255,255,255,0.2);font-family:Share Tech Mono,monospace">${cfg.i} ${f.crimeType}</div>`,className:'',iconAnchor:[40,16]});
+    const m=L.marker([f.lat,f.lng],{icon:ic}).bindPopup(mkPopup(f)).addTo(map); mapM.push(m);
+  });
+}
+function doZones(firs){
+  const areas={};
+  firs.forEach(f=>{if(!areas[f.area])areas[f.area]={count:0,lat:f.lat,lng:f.lng,types:new Set(),sev:0}; areas[f.area].count++; areas[f.area].types.add(f.crimeType); areas[f.area].sev+=f.severity;});
+  Object.entries(areas).forEach(([area,d])=>{
+    const avg=d.sev/d.count;
+    const col=avg>=4.5?'#ff0000':avg>=3.5?'#ff6600':avg>=2.5?'#ffaa00':avg>=1.5?'#ffff00':'#00ff88';
+    const circ=L.circle([d.lat,d.lng],{radius:180+d.count*75,color:col,fillColor:col,fillOpacity:0.22,weight:2}).bindPopup(`<div style="font-family:Orbitron,sans-serif;min-width:180px"><div class="ph" style="color:${col}">${area}</div><div class="pr"><span>Total FIRs</span><span>${d.count}</span></div><div class="pr"><span>Avg Severity</span><span>${avg.toFixed(1)}/5</span></div><div class="pr"><span>Crime Types</span><span>${d.types.size}</span></div><div style="margin-top:6px;font-size:9px;text-align:center;padding:4px;border-radius:5px;background:${col}22;color:${col};border:1px solid ${col}44">${avg>=4.5?'🔴 CRITICAL ZONE':avg>=3.5?'🟠 HIGH RISK':avg>=2.5?'🟡 MODERATE':'🟢 LOW RISK'}</div></div>`).addTo(map);
+    const lbl=L.divIcon({html:`<div style="background:${col}22;border:1px solid ${col};border-radius:4px;padding:2px 7px;font-size:9px;color:${col};font-family:Orbitron,sans-serif;font-weight:700;white-space:nowrap">${area}<br><span style="font-size:8px;opacity:0.8">${d.count} FIRs</span></div>`,className:'',iconAnchor:[35,14]});
+    const lm=L.marker([d.lat,d.lng],{icon:lbl}).addTo(map);
+    mapM.push(circ); mapM.push(lm);
+  });
+}
+function doPatrol(){
+  [{pts:PATROL_ROUTES.night,c:'#ff2244',n:'🌙 Night Patrol'},{pts:PATROL_ROUTES.day,c:'#00c8ff',n:'☀️ Day Patrol'},{pts:PATROL_ROUTES.women,c:'#f472b6',n:'👩 Women Safety Patrol'}].forEach(r=>{
+    const pl=L.polyline(r.pts,{color:r.c,weight:3,opacity:0.85,dashArray:'10,5'}).bindPopup(`<div style="font-family:Orbitron,sans-serif;font-size:12px;color:${r.c}">${r.n}</div>`).addTo(map);
+    const ic=L.divIcon({html:`<div style="background:${r.c};border-radius:50%;width:14px;height:14px;border:2px solid white;box-shadow:0 0 10px ${r.c};animation:pulse-m 1.5s ease-in-out infinite"></div>`,className:'',iconSize:[14,14],iconAnchor:[7,7]});
+    const pm=L.marker(r.pts[0],{icon:ic}).addTo(map); mapM.push(pl); mapM.push(pm);
+  });
+  DB.filter(f=>f.crimeType==='Road Accident').forEach(a=>{
+    const ic=L.divIcon({html:`<div style="background:#ff6b00;border-radius:3px;padding:2px 6px;font-size:9px;color:white;font-weight:bold;border:1px solid rgba(255,255,255,0.3)">⚠️ ACCIDENT ZONE</div>`,className:'',iconAnchor:[44,11]});
+    const m=L.marker([a.lat,a.lng],{icon:ic}).bindPopup(mkPopup(a)).addTo(map); mapM.push(m);
+  });
+}
+function addDot(f){
+  const cfg=CCFG[f.crimeType]||{c:'#888',i:''};
+  const sz=12+f.severity*2;
+  const ic=L.divIcon({html:`<div style="background:${cfg.c};width:${sz}px;height:${sz}px;border-radius:50%;border:2px solid rgba(255,255,255,0.4);display:flex;align-items:center;justify-content:center;font-size:${6+f.severity}px;box-shadow:0 0 ${f.severity*4}px ${cfg.c};animation:pulse-m 2s ease-in-out infinite">${f.severity>=4?cfg.i:''}</div>`,className:'',iconSize:[sz,sz],iconAnchor:[sz/2,sz/2]});
+  const m=L.marker([f.lat,f.lng],{icon:ic}).bindPopup(mkPopup(f)).addTo(map); mapM.push(m);
+}
+function mkPopup(f){
+  const cfg=CCFG[f.crimeType]||{c:'#888',i:'⚠️'};
+  const sc=f.status==='Arrested'?'#00ff88':f.status==='Chargesheeted'?'#fbbf24':'#ff7c1f';
+  return `<div style="font-family:Inter,sans-serif;min-width:200px">
+    <div class="ph" style="color:${cfg.c}">${cfg.i} ${f.crimeType}</div>
+    <div class="pr"><span>FIR No.</span><span style="font-family:Share Tech Mono,monospace">${f.id}</span></div>
+    <div class="pr"><span>Section</span><span>${f.act} ${f.ipc}</span></div>
+    <div class="pr"><span>Area</span><span>${f.area}</span></div>
+    <div class="pr"><span>PS</span><span>${f.ps}</span></div>
+    <div class="pr"><span>Date/Time</span><span>${f.date} ${f.time}</span></div>
+    <div class="pr"><span>Status</span><span style="color:${sc}">${f.status}</span></div>
+    <div class="pr"><span>Severity</span><span style="color:${cfg.c}">${'★'.repeat(f.severity)+'☆'.repeat(5-f.severity)}</span></div>
+    ${f.victim?`<div class="pr"><span>Victim</span><span>${f.victim}</span></div>`:''}
+  </div>`;
+}
+function switchView(v){ view=v; document.querySelectorAll('.mb').forEach(b=>b.classList.remove('active')); const b=document.getElementById('btn-'+v); if(b)b.classList.add('active'); renderMap(); }
+
+// ══════════════════════════════════════════
+// FILTERS
+// ══════════════════════════════════════════
+function populateCrimeFilter(){ const s=document.getElementById('f-crime'); [...new Set(DB.map(f=>f.crimeType))].sort().forEach(t=>{const o=document.createElement('option');o.value=t;o.textContent=t;s.appendChild(o);}); }
+function applyFilters(){ filters={crime:document.getElementById('f-crime').value,act:document.getElementById('f-act').value,sev:document.getElementById('f-sev').value,from:document.getElementById('f-from').value,to:document.getElementById('f-to').value}; renderAll(); showNotif('✅ Filters Applied','Showing '+getFiltered().length+' records','ok'); }
+function clearFilters(){ filters={crime:'all',act:'all',sev:'0',from:'2024-01-01',to:'2024-12-31'}; ['f-crime','f-act','f-sev'].forEach(id=>document.getElementById(id).value=id==='f-sev'?'0':'all'); document.getElementById('f-from').value='2024-01-01'; document.getElementById('f-to').value='2024-12-31'; renderAll(); }
+
+// ══════════════════════════════════════════
+// RENDER ALL
+// ══════════════════════════════════════════
+function renderAll(){ renderMap(); renderStats(); renderChart(); renderRank(); renderPred(); renderPatrol(); renderIPC(''); }
+
+// ══════════════════════════════════════════
+// STATS
+// ══════════════════════════════════════════
+function renderStats(){
+  const f=getFiltered();
+  anim('st-total',f.length); anim('st-crit',f.filter(x=>x.severity>=4).length);
+  anim('st-arr',f.filter(x=>x.status==='Arrested').length); anim('st-women',f.filter(x=>x.victim==='Female'||x.victim==='Minor').length);
+}
+function anim(id,target){ const el=document.getElementById(id); if(!el)return; let cur=0; const step=Math.max(1,Math.ceil(target/20)); const t=setInterval(()=>{cur=Math.min(cur+step,target);el.textContent=cur;if(cur>=target)clearInterval(t);},30); }
+
+// ══════════════════════════════════════════
+// CHART
+// ══════════════════════════════════════════
+function renderChart(){
+  const f=getFiltered(), counts={};
+  f.forEach(x=>{counts[x.crimeType]=(counts[x.crimeType]||0)+1;});
+  const sorted=Object.entries(counts).sort((a,b)=>b[1]-a[1]).slice(0,8);
+  const max=sorted[0]?.[1]||1;
+  document.getElementById('chart-bars').innerHTML=sorted.map(([t,c])=>{const cfg=CCFG[t]||{c:'#888'};return `<div class="bar" style="background:${cfg.c};height:${Math.round(c/max*100)}%;opacity:0.85" title="${t}: ${c}"></div>`;}).join('');
+  document.getElementById('chart-lbls').innerHTML=sorted.map(([t])=>`<div class="blbl">${t.split(' ')[0].substring(0,6)}</div>`).join('');
+}
+
+// ══════════════════════════════════════════
+// 🆕 CRIME RANK LEADERBOARD
+// ══════════════════════════════════════════
+function renderRank(){
+  const f=getFiltered(), areas={};
+  f.forEach(x=>{ if(!areas[x.area])areas[x.area]={count:0,sev:0}; areas[x.area].count++; areas[x.area].sev+=x.severity; });
+  const sorted=Object.entries(areas).sort((a,b)=>b[1].sev-a[1].sev).slice(0,6);
+  const maxSev=sorted[0]?.[1].sev||1;
+  const medals=['🥇','🥈','🥉','4️⃣','5️⃣','6️⃣'];
+  const colors=['#ff2244','#ff7c1f','#fbbf24','#94a3b8','#94a3b8','#94a3b8'];
+  const trends=['↑↑','↑','→','↓','↓','↓↓'];
+  document.getElementById('rank-list').innerHTML=sorted.map(([area,d],i)=>`
+    <div class="rank-row">
+      <div class="rank-num" style="color:${colors[i]}">${medals[i]}</div>
+      <div class="rank-area">
+        <div class="rank-name">${area}</div>
+        <div class="rank-count">${d.count} FIRs · Score: ${d.sev}</div>
+      </div>
+      <div>
+        <div class="rank-bar-w"><div class="rank-bar-f" style="width:${Math.round(d.sev/maxSev*100)}%;background:${colors[i]}"></div></div>
+      </div>
+      <span class="trend" style="color:${i<2?'#ff2244':i<4?'#fbbf24':'#00ff88'}">${trends[i]}</span>
+    </div>
+  `).join('');
+}
+
+// ══════════════════════════════════════════
+// PREDICTIONS
+// ══════════════════════════════════════════
+function renderPred(){
+  const h=new Date().getHours(), mo=new Date().getMonth();
+  const night=h>=20||h<=6, summer=mo>=3&&mo<=6, winter=mo>=11||mo<=1;
+  const preds=[
+    {l:'Theft Risk',pct:night?85:45,c:'#DAA520'},
+    {l:'Robbery Risk',pct:night?70:30,c:'#FFA500'},
+    {l:'Harassment',pct:night?65:35,c:'#FF1493'},
+    {l:'Drug Activity',pct:summer?62:40,c:'#9400D3'},
+    {l:'Domestic Violence',pct:winter?55:40,c:'#FF69B4'},
+    {l:'Accident Risk',pct:night?75:40,c:'#00CED1'},
+  ];
+  document.getElementById('pred-list').innerHTML=preds.map(p=>`
+    <div class="prow">
+      <div class="plbl">${p.l}</div>
+      <div class="pbar"><div class="pfill" style="width:${p.pct}%;background:${p.c}"></div></div>
+      <div class="ppct" style="color:${p.c}">${p.pct}%</div>
+    </div>`).join('');
+}
+
+// ══════════════════════════════════════════
+// PATROL
+// ══════════════════════════════════════════
+function renderPatrol(){
+  const units=[{i:'🚔',n:'PCR-01',l:'Central Zone',a:true},{i:'🚔',n:'PCR-02',l:'Srirangam',a:true},{i:'🏍️',n:'MTR-01',l:'Woraiyur',a:true},{i:'👮',n:'WOMEN-01',l:'Highway Patrol',a:true},{i:'🚁',n:'HWY-01',l:'NH-67',a:false}];
+  document.getElementById('patrol-list').innerHTML=units.map(u=>`<div class="punit" onclick="switchView('patrol')"><div style="font-size:16px">${u.i}</div><div style="flex:1"><div class="pname">${u.n}</div><div class="ploc">${u.l}</div></div><div class="${u.a?'pdot':'pdot off'}"></div></div>`).join('');
+}
+
+// ══════════════════════════════════════════
+// FIR FORM
+// ══════════════════════════════════════════
+function showTab(t){ const isN=t==='new'; document.getElementById('pnew').style.display=isN?'block':'none'; document.getElementById('prec').style.display=isN?'none':'block'; document.getElementById('tb-new').classList.toggle('active',isN); document.getElementById('tb-rec').classList.toggle('active',!isN); if(!isN)renderFIRList(); }
+function submitFIR(){
+  const ipc=document.getElementById('fir-ipc').value.trim(), crime=document.getElementById('fir-crime').value, area=document.getElementById('fir-area').value;
+  if(!ipc||!crime||!area){showNotif('❌ Error','Fill Act, Section, Crime Type and Area','err');return;}
+  const fir={id:'FIR-LIVE-'+Date.now(),ipc,act:document.getElementById('fir-act').value,crimeType:crime,area,ps:document.getElementById('fir-ps').value,date:document.getElementById('fir-date').value||new Date().toISOString().split('T')[0],time:document.getElementById('fir-time').value||'00:00',lat:parseFloat(document.getElementById('fir-lat').value)||10.7905+((Math.random()-0.5)*0.04),lng:parseFloat(document.getElementById('fir-lng').value)||78.7047+((Math.random()-0.5)*0.04),severity:parseInt(document.getElementById('fir-sev').value)||3,victim:document.getElementById('fir-victim').value||'',accused:document.getElementById('fir-accused').value||'Unknown',status:'Under Investigation'};
+  activeFIRs.push(fir); renderAll(); showNotif('✅ FIR Registered',fir.id+' — '+crime+' at '+area,'ok'); map.flyTo([fir.lat,fir.lng],15,{duration:1.5});
+  document.getElementById('fir-ipc').value=''; document.getElementById('fir-crime').value=''; document.getElementById('fir-area').value=''; document.getElementById('fir-accused').value='';
+}
+function renderFIRList(){
+  const firs=getFiltered().slice(-12).reverse();
+  document.getElementById('fir-list').innerHTML=firs.map(f=>{const cfg=CCFG[f.crimeType]||{c:'#888'}; return `<div class="frow" onclick="map.flyTo([${f.lat},${f.lng}],16,{duration:1.5})"><div class="fid">${f.id}</div><div class="ftype" style="color:${cfg.c}">${f.crimeType}</div><div class="fmeta"><span>${f.area}</span><span>${f.date}</span></div><div class="fsev" style="background:${cfg.c};box-shadow:0 0 5px ${cfg.c}"></div></div>`;}).join('');
+}
+
+// ══════════════════════════════════════════
+// 🆕 AI CRIME ANALYST
+// ══════════════════════════════════════════
+function askQuick(q){ document.getElementById('ai-input').value=q; sendAI(); }
+function sendAI(){
+  const inp=document.getElementById('ai-input'); const q=inp.value.trim(); if(!q)return;
+  addMsg(q,'user'); inp.value='';
+  document.getElementById('ai-thinking').style.display='block';
+  setTimeout(()=>{ document.getElementById('ai-thinking').style.display='none'; addMsg(analyzeQuery(q),'bot'); scrollChat(); },1200+Math.random()*800);
+}
+function addMsg(txt,role){ const d=document.createElement('div'); d.className='ai-msg '+role; d.textContent=txt; document.getElementById('ai-chat').appendChild(d); scrollChat(); }
+function scrollChat(){ const c=document.getElementById('ai-chat'); c.scrollTop=c.scrollHeight; }
+function analyzeQuery(q){
+  const ql=q.toLowerCase(); const firs=activeFIRs;
+  const areas={};firs.forEach(f=>{if(!areas[f.area])areas[f.area]=0;areas[f.area]++;});
+  const topArea=Object.entries(areas).sort((a,b)=>b[1]-a[1])[0];
+  const types={};firs.forEach(f=>{if(!types[f.crimeType])types[f.crimeType]=0;types[f.crimeType]++;});
+  const topType=Object.entries(types).sort((a,b)=>b[1]-a[1])[0];
+  const nightCrimes=firs.filter(f=>{const h=parseInt(f.time.split(':')[0]);return h>=20||h<=6;});
+  const arrested=firs.filter(f=>f.status==='Arrested').length;
+  const womenCrimes=firs.filter(f=>f.victim==='Female'||f.victim==='Minor').length;
+
+  if(ql.includes('dangerous')||ql.includes('worst')||ql.includes('most crime'))
+    return `📊 Analysis: ${topArea?.[0]} is the highest crime area with ${topArea?.[1]} FIRs recorded. It accounts for ${Math.round((topArea?.[1]||0)/firs.length*100)}% of total crime. Recommend increased patrol density here, especially after 8 PM.`;
+  if(ql.includes('theft')||ql.includes('most common')||ql.includes('frequent'))
+    return `🔍 Most common crime: ${topType?.[0]} with ${topType?.[1]} cases (${Math.round((topType?.[1]||0)/firs.length*100)}% of all FIRs). This suggests a systematic pattern — recommend community awareness drives and property marking campaigns.`;
+  if(ql.includes('night')||ql.includes('time')||ql.includes('when'))
+    return `⏰ Peak Crime Hours: ${nightCrimes.length} out of ${firs.length} crimes (${Math.round(nightCrimes.length/firs.length*100)}%) occur between 8 PM and 6 AM. Deploy additional night patrol units. High-risk windows: 10 PM–2 AM.`;
+  if(ql.includes('women')||ql.includes('female')||ql.includes('safety'))
+    return `👩 Women Safety: ${womenCrimes} incidents involve women or minors. Top areas: K.K. Nagar, Woraiyur, Thillai Nagar. Recommend activating WOMEN-01 patrol on these routes and installing more CCTV at bus stops.`;
+  if(ql.includes('predict')||ql.includes('next week')||ql.includes('forecast'))
+    return `🔮 Prediction Model: Based on seasonal patterns, expect 15–20% increase in theft cases next month. Drug-related activities peak during summer evenings. Recommend pre-emptive raids in Kattur and Ariyamangalam zones.`;
+  if(ql.includes('arrest')||ql.includes('solved'))
+    return `✅ Case Resolution: ${arrested} arrests made out of ${firs.length} FIRs = ${Math.round(arrested/firs.length*100)}% arrest rate. National average is 44%. Tiruchirapalli is performing ${Math.round(arrested/firs.length*100)>=44?'above':'below'} average. Focus on improving investigation in drug trafficking cases.`;
+  if(ql.includes('drug')||ql.includes('ndps'))
+    return `💊 Drug Crime Analysis: ${firs.filter(f=>f.act==='NDPS').length} NDPS cases recorded. Primary hotspot: Kattur and Ariyamangalam corridors. Recommend coordinated raids with anti-narcotics unit. Most trafficking occurs between 10 PM–1 AM on NH-67 route.`;
+  if(ql.includes('patrol')||ql.includes('police'))
+    return `🚔 Patrol Optimization: Current 5 patrol units cover ${PS_LIST.length} police station zones. Based on crime density analysis, deploy PCR-01 primarily to Srirangam (highest crime score), increase MTR-01 frequency in Woraiyur during 6–10 PM.`;
+  return `🤖 Analysis for "${q}": Based on ${firs.length} FIR records, the current crime index for Tiruchirapalli is ${Math.round(firs.reduce((a,f)=>a+f.severity,0)/firs.length*20)}/100. Top concern: ${topType?.[0]} incidents. Ask me about specific areas, crime types, patrol recommendations, or future predictions.`;
+}
+
+// ══════════════════════════════════════════
+// 🆕 SOS EMERGENCY DISPATCH
+// ══════════════════════════════════════════
+function triggerSOS(){
+  const btn=document.getElementById('sos-btn'), st=document.getElementById('sos-status'), di=document.getElementById('dispatch-info');
+  if(sosActive){ sosActive=false; btn.classList.remove('active'); btn.textContent='🚨 SOS — DISPATCH NOW'; st.textContent='CLICK TO DISPATCH NEAREST PATROL UNIT'; di.style.display='none'; return; }
+  sosActive=true; btn.classList.add('active'); btn.textContent='🔴 DISPATCHING...';
+  st.textContent='LOCATING NEAREST PATROL UNIT...';
+  setTimeout(()=>{
+    const units=['PCR-01','PCR-02','MTR-01','WOMEN-01'];
+    const unit=units[Math.floor(Math.random()*units.length)];
+    const areas=['Srirangam','Thillai Nagar','Woraiyur','Palakarai','Central'];
+    const eta=Math.floor(Math.random()*5)+3;
+    document.getElementById('d-unit').textContent=unit;
+    document.getElementById('d-eta').textContent=eta+' min';
+    document.getElementById('d-loc').textContent=areas[Math.floor(Math.random()*areas.length)];
+    di.style.display='block';
+    btn.textContent='✅ UNIT DISPATCHED — TAP TO CANCEL';
+    st.textContent='UNIT '+unit+' EN ROUTE — ETA '+eta+' MIN';
+    showNotif('🚨 DISPATCH CONFIRMED','Unit '+unit+' en route — ETA '+eta+' minutes','err');
+    document.getElementById('hdr-a').textContent=parseInt(document.getElementById('hdr-a').textContent)+1;
+  },2000);
+}
+
+// ══════════════════════════════════════════
+// 🆕 WEATHER-CRIME CORRELATION
+// ══════════════════════════════════════════
+function startWeather(){
+  const h=new Date().getHours(), mo=new Date().getMonth();
+  const isHot=mo>=3&&mo<=8;
+  const temp=isHot?29+Math.floor(Math.random()*5):22+Math.floor(Math.random()*4);
+  const hum=isHot?65+Math.floor(Math.random()*15):50+Math.floor(Math.random()*15);
+  const isNight=h>=20||h<=6;
+  document.getElementById('wc-temp').textContent=temp+'°C';
+  document.getElementById('wc-hum').textContent=hum+'%';
+  const corrs=[
+    {l:'Heat → Aggression',pct:isHot?72:40,c:'#ff2244'},
+    {l:'Night → Theft',pct:isNight?85:35,c:'#DAA520'},
+    {l:'Weekend Risk',pct:([0,6].includes(new Date().getDay())?80:45),c:'#ff7c1f'},
+    {l:'Humidity → Unrest',pct:hum>70?65:35,c:'#9400D3'},
+  ];
+  document.getElementById('weather-corr').innerHTML=corrs.map(c=>`
+    <div style="margin-bottom:6px">
+      <div style="display:flex;justify-content:space-between;font-size:9px;color:var(--text2);margin-bottom:2px"><span>${c.l}</span><span style="color:${c.c}">${c.pct}%</span></div>
+      <div class="corr-bar"><div class="corr-fill" style="width:${c.pct}%;background:${c.c}"></div></div>
+    </div>`).join('');
+  const advice=temp>=32?'⚠️ HIGH TEMPERATURE ALERT: Historical data shows 40% increase in violent crime above 32°C. Increase patrol frequency.':temp>=28?'🟡 Warm conditions — moderate risk increase expected this evening.':'🟢 Weather conditions are normal. Standard patrol protocol applies.';
+  document.getElementById('weather-advice').textContent=advice;
+}
+
+// ══════════════════════════════════════════
+// IPC REFERENCE
+// ══════════════════════════════════════════
+const IPC_REF=[
+  {s:'121',d:'Waging war against Govt'},{s:'141',d:'Unlawful Assembly'},{s:'144',d:'Unlawful Assembly (Armed)'},{s:'146',d:'Rioting'},{s:'147',d:'Rioting'},{s:'148',d:'Rioting — deadly weapon'},{s:'151',d:'Assembling to disturb peace'},{s:'153A',d:'Promoting enmity between groups'},{s:'268',d:'Public nuisance'},{s:'295A',d:'Insulting religion'},{s:'302',d:'Murder'},{s:'304B',d:'Dowry Death'},{s:'307',d:'Attempt to Murder'},{s:'322',d:'Voluntarily causing grievous hurt'},{s:'324',d:'Causing hurt by weapon'},{s:'351',d:'Assault'},{s:'354',d:'Assault on woman'},{s:'363',d:'Kidnapping'},{s:'364',d:'Kidnapping to commit murder'},{s:'365',d:'Wrongful confinement'},{s:'366',d:'Kidnapping woman for marriage'},{s:'376',d:'Rape'},{s:'379',d:'Theft'},{s:'380',d:'Theft in dwelling house'},{s:'383',d:'Extortion'},{s:'390',d:'Robbery'},{s:'391',d:'Dacoity'},{s:'392',d:'Punishment for robbery'},{s:'395',d:'Punishment for dacoity'},{s:'396',d:'Dacoity with murder'},{s:'397',d:'Robbery with deadly weapon'},{s:'411',d:'Receiving stolen property'},{s:'420',d:'Cheating and fraud'},{s:'441',d:'Criminal trespass'},{s:'442',d:'House-trespass'},{s:'447',d:'Criminal trespass punishment'},{s:'448',d:'House-trespass punishment'},{s:'454',d:'Lurking house-trespass for theft'},{s:'457',d:'Lurking house-trespass by night'},{s:'465',d:'Punishment for forgery'},{s:'467',d:'Forgery of documents'},{s:'468',d:'Forgery for cheating'},{s:'470',d:'Forged document'},{s:'471',d:'Using forged document'},{s:'489A',d:'Counterfeiting currency'},{s:'498A',d:'Cruelty by husband'},{s:'504',d:'Intentional insult'},{s:'506',d:'Criminal intimidation'},{s:'509',d:'Outraging modesty of woman'},
+];
+function filterIPC(v){ renderIPC(v); }
+function renderIPC(v){ const items=v?IPC_REF.filter(i=>i.s.includes(v)||i.d.toLowerCase().includes(v.toLowerCase())):IPC_REF; document.getElementById('ipc-l').innerHTML=items.map(i=>`<div class="irow"><span class="ino">${i.s}</span><span class="idsc">${i.d}</span></div>`).join(''); }
+
+// ══════════════════════════════════════════
+// EXPORT
+// ══════════════════════════════════════════
+function exportCSV(){
+  const firs=getFiltered();
+  const rows=['FIR ID,Crime Type,Act,IPC,Area,PS,Date,Time,Severity,Status,Victim,Lat,Lng'].concat(firs.map(f=>`${f.id},${f.crimeType},${f.act},${f.ipc},${f.area},${f.ps},${f.date},${f.time},${f.severity},${f.status},${f.victim||'N/A'},${f.lat},${f.lng}`));
+  const a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([rows.join('\n')],{type:'text/csv'})); a.download='REDSHIELD_v2_'+new Date().toISOString().split('T')[0]+'.csv'; a.click();
+  showNotif('📥 Export Done',firs.length+' records exported to CSV','info');
+}
+
+// ══════════════════════════════════════════
+// NOTIFICATIONS
+// ══════════════════════════════════════════
+function showNotif(title,msg,type){
+  const n=document.createElement('div'); n.className='notif '+(type||'ok');
+  const tc=type==='err'?'#ff2244':type==='info'?'#00c8ff':'#00ff88';
+  n.innerHTML=`<div class="ntitle" style="color:${tc}">${title}</div><div class="nmsg">${msg}</div>`;
+  document.body.appendChild(n);
+  setTimeout(()=>{ n.style.transition='opacity 0.3s'; n.style.opacity='0'; setTimeout(()=>n.remove(),300); },4000);
+}
+
+// ══════════════════════════════════════════
+// CLOCK + TICKER
+// ══════════════════════════════════════════
+function startClock(){ const u=()=>{ const el=document.getElementById('htime'); if(el)el.textContent=new Date().toLocaleTimeString('en-IN',{hour12:false}); }; u(); setInterval(u,1000); }
+function startTicker(){
+  const alerts=['🔴 HIGH ALERT: Robbery near Chinthamani — PCR-02 deployed  ','🟡 Patrol PCR-01 active in Srirangam zone  ','🔴 NDPS case at Ariyamangalam PS — suspects in custody  ','🟢 3 arrests — Central PS Theft case solved  ','⚠️ NH-67 accident-prone zone — heightened surveillance active  ','🔴 Women safety protocol activated — Woraiyur evening patrol  ','🟡 Drug trafficking network monitoring — Kattur corridor  ','🟢 Monthly crime stats updated in CCTNS system  ','🤖 AI Analyst: Theft risk 85% tonight — deploy extra units  ','📡 Radar: 7 active threats detected in district  '];
+  const t=document.getElementById('ticker'); if(t)t.textContent=alerts.join('  |  ')+'  |  '+alerts.join('  |  ');
+}
+
+// ══════════════════════════════════════════
+// LIVE SIMULATION
+// ══════════════════════════════════════════
+function liveSim(){
+  const fir={id:'FIR-LIVE-'+Date.now(),ipc:'392',act:'IPC',crimeType:'Robbery',lat:10.795+((Math.random()-0.5)*0.02),lng:78.705+((Math.random()-0.5)*0.02),area:'Srirangam',ps:'Srirangam PS',date:new Date().toISOString().split('T')[0],time:new Date().toTimeString().substring(0,5),severity:4,victim:'Male',accused:'Unknown',status:'Under Investigation'};
+  activeFIRs.push(fir); renderAll();
+  showNotif('🔴 LIVE FIR RECEIVED','Robbery at '+fir.area+' — Immediate Response Required','err');
+}
+
+// INIT
+document.getElementById('fir-date').value=new Date().toISOString().split('T')[0];
+document.getElementById('fir-time').value=new Date().toTimeString().substring(0,5);
+</script>
+</body>
+</html>

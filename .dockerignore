@@ -1,0 +1,7 @@
+node_modules
+build
+.git
+backend/__pycache__
+backend/.venv
+backend/data/*.json
+backend/data/*.csv

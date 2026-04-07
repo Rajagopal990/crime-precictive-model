@@ -1,0 +1,60 @@
+{
+    "name":  "rajafrontend",
+    "version":  "0.1.0",
+    "private":  true,
+    "dependencies":  {
+                         "@testing-library/dom":  "^10.4.1",
+                         "@testing-library/jest-dom":  "^6.9.1",
+                         "@testing-library/react":  "^16.3.2",
+                         "@testing-library/user-event":  "^13.5.0",
+                         "axios":  "^1.9.0",
+                         "bcrypt":  "^6.0.0",
+                         "leaflet":  "^1.9.4",
+                         "react":  "^18.2.0",
+                         "react-dom":  "^18.2.0",
+                         "react-icons":  "^5.5.0",
+                         "react-leaflet":  "^4.2.1",
+                         "react-scripts":  "5.0.1",
+                         "recharts":  "^2.15.3",
+                         "web-vitals":  "^2.1.4"
+                     },
+    "scripts":  {
+                    "start":  "react-scripts start",
+                    "frontend":  "react-scripts start",
+                    "start:domain":  "powershell -ExecutionPolicy Bypass -File ./scripts/start-domain.ps1",
+                    "domain:setup":  "powershell -ExecutionPolicy Bypass -File ./scripts/setup-local-domain.ps1",
+                    "backend":  "python -m uvicorn backend.app.main:app --reload --port 8000",
+                    "dev":  "concurrently \"npm run backend\" \"npm run frontend\"",
+                    "build":  "react-scripts build",
+                    "test":  "react-scripts test",
+                    "eject":  "react-scripts eject",
+                    "backend:node":  "node backend-node/src/server.js",
+                    "dev:all":  "concurrently \"npm run backend\" \"npm run backend:node\" \"npm run frontend\"",
+                    "frontend:domain":  "powershell -ExecutionPolicy Bypass -File ./scripts/start-domain.ps1",
+                    "dev:domain":  "concurrently \"npm run backend\" \"npm run frontend:domain\""
+                },
+    "devDependencies":  {
+                            "autoprefixer":  "^10.4.21",
+                            "concurrently":  "^9.1.2",
+                            "postcss":  "^8.5.3",
+                            "tailwindcss":  "^3.4.17"
+                        },
+    "eslintConfig":  {
+                         "extends":  [
+                                         "react-app",
+                                         "react-app/jest"
+                                     ]
+                     },
+    "browserslist":  {
+                         "production":  [
+                                            "\u003e0.2%",
+                                            "not dead",
+                                            "not op_mini all"
+                                        ],
+                         "development":  [
+                                             "last 1 chrome version",
+                                             "last 1 firefox version",
+                                             "last 1 safari version"
+                                         ]
+                     }
+}
